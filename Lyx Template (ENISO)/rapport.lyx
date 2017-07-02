@@ -1,0 +1,1841 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+% the pages of the TOC is numbered roman
+% and a pdf-bookmark for the TOC is added
+\pagenumbering{roman}
+
+%\let\myTOC\tableofcontents
+%\renewcommand\tableofcontents{%
+ % \pdfbookmark[1]{\contentsname}{}
+ % \myTOC
+ % \cleardoublepage  }
+
+%*****Chapter style******
+\usepackage[Glenn]{fncychap}
+\ChNameVar{\large}
+\ChTitleAsIs
+\ChTitleVar{\bfseries\Huge}
+
+%*****Header style*******
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE,LO]{\footnotesize\nouppercase{\leftmark}}
+
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\renewcommand{\headrulewidth}{0,5pt}
+
+%****Glossaire Title*****
+\renewcommand{\nomname}{Glossaire}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman charter
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "linkcolor=black, citecolor=red, urlcolor=blue, filecolor=blue, pdfstartview=XYZ"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+% Upper part of the page
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth}   Réf : xx/xx  
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushright} A.U.
+ : 2014-2015 
+\backslash
+end{flushright}
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[0.5ex]{1
+\backslash
+columnwidth}{1pt}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+large{Université de Sousse}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+large{Ecole Nationale d'Ingénieurs de Sousse}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=0.3
+\backslash
+textwidth]{images/logo-eniso.pdf}
+\backslash
+
+\backslash
+[-0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Large{Rapport de Projet de Fin d'Etudes}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalsize{Présenté en vue de l'obtention du diplôme d'}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Large{ 
+\backslash
+bfseries{Ingénieur en Génie .....}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalsize{Option ...}
+\backslash
+
+\backslash
+[0.6cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[0.5ex]{1
+\backslash
+columnwidth}{1pt}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+huge 
+\backslash
+bfseries Conception et développement d'une application }
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[0.5ex]{1
+\backslash
+columnwidth}{1pt}
+\backslash
+
+\backslash
+[2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+% Author and supervisor
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushleft} 
+\backslash
+large 
+\backslash
+emph{Réalisé par:}
+\backslash
+
+\backslash
+ Prénom~
+\backslash
+textsc{Nom} 
+\backslash
+end{flushleft} 
+\backslash
+end{minipage} 
+\backslash
+begin{minipage}{0.5
+\backslash
+textwidth} 
+\backslash
+begin{flushright} 
+\backslash
+large 
+\backslash
+emph{Encadré par:} 
+\backslash
+
+\backslash
+  Mr.~Prénom~
+\backslash
+textsc{Nom} 
+\backslash
+end{flushright} 
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+% Bottom of the page 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Dédicaces
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\shape italic
+Ici vos dédicaces
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\shape italic
+Pour vos amis
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align right
+
+\series bold
+Votre Prénom
+\end_layout
+
+\begin_layout Chapter*
+Remerciements
+\end_layout
+
+\begin_layout Standard
+Ici vos remerciements...
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Introduction Générale
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ne pas supprimer ce code Latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Introduction Générale}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+markboth{Introduction Générale}{Introduction Générale}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+ 
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper.
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper.
+\end_layout
+
+\begin_layout Chapter
+Cadre du Projet
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+Nam eu leo justo.
+ Praesent accumsan consequat tellus, et hendrerit magna ornare ut.
+ Nullam ac orci ac magna ullamcorper tristique.
+ Cras lacus augue, congue in ullamcorper id, cursus sit amet odio.
+ Fusce dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu.
+ Mauris interdum pretium urna a posuere.
+ Fusce in porttitor ante.
+ Suspendisse potenti (une référence vers un élément de Bibliographie 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Section
+Présentation de l'organisme d'accueil
+\end_layout
+
+\begin_layout Standard
+Cras mattis adipiscing enim.
+ Duis varius, neque in posuere porttitor, odio urna bibendum nunc, sit amet
+ laoreet sem orci id lorem.
+ Ut ultrices mauris quis purus fringilla tristique.
+ Aliquam non nunc nulla, vitae sagittis nibh.
+ Mauris in diam felis.
+ Cras quis neque sed turpis condimentum porta ac a purus.
+ Duis posuere pellentesque feugiat.
+ Nunc tempus, ligula ac scelerisque dignissim, neque mauris venenatis lorem,
+ nec consectetur sem odio in tortor.
+ Sed velit tellus, egestas ut malesuada nec, interdum a eros.
+ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+ inceptos himenaeos
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Voici une note de bas de page
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Nulla tellus augue, mattis sed scelerisque id, aliquet sit amet nunc.
+ Nullam nulla metus, volutpat vitae tempus vel, rhoncus id elit.
+ Quisque non semper urna.
+ Cras molestie mollis sapien egestas rutrum.
+ Proin tincidunt laoreet est id fringilla.
+ Aliquam vel risus augue.
+ Mauris scelerisque tortor arcu, sed auctor tellus.
+ Donec egestas luctus varius.
+ Vestibulum tortor erat, elementum sollicitudin tempus quis, tempus nec
+ magna.
+ Sed sed metus turpis, in pulvinar orci.
+ 
+\end_layout
+
+\begin_layout Section
+Travail demandé
+\end_layout
+
+\begin_layout Standard
+Sed sed augue vel velit interdum bibendum.
+ Donec imperdiet interdum elit eu elementum.
+ Vivamus pulvinar pharetra erat, et mattis est iaculis a.
+ Pellentesque eu nunc sit amet orci ultrices tempus vitae non massa.
+ Morbi pharetra posuere sem eget pharetra.
+ Phasellus commodo purus ac eros consequat a sodales orci sodales.
+ In vitae augue vel nisl tincidunt elementum ac eu lorem.
+ Nam placerat sapien quis lorem facilisis molestie.
+ Proin eros massa, rhoncus eu accumsan a, lobortis eget est.
+ Etiam ac quam eros, quis suscipit lectus.
+ Donec sit amet metus id turpis aliquet iaculis sed in tellus.
+ Sed sed ligula lorem, ut porttitor lacus.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+\end_layout
+
+\begin_layout Section
+Etat de l'art
+\end_layout
+
+\begin_layout Standard
+Morbi pharetra posuere sem eget pharetra.
+ Phasellus commodo purus ac eros consequat a sodales orci sodales.
+ In vitae augue vel nisl tincidunt elementum ac eu lorem.
+ Nam placerat sapien quis lorem facilisis molestie.
+\end_layout
+
+\begin_layout Subsection
+Exemple site 1
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper (voir figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mon_image"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/pseudo_image.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mon_image"
+
+\end_inset
+
+Mon image du premier site avec référence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nam eu leo justo.
+ Praesent accumsan consequat tellus, et hendrerit magna ornare ut.
+ Nullam ac orci ac magna ullamcorper tristique.
+ Cras lacus augue, congue in ullamcorper id, cursus sit amet odio.
+ Fusce dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu.
+ Mauris interdum pretium urna a posuere.
+ Fusce in porttitor ante.
+ Suspendisse potenti.
+ Cras mattis adipiscing enim.
+ Duis varius, neque in posuere porttitor, odio urna bibendum nunc, sit amet
+ laoreet sem orci id lorem.
+ Ut ultrices mauris quis purus fringilla tristique.
+ Aliquam non nunc nulla, vitae sagittis nibh.
+ Mauris in diam felis.
+ Cras quis neque sed turpis condimentum porta ac a purus.
+ Duis posuere pellentesque feugiat.
+ Nunc tempus, ligula ac scelerisque dignissim, neque mauris venenatis lorem,
+ nec consectetur sem odio in tortor.
+ Sed velit tellus, egestas ut malesuada nec, interdum a eros.
+ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+ inceptos himenaeos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Z
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Un exemple de tableau
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nulla tellus augue, mattis sed scelerisque id, aliquet sit amet nunc.
+ Nullam nulla metus, volutpat vitae tempus vel, rhoncus id elit.
+ Quisque non semper urna.
+ Cras molestie mollis sapien egestas rutrum.
+ Proin tincidunt laoreet est id fringilla.
+ Aliquam vel risus augue.
+ Mauris scelerisque tortor arcu, sed auctor tellus.
+ Donec egestas luctus varius.
+ Vestibulum tortor erat, elementum sollicitudin tempus quis, tempus nec
+ magna.
+ Sed sed metus turpis, in pulvinar orci.
+ 
+\end_layout
+
+\begin_layout Standard
+Sed sed augue vel velit interdum bibendum.
+ Donec imperdiet interdum elit eu elementum.
+ Vivamus pulvinar pharetra erat, et mattis est iaculis a.
+ Pellentesque eu nunc sit amet orci ultrices tempus vitae non massa.
+ Morbi pharetra posuere sem eget pharetra.
+ Phasellus commodo purus ac eros consequat a sodales orci sodales.
+ In vitae augue vel nisl tincidunt elementum ac eu lorem.
+ Nam placerat sapien quis lorem facilisis molestie.
+ 
+\end_layout
+
+\begin_layout Subsection
+Exemple site 2
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper (voir figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mon_image-1"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/pseudo_image.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mon_image-1"
+
+\end_inset
+
+Mon image du deuxième site avec référence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nam eu leo justo.
+ Praesent accumsan consequat tellus, et hendrerit magna ornare ut.
+ Nullam ac orci ac magna ullamcorper tristique.
+ Cras lacus augue, congue in ullamcorper id, cursus sit amet odio.
+ Fusce dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu.
+ Mauris interdum pretium urna a posuere.
+ Fusce in porttitor ante.
+ Suspendisse potenti.
+ Cras mattis adipiscing enim.
+ Duis varius, neque in posuere porttitor, odio urna bibendum nunc, sit amet
+ laoreet sem orci id lorem.
+ Ut ultrices mauris quis purus fringilla tristique.
+ Aliquam non nunc nulla, vitae sagittis nibh.
+ Mauris in diam felis.
+ Cras quis neque sed turpis condimentum porta ac a purus.
+ Duis posuere pellentesque feugiat.
+ Nunc tempus, ligula ac scelerisque dignissim, neque mauris venenatis lorem,
+ nec consectetur sem odio in tortor.
+ Sed velit tellus, egestas ut malesuada nec, interdum a eros.
+ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+ inceptos himenaeos.
+ 
+\end_layout
+
+\begin_layout Subsection
+Exemple site 3
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper (voir figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mon_image-2"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/pseudo_image.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mon_image-2"
+
+\end_inset
+
+Mon image du troisème site avec référence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nam eu leo justo.
+ Praesent accumsan consequat tellus, et hendrerit magna ornare ut.
+ Nullam ac orci ac magna ullamcorper tristique.
+ Cras lacus augue, congue in ullamcorper id, cursus sit amet odio.
+ Fusce dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu.
+ Mauris interdum pretium urna a posuere.
+ Fusce in porttitor ante.
+ Suspendisse potenti.
+ Cras mattis adipiscing enim.
+ Duis varius, neque in posuere porttitor, odio urna bibendum nunc, sit amet
+ laoreet sem orci id lorem.
+ Ut ultrices mauris quis purus fringilla tristique.
+ Aliquam non nunc nulla, vitae sagittis nibh.
+ Mauris in diam felis.
+ Cras quis neque sed turpis condimentum porta ac a purus.
+ Duis posuere pellentesque feugiat.
+ Nunc tempus, ligula ac scelerisque dignissim, neque mauris venenatis lorem,
+ nec consectetur sem odio in tortor.
+ Sed velit tellus, egestas ut malesuada nec, interdum a eros.
+ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+ inceptos himenaeos.
+ 
+\end_layout
+
+\begin_layout Section*
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Proin eros massa, rhoncus eu accumsan a, lobortis eget est.
+ Etiam ac quam eros, quis suscipit lectus.
+ Donec sit amet metus id turpis aliquet iaculis sed in tellus.
+ Sed sed ligula lorem, ut porttitor lacus.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+\end_layout
+
+\begin_layout Chapter
+Analyse et Spécification des Besoins
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+Nam eu leo justo.
+ Praesent accumsan consequat tellus, et hendrerit magna ornare ut.
+ Nullam ac orci ac magna ullamcorper tristique.
+ Cras lacus augue, congue in ullamcorper id, cursus sit amet odio.
+ Fusce dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu.
+ Mauris interdum pretium urna a posuere.
+\end_layout
+
+\begin_layout Section
+Analyse des besoins
+\end_layout
+
+\begin_layout Standard
+Nam eu leo justo.
+ Praesent accumsan consequat tellus, et hendrerit magna ornare ut.
+ Nullam ac orci ac magna ullamcorper tristique.
+ Cras lacus augue, congue in ullamcorper id, cursus sit amet odio.
+ Fusce dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu.
+ Mauris interdum pretium urna a posuere.
+\end_layout
+
+\begin_layout Subsection
+Besoins fonctionnels
+\end_layout
+
+\begin_layout Standard
+Cras mattis adipiscing enim.
+ Duis varius, neque in posuere porttitor, odio urna bibendum nunc, sit amet
+ laoreet sem orci id lorem.
+ Ut ultrices mauris quis purus fringilla tristique.
+ Aliquam non nunc nulla, vitae sagittis nibh.
+ Mauris in diam felis.
+ Cras quis neque sed turpis condimentum porta ac a purus.
+ Duis posuere pellentesque feugiat.
+ Nunc tempus, ligula ac scelerisque dignissim, neque mauris venenatis lorem,
+ nec consectetur sem odio in tortor.
+ Sed velit tellus, egestas ut malesuada nec, interdum a eros.
+ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+ inceptos himenaeos.
+ 
+\end_layout
+
+\begin_layout Subsection
+Besoins non fonctionnels
+\end_layout
+
+\begin_layout Standard
+Nulla tellus augue, mattis sed scelerisque id, aliquet sit amet nunc.
+ Nullam nulla metus, volutpat vitae tempus vel, rhoncus id elit.
+ Quisque non semper urna.
+ 
+\end_layout
+
+\begin_layout Itemize
+Cras molestie mollis sapien egestas rutrum.
+\end_layout
+
+\begin_layout Itemize
+Proin tincidunt laoreet est id fringilla.
+ 
+\end_layout
+
+\begin_layout Itemize
+Aliquam vel risus augue.
+ Mauris scelerisque tortor arcu, sed auctor tellus.
+ 
+\end_layout
+
+\begin_layout Itemize
+Donec egestas luctus varius.
+ Vestibulum tortor erat, elementum sollicitudin tempus quis, tempus nec
+ magna.
+ Sed sed metus turpis, in pulvinar orci.
+ 
+\end_layout
+
+\begin_layout Section
+Spécification des besoins
+\end_layout
+
+\begin_layout Standard
+Fusce dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu.
+ Mauris interdum pretium urna a posuere.
+\end_layout
+
+\begin_layout Subsection
+Identification des acteurs
+\end_layout
+
+\begin_layout Subsection
+Diagramme de cas d'utilisation
+\end_layout
+
+\begin_layout Section*
+Conclusion
+\end_layout
+
+\begin_layout Chapter
+Conception
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+Cras mattis adipiscing enim.
+ Duis varius, neque in posuere porttitor, odio urna bibendum nunc, sit amet
+ laoreet sem orci id lorem.
+ Ut ultrices mauris quis purus fringilla tristique.
+ Aliquam non nunc nulla, vitae sagittis nibh.
+ Mauris in diam felis.
+ Cras quis neque sed turpis condimentum porta ac a purus.
+ Duis posuere pellentesque feugiat.
+ Nunc tempus, ligula ac scelerisque dignissim, neque mauris venenatis lorem,
+ nec consectetur sem odio in tortor.
+ Sed velit tellus, egestas ut malesuada nec, interdum a eros.
+\end_layout
+
+\begin_layout Section
+Conception générale
+\end_layout
+
+\begin_layout Standard
+Ut ultrices mauris quis purus fringilla tristique.
+ Aliquam non nunc nulla, vitae sagittis nibh.
+ Mauris in diam felis.
+\end_layout
+
+\begin_layout Subsection
+Architecture de la solution
+\end_layout
+
+\begin_layout Standard
+Sed sed augue vel velit interdum bibendum.
+ Donec imperdiet interdum elit eu elementum.
+ Vivamus pulvinar pharetra erat, et mattis est iaculis a.
+ Pellentesque eu nunc sit amet orci ultrices tempus vitae non massa.
+ Morbi pharetra posuere sem eget pharetra.
+ Phasellus commodo purus ac eros consequat a sodales orci sodales.
+ In vitae augue vel nisl tincidunt elementum ac eu lorem.
+ Nam placerat sapien quis lorem facilisis molestie.
+ Proin eros massa, rhoncus eu accumsan a, lobortis eget est.
+ Etiam ac quam eros, quis suscipit lectus.
+ Donec sit amet metus id turpis aliquet iaculis sed in tellus.
+ Sed sed ligula lorem, ut porttitor lacus.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+\end_layout
+
+\begin_layout Subsection
+Diagramme de packages
+\end_layout
+
+\begin_layout Standard
+Cras mattis adipiscing enim.
+ Duis varius, neque in posuere porttitor, odio urna bibendum nunc, sit amet
+ laoreet sem orci id lorem.
+ Ut ultrices mauris quis purus fringilla tristique.
+ Aliquam non nunc nulla, vitae sagittis nibh.
+ Mauris in diam felis.
+ Cras quis neque sed turpis condimentum porta ac a purus.
+ Duis posuere pellentesque feugiat.
+ Nunc tempus, ligula ac scelerisque dignissim, neque mauris venenatis lorem,
+ nec consectetur sem odio in tortor.
+ Sed velit tellus, egestas ut malesuada nec, interdum a eros.
+\end_layout
+
+\begin_layout Section
+Conception détaillée
+\end_layout
+
+\begin_layout Standard
+Mauris in diam felis.
+ Cras quis neque sed turpis condimentum porta ac a purus.
+ 
+\end_layout
+
+\begin_layout Subsection
+Conception de la base de données
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+ 
+\end_layout
+
+\begin_layout Subsection
+Diagramme de classes
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+ 
+\end_layout
+
+\begin_layout Section*
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Cras mattis adipiscing enim.
+ Duis varius, neque in posuere porttitor, odio urna bibendum nunc, sit amet
+ laoreet sem orci id lorem.
+ Ut ultrices mauris quis purus fringilla tristique.
+ Aliquam non nunc nulla, vitae sagittis nibh.
+ Mauris in diam felis.
+ Cras quis neque sed turpis condimentum porta ac a purus.
+ Duis posuere pellentesque feugiat.
+ Nunc tempus, ligula ac scelerisque dignissim, neque mauris venenatis lorem,
+ nec consectetur sem odio in tortor.
+ Sed velit tellus, egestas ut malesuada nec, interdum a eros.
+\end_layout
+
+\begin_layout Chapter
+Réalisation et Résultats
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Section
+Environnement et outils de travail
+\end_layout
+
+\begin_layout Subsection
+Configuration matérielle
+\end_layout
+
+\begin_layout Subsection
+Environnement logiciel
+\end_layout
+
+\begin_layout Section
+Interfaces Homme Machine
+\end_layout
+
+\begin_layout Section
+Problèmes rencontrés
+\end_layout
+
+\begin_layout Itemize
+problème
+\end_layout
+
+\begin_layout Itemize
+problème
+\end_layout
+
+\begin_layout Itemize
+problème
+\end_layout
+
+\begin_layout Section
+Chronogramme de travail
+\end_layout
+
+\begin_layout Section*
+Conclusion
+\end_layout
+
+\begin_layout Chapter*
+Conclusion Générale
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ne pas supprimer ce code Latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Conclusion Générale}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+markboth{Conclusion Générale}{Conclusion Générale}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+ 
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper.
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper.
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper.
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Auteur.
+ (ou Orgnisme).
+ Titre de la page d'accueil en ligne.
+ Disponible sur : 
+\begin_inset CommandInset href
+LatexCommand href
+name "www.google.com"
+target "http://www.google.com"
+
+\end_inset
+
+ [date à laquelle le document a été consulté (JJ-mois-AAAA)]
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+Nom, Prénom ou Initiales.
+ 
+\shape italic
+Titre en italique
+\shape default
+.
+ Lieu d'édition : Éditeur, Année de publication.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ne pas supprimer ce code Latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Bibliographie}  % instruction pour ajouter
+ la bibliographie au sommaire
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+markboth{Bibliographie}{Bibliographie}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "custom"
+width "3cm"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ENISO"
+description "Ecole Nationale d'Ingénieurs de Sousse"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "API"
+description "Application Programming Interface"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ne pas supprimer ce code Latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Glossaire}  % instruction pour ajouter le
+ glossaire au sommaire
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+markboth{Glossaire}{Glossaire}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+appendix  % code pour commencer la numérotation des annexes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Une annexe optionnelle
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper.
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper.
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi dignissim gravida risus, quis malesuada ipsum ullamcorper at.
+ Nunc suscipit dolor vel purus euismod rutrum.
+ Quisque nec libero elit, id hendrerit lacus.
+ Integer nunc est, dignissim facilisis suscipit et, gravida sit amet turpis.
+ Integer at adipiscing sapien.
+ Aenean vel quam in felis suscipit elementum.
+ Nulla pharetra viverra lorem, non ultricies elit mattis non.
+ Vestibulum interdum, massa id fermentum viverra, nulla arcu faucibus diam,
+ in sagittis sem diam quis tellus.
+ Praesent id nisi nec leo facilisis dignissim sed in enim.
+ Vestibulum vel eros arcu.
+ Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+\end_layout
+
+\begin_layout Standard
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam, eu
+ vulputate nisl odio vitae tellus.
+ In eget odio tellus, non varius dolor.
+ Cras porttitor convallis augue, at viverra tortor faucibus id.
+ Donec sagittis tristique est, a bibendum quam rutrum at.
+ Vestibulum ac mi ante, eu facilisis ligula.
+ Ut nec feugiat ipsum.
+ Vivamus elementum dolor ut ligula pharetra ac convallis lacus fermentum.
+ Phasellus suscipit lacus vel odio tristique sed ultricies elit varius.
+ Phasellus elit nisi, pellentesque sit amet rhoncus non, aliquet interdum
+ lorem.
+ Nullam et neque nibh, non mattis nulla.
+ Nam sit amet tincidunt arcu.
+ Aliquam consequat laoreet quam, vitae mattis nunc gravida eget.
+ Proin nec massa tortor, ut sagittis odio.
+ Donec bibendum ipsum sed nibh ornare gravida.
+ Donec volutpat felis nec massa posuere fermentum.
+ Donec tincidunt faucibus velit non semper.
+\end_layout
+
+\end_body
+\end_document
