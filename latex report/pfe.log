@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.7)  8 JUL 2017 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.7)  8 JUL 2017 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,154 +475,157 @@ l.111 \chapter
 ] [1
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+bch on input line 150.
-
+Chapter 1.
+LaTeX Font Info:    Try loading font information for OMS+bch on input line 151.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsbch.fd
 File: omsbch.fd 
 )
 LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
  [2
 
-] [3]
-Chapter 1.
-<tripadvisor.jpg, id=312, 1179.40625pt x 594.22pt>
+]
+Overfull \hbox (0.17451pt too wide) in paragraph at lines 155--158
+\T1/bch/m/n/12 OPR is a tourism plat-form that is sustainability-focused, it al
+-lows peo-ple from around
+ []
+
+<tripadvisor.jpg, id=315, 1179.40625pt x 594.22pt>
 File: tripadvisor.jpg Graphic file (type jpg)
  <use tripadvisor.jpg>
-Package pdftex.def Info: tripadvisor.jpg used on input line 175.
+Package pdftex.def Info: tripadvisor.jpg used on input line 176.
 (pdftex.def)             Requested size: 426.79134pt x 215.03429pt.
 
-<trivago.jpg, id=313, 661.47125pt x 150.5625pt>
+[3] <trivago.jpg, id=320, 661.47125pt x 150.5625pt>
 File: trivago.jpg Graphic file (type jpg)
  <use trivago.jpg>
-Package pdftex.def Info: trivago.jpg used on input line 184.
+Package pdftex.def Info: trivago.jpg used on input line 186.
 (pdftex.def)             Requested size: 426.79134pt x 97.14307pt.
- [4
 
- <./tripadvisor.jpg>] <momondo.jpg, id=318, 1268.74pt x 686.565pt>
+<momondo.jpg, id=322, 1268.74pt x 686.565pt>
 File: momondo.jpg Graphic file (type jpg)
  <use momondo.jpg>
-Package pdftex.def Info: momondo.jpg used on input line 193.
+Package pdftex.def Info: momondo.jpg used on input line 196.
 (pdftex.def)             Requested size: 426.79134pt x 230.95665pt.
-
-[5 <./trivago.jpg> <./momondo.jpg>] <blog.jpg, id=324, 862.22125pt x 602.25pt>
+ [4 <./tripadvisor.jpg> <./trivago.jpg>] [5 <./momondo.jpg>]
+<blog.jpg, id=334, 862.22125pt x 602.25pt>
 File: blog.jpg Graphic file (type jpg)
-
-<use blog.jpg>
-Package pdftex.def Info: blog.jpg used on input line 231.
+ <use blog.jpg>
+Package pdftex.def Info: blog.jpg used on input line 235.
 (pdftex.def)             Requested size: 426.79134pt x 298.10088pt.
- [6 <./blog.jpg>] [7]
+ [6 <./blog.jpg>]
+[7]
 Chapter 2.
 [8
 
-] <generalUseCase.jpg, id=344, 803.0pt x 812.03375pt>
+] <generalUseCase.jpg, id=354, 803.0pt x 812.03375pt>
 File: generalUseCase.jpg Graphic file (type jpg)
 
 <use generalUseCase.jpg>
-Package pdftex.def Info: generalUseCase.jpg used on input line 302.
+Package pdftex.def Info: generalUseCase.jpg used on input line 307.
 (pdftex.def)             Requested size: 426.79134pt x 431.60251pt.
  [9]
-<registerSequence.jpg, id=352, 747.79375pt x 594.22pt>
+<registerSequence.jpg, id=363, 747.79375pt x 594.22pt>
 File: registerSequence.jpg Graphic file (type jpg)
 
 <use registerSequence.jpg>
-Package pdftex.def Info: registerSequence.jpg used on input line 317.
+Package pdftex.def Info: registerSequence.jpg used on input line 323.
 (pdftex.def)             Requested size: 426.79134pt x 339.14413pt.
  [10 <./generalUseCase.jpg>] [11 <./registerSequence.jpg>] <loginSequence.jpg, 
-id=362, 548.0475pt x 576.1525pt>
+id=374, 548.0475pt x 576.1525pt>
 File: loginSequence.jpg Graphic file (type jpg)
 
 <use loginSequence.jpg>
-Package pdftex.def Info: loginSequence.jpg used on input line 347.
+Package pdftex.def Info: loginSequence.jpg used on input line 354.
 (pdftex.def)             Requested size: 426.79134pt x 448.68503pt.
  [12] [13 <./loginSequence.jpg>]
-<searchSpec.png, id=371, 422.57875pt x 433.62pt>
+<searchSpec.png, id=384, 422.57875pt x 433.62pt>
 File: searchSpec.png Graphic file (type png)
  <use searchSpec.png>
-Package pdftex.def Info: searchSpec.png used on input line 379.
+Package pdftex.def Info: searchSpec.png used on input line 387.
 (pdftex.def)             Requested size: 341.43306pt x 350.36351pt.
  [14]
-[15 <./searchSpec.png>] <viewSpec.png, id=382, 687.56876pt x 713.66624pt>
+[15 <./searchSpec.png>] <viewSpec.png, id=396, 687.56876pt x 713.66624pt>
 File: viewSpec.png Graphic file (type png)
 
 <use viewSpec.png>
-Package pdftex.def Info: viewSpec.png used on input line 409.
+Package pdftex.def Info: viewSpec.png used on input line 418.
 (pdftex.def)             Requested size: 426.79134pt x 442.9912pt.
  [16] [17 <./viewSpec.png>]
-<reviewSpec.png, id=393, 452.69125pt x 445.665pt>
+<reviewSpec.png, id=408, 452.69125pt x 445.665pt>
 File: reviewSpec.png Graphic file (type png)
  <use reviewSpec.png>
-Package pdftex.def Info: reviewSpec.png used on input line 440.
+Package pdftex.def Info: reviewSpec.png used on input line 450.
 (pdftex.def)             Requested size: 369.88582pt x 364.14201pt.
  [18]
-[19 <./reviewSpec.png>] <managerUseCase.jpg, id=403, 742.775pt x 812.03375pt>
+[19 <./reviewSpec.png>] <managerUseCase.jpg, id=419, 742.775pt x 812.03375pt>
 File: managerUseCase.jpg Graphic file (type jpg)
 
 <use managerUseCase.jpg>
-Package pdftex.def Info: managerUseCase.jpg used on input line 469.
+Package pdftex.def Info: managerUseCase.jpg used on input line 480.
 (pdftex.def)             Requested size: 426.79134pt x 466.59363pt.
  [20]
-<adminUseCase.jpg, id=408, 683.55376pt x 279.0425pt>
+<adminUseCase.jpg, id=425, 683.55376pt x 279.0425pt>
 File: adminUseCase.jpg Graphic file (type jpg)
  <use adminUseCase.jpg>
-Package pdftex.def Info: adminUseCase.jpg used on input line 479.
+Package pdftex.def Info: adminUseCase.jpg used on input line 491.
 (pdftex.def)             Requested size: 426.79134pt x 174.2308pt.
 
 [21 <./managerUseCase.jpg>] [22 <./adminUseCase.jpg>]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--490
+Underfull \hbox (badness 10000) in paragraph at lines 499--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--490
+Underfull \hbox (badness 10000) in paragraph at lines 499--503
 
  []
 
-<physicalArchitecture.png, id=417, 723.70375pt x 673.51625pt>
+<physicalArchitecture.png, id=437, 723.70375pt x 673.51625pt>
 File: physicalArchitecture.png Graphic file (type png)
 
 <use physicalArchitecture.png>
-Package pdftex.def Info: physicalArchitecture.png used on input line 500.
+Package pdftex.def Info: physicalArchitecture.png used on input line 513.
 (pdftex.def)             Requested size: 426.79134pt x 397.19643pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--502
+Underfull \hbox (badness 10000) in paragraph at lines 504--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--502
+Underfull \hbox (badness 10000) in paragraph at lines 504--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--502
+Underfull \hbox (badness 10000) in paragraph at lines 504--516
 
  []
 
 [23
 
 ] [24 <./physicalArchitecture.png>]
-<logicalArchitecture.png, id=428, 443.6575pt x 875.27pt>
+<logicalArchitecture.png, id=451, 443.6575pt x 875.27pt>
 File: logicalArchitecture.png Graphic file (type png)
 
 <use logicalArchitecture.png>
-Package pdftex.def Info: logicalArchitecture.png used on input line 525.
+Package pdftex.def Info: logicalArchitecture.png used on input line 539.
 (pdftex.def)             Requested size: 341.43306pt x 673.58603pt.
  [25]
-<modularArchitecture.png, id=435, 678.535pt x 383.4325pt>
+<modularArchitecture.png, id=458, 678.535pt x 383.4325pt>
 File: modularArchitecture.png Graphic file (type png)
 
 <use modularArchitecture.png>
-Package pdftex.def Info: modularArchitecture.png used on input line 534.
+Package pdftex.def Info: modularArchitecture.png used on input line 549.
 (pdftex.def)             Requested size: 426.79134pt x 241.17175pt.
  [26 <./logicalArchitecture.png>]
-<searchAdClass.png, id=441, 649.42625pt x 1595.9625pt>
+<searchAdClass.png, id=465, 649.42625pt x 1595.9625pt>
 File: searchAdClass.png Graphic file (type png)
  <use searchAdClass.png>
-Package pdftex.def Info: searchAdClass.png used on input line 554.
+Package pdftex.def Info: searchAdClass.png used on input line 569.
 (pdftex.def)             Requested size: 284.52756pt x 699.23033pt.
 
 [27 <./modularArchitecture.png>]
@@ -630,401 +633,360 @@ Overfull \vbox (23.46124pt too high) has occurred while \output is active []
 
 
 [28 <./searchAdClass.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
 
  []
 
-<searchSequence.png, id=452, 692.5875pt x 605.26125pt>
+<searchSequence.png, id=476, 711.65875pt x 604.2575pt>
 File: searchSequence.png Graphic file (type png)
 
 <use searchSequence.png>
-Package pdftex.def Info: searchSequence.png used on input line 578.
-(pdftex.def)             Requested size: 426.79134pt x 372.98615pt.
+Package pdftex.def Info: searchSequence.png used on input line 594.
+(pdftex.def)             Requested size: 426.79134pt x 362.3729pt.
  [29]
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
 
  []
 
-<viewSequence.png, id=459, 818.05624pt x 874.26625pt>
+<viewSequence.png, id=484, 818.05624pt x 874.26625pt>
 File: viewSequence.png Graphic file (type png)
  <use viewSequence.png>
-Package pdftex.def Info: viewSequence.png used on input line 589.
+Package pdftex.def Info: viewSequence.png used on input line 606.
 (pdftex.def)             Requested size: 426.79134pt x 456.12851pt.
 
 [30 <./searchSequence.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 596--597
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
 
  []
 
-<reviewSequence.png, id=466, 619.31375pt x 452.69125pt>
+<reviewSequence.png, id=492, 618.31pt x 452.69125pt>
 File: reviewSequence.png Graphic file (type png)
+ <use reviewSequence.png>
+Package pdftex.def Info: reviewSequence.png used on input line 618.
+(pdftex.def)             Requested size: 426.79134pt x 312.48163pt.
 
-<use reviewSequence.png>
-Package pdftex.def Info: reviewSequence.png used on input line 600.
-(pdftex.def)             Requested size: 426.79134pt x 311.97739pt.
- [31 <./viewSequence.png>]
-<interactionDiagram.png, id=473, 653.44125pt x 753.81625pt>
+[31 <./viewSequence.png>]
+<interactionDiagram.png, id=501, 653.44125pt x 753.81625pt>
 File: interactionDiagram.png Graphic file (type png)
 
 <use interactionDiagram.png>
-Package pdftex.def Info: interactionDiagram.png used on input line 612.
+Package pdftex.def Info: interactionDiagram.png used on input line 631.
 (pdftex.def)             Requested size: 426.79134pt x 492.34424pt.
  [32 <./reviewSequence.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 619--621
+Underfull \hbox (badness 10000) in paragraph at lines 639--641
 
  []
 
 [33 <./interactionDiagram.png>]
-<loginDoc.png, id=484, 793.96625pt x 747.79375pt>
+<loginDoc.png, id=514, 793.96625pt x 747.79375pt>
 File: loginDoc.png Graphic file (type png)
  <use loginDoc.png>
-Package pdftex.def Info: loginDoc.png used on input line 646.
+Package pdftex.def Info: loginDoc.png used on input line 666.
 (pdftex.def)             Requested size: 426.79134pt x 401.97694pt.
  [34]
-<registerDoc.png, id=490, 797.98125pt x 729.72626pt>
+<registerDoc.png, id=520, 797.98125pt x 729.72626pt>
 File: registerDoc.png Graphic file (type png)
  <use registerDoc.png>
-Package pdftex.def Info: registerDoc.png used on input line 652.
+Package pdftex.def Info: registerDoc.png used on input line 672.
 (pdftex.def)             Requested size: 426.79134pt x 390.28279pt.
 
-[35 <./loginDoc.png>] <logoutDoc.png, id=497, 800.9925pt x 678.535pt>
+[35 <./loginDoc.png>] <logoutDoc.png, id=527, 800.9925pt x 678.535pt>
 File: logoutDoc.png Graphic file (type png)
 
 <use logoutDoc.png>
-Package pdftex.def Info: logoutDoc.png used on input line 658.
+Package pdftex.def Info: logoutDoc.png used on input line 678.
 (pdftex.def)             Requested size: 426.79134pt x 361.5476pt.
  [36 <./registerDoc.png>]
-<searchDoc.png, id=503, 805.0075pt x 440.64626pt>
+<searchDoc.png, id=533, 805.0075pt x 440.64626pt>
 File: searchDoc.png Graphic file (type png)
  <use searchDoc.png>
-Package pdftex.def Info: searchDoc.png used on input line 664.
+Package pdftex.def Info: searchDoc.png used on input line 684.
 (pdftex.def)             Requested size: 426.79134pt x 233.61536pt.
 
-<searchDocResponse.png, id=504, 806.01125pt x 829.0975pt>
+<searchDocResponse.png, id=534, 806.01125pt x 829.0975pt>
 File: searchDocResponse.png Graphic file (type png)
 
 <use searchDocResponse.png>
-Package pdftex.def Info: searchDocResponse.png used on input line 666.
+Package pdftex.def Info: searchDocResponse.png used on input line 686.
 (pdftex.def)             Requested size: 426.79134pt x 439.01476pt.
  [37 <./logoutDoc.png> <./searchDoc.png>]
-<detailsDoc.png, id=510, 569.12625pt x 715.67375pt>
+<detailsDoc.png, id=540, 569.12625pt x 715.67375pt>
 File: detailsDoc.png Graphic file (type png)
  <use detailsDoc.png>
-Package pdftex.def Info: detailsDoc.png used on input line 673.
+Package pdftex.def Info: detailsDoc.png used on input line 693.
 (pdftex.def)             Requested size: 426.79134pt x 536.71031pt.
 
-<detailsDocResponse.png, id=511, 563.10374pt x 347.2975pt> [38 <./searchDocResp
+<detailsDocResponse.png, id=541, 563.10374pt x 347.2975pt> [38 <./searchDocResp
 onse.png>]
 File: detailsDocResponse.png Graphic file (type png)
  <use detailsDocResponse.png>
-Package pdftex.def Info: detailsDocResponse.png used on input line 675.
+Package pdftex.def Info: detailsDocResponse.png used on input line 695.
 (pdftex.def)             Requested size: 426.79134pt x 263.22813pt.
  [39 <./detailsDoc.png>]
-<reviewsDoc.png, id=521, 571.13374pt x 709.65125pt>
+<reviewsDoc.png, id=551, 571.13374pt x 709.65125pt>
 File: reviewsDoc.png Graphic file (type png)
  <use reviewsDoc.png>
-Package pdftex.def Info: reviewsDoc.png used on input line 682.
+Package pdftex.def Info: reviewsDoc.png used on input line 702.
 (pdftex.def)             Requested size: 426.79134pt x 530.29884pt.
 
-<reviewsDocResponse.png, id=522, 566.115pt x 540.0175pt> [40 <./detailsDocRespo
+<reviewsDocResponse.png, id=552, 566.115pt x 540.0175pt> [40 <./detailsDocRespo
 nse.png>]
 File: reviewsDocResponse.png Graphic file (type png)
  <use reviewsDocResponse.png>
-Package pdftex.def Info: reviewsDocResponse.png used on input line 684.
+Package pdftex.def Info: reviewsDocResponse.png used on input line 704.
 (pdftex.def)             Requested size: 426.79134pt x 407.1298pt.
  [41 <./reviewsDoc.png>]
-<addDoc.png, id=533, 558.085pt x 588.1975pt>
+<addDoc.png, id=563, 558.085pt x 588.1975pt>
 File: addDoc.png Graphic file (type png)
  <use addDoc.png>
-Package pdftex.def Info: addDoc.png used on input line 690.
+Package pdftex.def Info: addDoc.png used on input line 710.
 (pdftex.def)             Requested size: 426.79134pt x 449.83499pt.
 
-<addDocResponse.png, id=534, 555.07375pt x 206.7725pt> [42 <./reviewsDocRespons
+<addDocResponse.png, id=564, 555.07375pt x 206.7725pt> [42 <./reviewsDocRespons
 e.png>]
 File: addDocResponse.png Graphic file (type png)
  <use addDocResponse.png>
-Package pdftex.def Info: addDocResponse.png used on input line 692.
+Package pdftex.def Info: addDocResponse.png used on input line 712.
 (pdftex.def)             Requested size: 426.79134pt x 158.98814pt.
  [43 <./addDoc.png> <./addDocResponse.png>]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 705--706
+Underfull \hbox (badness 10000) in paragraph at lines 724--725
 
  []
 
 [44
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
+Underfull \hbox (badness 10000) in paragraph at lines 753--754
 
  []
 
 
-Overfull \hbox (0.59074pt too wide) in paragraph at lines 743--750
+Overfull \hbox (4.87473pt too wide) in paragraph at lines 762--769
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+Underfull \hbox (badness 10000) in paragraph at lines 777--778
 
  []
 
-[45] <apache.png, id=555, 1065.9825pt x 601.24625pt>
+[45] <apache.png, id=590, 1065.9825pt x 601.24625pt>
 File: apache.png Graphic file (type png)
  <use apache.png>
-Package pdftex.def Info: apache.png used on input line 778.
+Package pdftex.def Info: apache.png used on input line 797.
 (pdftex.def)             Requested size: 426.79134pt x 240.72359pt.
- [46 <./apache.png>] <landing.jpg, id=564, 1367.1075pt x 678.535pt>
+ [46 <./apache.png>] <landing.jpg, id=600, 1367.1075pt x 678.535pt>
 File: landing.jpg Graphic file (type jpg)
  <use landing.jpg>
-Package pdftex.def Info: landing.jpg used on input line 813.
+Package pdftex.def Info: landing.jpg used on input line 833.
 (pdftex.def)             Requested size: 426.79134pt x 211.82423pt.
 
-[47 <./landing.jpg>] <search.jpg, id=575, 1367.1075pt x 677.53125pt>
+[47 <./landing.jpg>] <search.jpg, id=612, 1367.1075pt x 677.53125pt>
 File: search.jpg Graphic file (type jpg)
 
 <use search.jpg>
-Package pdftex.def Info: search.jpg used on input line 827.
+Package pdftex.def Info: search.jpg used on input line 848.
 (pdftex.def)             Requested size: 426.79134pt x 211.51088pt.
- <map.jpg, id=576, 1367.1075pt x 674.52pt>
+ <map.jpg, id=614, 1367.1075pt x 674.52pt>
 File: map.jpg Graphic file (type jpg)
  <use map.jpg>
-Package pdftex.def Info: map.jpg used on input line 841.
+Package pdftex.def Info: map.jpg used on input line 863.
 (pdftex.def)             Requested size: 426.79134pt x 210.57085pt.
 
 [48 <./search.jpg> <./map.jpg>]
-<details.jpg, id=582, 1366.10374pt x 678.535pt>
+<details.jpg, id=620, 1366.10374pt x 678.535pt>
 File: details.jpg Graphic file (type jpg)
  <use details.jpg>
-Package pdftex.def Info: details.jpg used on input line 854.
+Package pdftex.def Info: details.jpg used on input line 877.
 (pdftex.def)             Requested size: 426.79134pt x 211.97954pt.
 
-<createReview.jpg, id=583, 1366.10374pt x 675.52374pt>
+<createReview.jpg, id=622, 1366.10374pt x 675.52374pt>
 File: createReview.jpg Graphic file (type jpg)
  <use createReview.jpg>
-Package pdftex.def Info: createReview.jpg used on input line 868.
+Package pdftex.def Info: createReview.jpg used on input line 892.
 (pdftex.def)             Requested size: 426.79134pt x 211.0388pt.
 
 [49 <./details.jpg> <./createReview.jpg>]
-<thanks.jpg, id=588, 1368.11125pt x 679.53876pt>
+<thanks.jpg, id=628, 1368.11125pt x 679.53876pt>
 File: thanks.jpg Graphic file (type jpg)
  <use thanks.jpg>
-Package pdftex.def Info: thanks.jpg used on input line 882.
+Package pdftex.def Info: thanks.jpg used on input line 907.
 (pdftex.def)             Requested size: 426.79134pt x 211.98206pt.
 
-<review.jpg, id=589, 1342.01375pt x 652.4375pt>
+<review.jpg, id=630, 1342.01375pt x 652.4375pt>
 File: review.jpg Graphic file (type jpg)
  <use review.jpg>
-Package pdftex.def Info: review.jpg used on input line 893.
+Package pdftex.def Info: review.jpg used on input line 919.
 (pdftex.def)             Requested size: 426.79134pt x 207.49005pt.
 
-<apilogin.jpg, id=590, 1065.9825pt x 437.635pt>
+<apilogin.jpg, id=632, 1065.9825pt x 437.635pt>
 File: apilogin.jpg Graphic file (type jpg)
  <use apilogin.jpg>
-Package pdftex.def Info: apilogin.jpg used on input line 907.
+Package pdftex.def Info: apilogin.jpg used on input line 934.
 (pdftex.def)             Requested size: 426.79134pt x 175.21783pt.
- [50 <./thanks.jpg> <./review.jpg>] <apiloginfail.jpg, id=595, 1065.9825pt x 43
+ [50 <./thanks.jpg> <./review.jpg>] <apiloginfail.jpg, id=638, 1065.9825pt x 43
 6.63126pt>
 File: apiloginfail.jpg Graphic file (type jpg)
 
 <use apiloginfail.jpg>
-Package pdftex.def Info: apiloginfail.jpg used on input line 917.
+Package pdftex.def Info: apiloginfail.jpg used on input line 945.
 (pdftex.def)             Requested size: 426.79134pt x 174.81596pt.
- <apisearch.jpg, id=596, 1160.335pt x 628.3475pt>
+ <apisearch.jpg, id=640, 1160.335pt x 628.3475pt>
 File: apisearch.jpg Graphic file (type jpg)
 
 <use apisearch.jpg>
-Package pdftex.def Info: apisearch.jpg used on input line 929.
+Package pdftex.def Info: apisearch.jpg used on input line 958.
 (pdftex.def)             Requested size: 426.79134pt x 231.11388pt.
  [51 <./apilogin.jpg> <./apiloginfail.jpg>]
-<apidetails.jpg, id=601, 1165.35374pt x 638.385pt>
+<apidetails.jpg, id=646, 1165.35374pt x 638.385pt>
 File: apidetails.jpg Graphic file (type jpg)
  <use apidetails.jpg>
-Package pdftex.def Info: apidetails.jpg used on input line 947.
+Package pdftex.def Info: apidetails.jpg used on input line 977.
 (pdftex.def)             Requested size: 426.79134pt x 233.79272pt.
 
 [52 <./apisearch.jpg> <./apidetails.jpg>]
-<apilogout.jpg, id=606, 1163.34625pt x 546.04pt>
+<apilogout.jpg, id=652, 1163.34625pt x 546.04pt>
 File: apilogout.jpg Graphic file (type jpg)
  <use apilogout.jpg>
-Package pdftex.def Info: apilogout.jpg used on input line 962.
+Package pdftex.def Info: apilogout.jpg used on input line 993.
 (pdftex.def)             Requested size: 426.79134pt x 200.3236pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 971--972
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1004
 
  []
 
-<ec21.jpg, id=607, 1127.21124pt x 461.725pt>
+<ec21.jpg, id=654, 1127.21124pt x 461.725pt>
 File: ec21.jpg Graphic file (type jpg)
  <use ec21.jpg>
-Package pdftex.def Info: ec21.jpg used on input line 977.
+Package pdftex.def Info: ec21.jpg used on input line 1009.
 (pdftex.def)             Requested size: 426.79134pt x 174.82324pt.
-
-<ec22.jpg, id=608, 1113.15875pt x 463.7325pt>
+ [53 <./apilogout.jpg>] <ec22.jpg, id=661, 1113.15875pt x 463.7325pt>
 File: ec22.jpg Graphic file (type jpg)
  <use ec22.jpg>
-Package pdftex.def Info: ec22.jpg used on input line 984.
+Package pdftex.def Info: ec22.jpg used on input line 1017.
 (pdftex.def)             Requested size: 426.79134pt x 177.79811pt.
- [53 <./apilogout.jpg> <./ec21.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 993--994
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
 
  []
 
-<rds.jpg, id=615, 1068.99374pt x 414.54875pt>
+<rds.jpg, id=665, 1068.99374pt x 414.54875pt>
 File: rds.jpg Graphic file (type jpg)
  <use rds.jpg>
-Package pdftex.def Info: rds.jpg used on input line 998.
+Package pdftex.def Info: rds.jpg used on input line 1032.
 (pdftex.def)             Requested size: 426.79134pt x 165.5066pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1009
+ [54 <./ec21.jpg> <./ec22.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1044
 
  []
 
-[54 <./ec22.jpg> <./rds.jpg>] <unittests.jpg, id=622, 770.88pt x 1371.1225pt>
+<unittests.jpg, id=675, 770.88pt x 962.59625pt>
 File: unittests.jpg Graphic file (type jpg)
-
-<use unittests.jpg>
-Package pdftex.def Info: unittests.jpg used on input line 1026.
-(pdftex.def)             Requested size: 369.88582pt x 657.88026pt.
- [55] [56 <./unittests.jpg>]
-<speed1.jpg, id=631, 1347.0325pt x 562.1pt>
+ <use unittests.jpg>
+Package pdftex.def Info: unittests.jpg used on input line 1061.
+(pdftex.def)             Requested size: 369.88582pt x 461.8647pt.
+ [55 <./rds.jpg>] <speed1.jpg, id=684, 1347.0325pt x 562.1pt>
 File: speed1.jpg Graphic file (type jpg)
  <use speed1.jpg>
-Package pdftex.def Info: speed1.jpg used on input line 1039.
+Package pdftex.def Info: speed1.jpg used on input line 1075.
 (pdftex.def)             Requested size: 426.79134pt x 178.09167pt.
-
-<speed2.jpg, id=632, 1334.9875pt x 451.6875pt>
+ [56 <./unittests.jpg>] <speed2.jpg, id=689, 1334.9875pt x 451.6875pt>
 File: speed2.jpg Graphic file (type jpg)
  <use speed2.jpg>
-Package pdftex.def Info: speed2.jpg used on input line 1047.
+Package pdftex.def Info: speed2.jpg used on input line 1084.
 (pdftex.def)             Requested size: 426.79134pt x 144.39821pt.
 
-<fbtest.jpg, id=633, 1342.01375pt x 448.67625pt>
+<fbtest.jpg, id=691, 1342.01375pt x 448.67625pt>
 File: fbtest.jpg Graphic file (type jpg)
  <use fbtest.jpg>
-Package pdftex.def Info: fbtest.jpg used on input line 1058.
+Package pdftex.def Info: fbtest.jpg used on input line 1097.
 (pdftex.def)             Requested size: 426.79134pt x 142.68932pt.
- [57 <./speed1.jpg> <./speed2.jpg> <./fbtest.jpg>]
-<blaze.jpg, id=638, 986.68625pt x 471.7625pt>
+
+<blaze.jpg, id=693, 986.68625pt x 471.7625pt>
 File: blaze.jpg Graphic file (type jpg)
  <use blaze.jpg>
-Package pdftex.def Info: blaze.jpg used on input line 1071.
+Package pdftex.def Info: blaze.jpg used on input line 1111.
 (pdftex.def)             Requested size: 426.79134pt x 204.06326pt.
- [58 <./blaze.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1101--1105
+ [57 <./speed1.jpg> <./speed2.jpg> <./fbtest.jpg>] [58 <./blaze.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1146
 
  []
 
 [59] [60]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1129
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1129
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1129
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1172
 
  []
 
 [61
 
-]
-Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1134--1136
-
+] [62]
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1198
+[][]\T1/bch/m/n/12 https://www.slideshare.net/anandology/ten-reasons-to-prefer-
+postgresql-to-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1138--1140
-
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1207
+[][]\T1/bch/m/n/12 https://www.digitalocean.com/community/tutorials/how-to-set-
+up-django-
  []
 
+[63
 
-Underfull \hbox (badness 10000) in paragraph at lines 1141--1143
-
- []
-
-
-Overfull \hbox (33.79451pt too wide) in paragraph at lines 1144--1146
-\T1/bch/m/n/12 https://www.digitalocean.com/community/tutorials/how-to-set-up-d
-jango-with-postgres-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1144--1146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1149
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1150--1152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1153--1155
-
- []
-
-[62
-
-]
-Chapter 7.
-<nginx.jpg, id=669, 644.4075pt x 512.91624pt>
+] [64] <nginx.jpg, id=751, 644.4075pt x 512.91624pt>
 File: nginx.jpg Graphic file (type jpg)
  <use nginx.jpg>
-Package pdftex.def Info: nginx.jpg used on input line 1158.
+Package pdftex.def Info: nginx.jpg used on input line 1255.
 (pdftex.def)             Requested size: 426.79134pt x 339.7154pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1160.
- [63
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1257.
+
+[65
 
  <./nginx.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1160.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1257.
  (./pfe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1160.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1160.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1257.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1257.
 
 Package rerunfilecheck Info: File `pfe.out' has not changed.
-(rerunfilecheck)             Checksum: DD1925E861637040AD082FB01C4A010F;4686.
+(rerunfilecheck)             Checksum: F9E5EFE75686A4972AE1E113F59F5768;4735.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1160.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1257.
  ) 
 Here is how much of TeX's memory you used:
- 10245 strings out of 494910
- 142643 string characters out of 6179837
- 212281 words of memory out of 5000000
- 13187 multiletter control sequences out of 15000+600000
- 45234 words of font info for 47 fonts, out of 8000000 for 9000
+ 10308 strings out of 494910
+ 143404 string characters out of 6179837
+ 214664 words of memory out of 5000000
+ 13238 multiletter control sequences out of 15000+600000
+ 48281 words of font info for 49 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 29i,14n,43p,784b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,14n,43p,916b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb>
-Output written on pfe.pdf (71 pages, 3093539 bytes).
+Output written on pfe.pdf (73 pages, 3103338 bytes).
 PDF statistics:
- 735 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
- 196 named destinations out of 1000 (max. 500000)
+ 821 PDF objects out of 1000 (max. 8388607)
+ 671 compressed objects within 7 object streams
+ 207 named destinations out of 1000 (max. 500000)
  522 words of extra memory for PDF output out of 10000 (max. 10000000)
 

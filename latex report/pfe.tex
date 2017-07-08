@@ -124,8 +124,8 @@ I would also like to thank all my professors for teaching me and helping me achi
 
 
 \chapter*{Abstract}
-My graduation project consists in creating a web application that contains listings of hotels, restaurants and any place available in the Google places API and allows registered users to create reviews about these places as well as rate these places following some specific criteria like the use of renewable energy and the use of recyclable materials..
-The web app also provides a REST API that is being used by a mobile app developed separately. Part of the project also consists of deploying the app to the cloud.
+My graduation project consists in creating a web application that contains listings of hotels, restaurants and any place available in the Google places API and allows registered users to create reviews about these places as well as rate them following some specific criteria like the use of renewable energy and the use of recyclable materials...
+The web app also provides a REST API that is being used by a mobile app developed separately. Part of the project also consists in deploying the app to the cloud.
 
 
 \section*{Keywords}
@@ -137,36 +137,37 @@ Python - Django - Sustainable Tourism - REST API - Amazon Web Services - Ratings
 
 
 
-\chapter*{Introduction}
+\chapter{Context}
+\section{Introduction}
 
 The internet is full of tourism platforms that list hotels, restaurants and similar tourism related services. To name a few of them we can cite as notable examples: Tripadvisor, Trivago and Kayak. There is literally tens of these platforms, from different countries and in different shapes and colours. However all of the existing platforms only let users write "general" reviews about the listed places, and the visitors can only distinguish between those places based on either the prices or the "general" reviews.
-It turns out that there's also a market for people who are interested in "sustainable tourism" and don't mind paying more for an eco-friendly vacation. Sustainable tourism is defined as "tourism that respects local people, the traveller, cultural heritage and the environment" by UNESCO, you think of it as "fairtrade" and "organic" but for the travel sector.
+It turns out that there's also a market for people who are interested in "sustainable tourism" and don't mind paying more for an eco-friendly vacation. Sustainable tourism is defined as "tourism that respects local people, the traveller, cultural heritage and the environment" by UNESCO\cite{UNESCO}, you think of it as "fairtrade" and "organic" but for the travel sector.
 
 One Planet Rating (OPR) was created to fill this void and serve this portion of tourists by listing the same places while focusing on sustainability instead of price.
-One Planet Rating is a newly founded social startup based in Stockholm, with a portion of its team members working remotely (partially including myself). The startup is in it's very early stages, it's main product/service is the web application described in this report.The company's service isn't released to the public yet.
-The company thrives to have an impact and aims, with its services, to help achieve some of the United Nations' Sustainable Development Goals (UN SDGs) like:
+One Planet Rating is a newly founded social startup based in Stockholm, with a portion of its team members working remotely (partially including myself). The startup is in its very early stages, its main product/service is the web application described in this report.
+The company thrives to have an impact and aims, with its services, to help achieve some of the United Nations' Sustainable Development Goals (UN SDGs)\cite{UN} like:
 \begin{itemize}
 
 \item UN SDG 8: "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all".
 \item UN SDG 15: Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"
 \item UN SDG 13: "Take urgent action to combat climate change and its impacts by regulating emissions and promoting developments in renewable energy.
 \end{itemize}
-OPR is a tourism platform that is sustainability focused, it allows people from around the world to rate and review touristic services based on how much they respect the earth.
+OPR is a tourism platform that is sustainability-focused, it allows people from around the world to rate and review touristic services based on how much they respect the earth.
 The long term goal of OPR is to promote the movement of sustainable tourism and incite people to be more responsible during their trips, and eventually help protect the environment and the community.
 OPR also emphasizes on transparency as it doesn't participate in writing the reviews and ratings, it only provides a playground for all people to express themselves freely.
 
 
-In this report we'll briefly cover the state of the art and market analysis of the project.
-In the first chapter we'll go through the requirements and specifications.
-The second chapter covers the design aspect of the project.
+In this report we briefly cover the state of the art and market analysis of the project.
+In the first chapter we go through the requirements and specifications.
+The second chapter covers the design aspects of the project.
 The third chapter covers the development and deployment aspects of the project.
 
 
-\chapter{State of the art}
+\section{State of the art}
 
 
 Many online tourism platforms exist today, we can consider these platforms as "indirect competitors" because they offer an alternative functionality to OPR, but what makes the most difference is the target market.
-Some of these major platforms are Tripadvisor(Fig.1), Trivago(Fig.2) and Momondo(Fig.3).
+Some of these major platforms are Tripadvisor (fig.\ref{fig:tripadvisor}), Trivago (fig.\ref{fig:trivago}) and Momondo(fig.\ref{fig:momondo}).
 As shown in the following screenshots, all of those platforms focus on the general ratings and the price.
 They offer very similar functionalities but in different layouts.
 
@@ -174,29 +175,32 @@ They offer very similar functionalities but in different layouts.
 \centering
 \includegraphics[width=15cm]{tripadvisor.jpg}
 \caption{screenshot of Tripadvisor}
+\label{fig:tripadvisor}
 \end{figure}
 
 
-Trip advisor, which is the world leader in the tourism sector provides hotel booking and listing of tourism establishments. The company is based in the United States, and it also offers other related services like tourism focused forums. The platform also allows users to search for and book flight tickets.
+Tripadvisor, which is the world leader in the tourism sector, provides hotel booking and listing of tourism establishments. The company is based in the United States and it also offers other related services like tourism focused forums. The platform also allows users to search for and book flight tickets.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{trivago.jpg}
 \caption{screenshot of search results for Trivago}
+\label{fig:trivago}
 \end{figure}
 
-In contrast, the Germany based company, Trivago, only focuses on hotels. Trivago is the leader hotel search engine in Germany. Though trivago only lists hotels, it is owned by Expedia, which owns and operates more than 200 websites that offer diverse services in the tourism and travel sectors.
+In contrast, the Germany based company, Trivago, only focuses on hotels. Trivago is the leader hotel search engine in Germany\cite{PAOLO}. Though trivago only lists hotels, it is owned by Expedia, which owns and operates more than 200 websites that offer diverse services in the tourism and travel sectors.
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{momondo.jpg}
 \caption{screenshot of Momondo}
+\label{fig:momondo}
 \end{figure}
 
-Momondo is also a similar service which, in addition to listing hotels, also provides flight booking and car rental services. Another interesting thing about Momondo is that it's based in Scandinavia, and this makes of it a local competitor.
+Momondo is also a similar service which, in addition to listing hotels, also provides flight booking and car rental services. Another interesting thing about Momondo is that it is based in Scandinavia, and this makes of it a local competitor.
 
-Another thing to note is that most of these "indirect competitors" are booking websites while OPR is not. OPR's goal is to promote the sustainable places and punish the unsustainable ones.
+Another thing to note is that most of these "indirect competitors" are booking websites while OPR is not. OPR's goal is to promote the sustainable places and discourage the unsustainable ones.
 
 
 
@@ -215,7 +219,7 @@ Search for flights                 & YES         & NO      & YES     & NO  \\ \h
 Search for flights                 & NO          & NO      & YES     & NO  \\ \hline
 Booking service                    & YES         & YES     & YES     & NO  \\ \hline
 General ratings                    & YES         & YES     & YES     & YES \\ \hline
-Sustainabilityratings              & NO          & NO      & NO      & YES \\ \hline
+Sustainability ratings              & NO          & NO      & NO      & YES \\ \hline
 \end{tabular}
 \caption{comparison of tourism platforms}
 \label{my-label}
@@ -224,21 +228,22 @@ Sustainabilityratings              & NO          & NO      & NO      & YES \\ \h
 
 
 
-Another category of competitors includes magazines, blogs and expert websites ( like shown in Fig.4) that promote some specific sustainable places. Those are also indirect competitors because they rely on experts' advice on their reviews which tend to be not very trustworthy. OPR's content will be completely user generated, because most people believe more in reviews created by peers and want to be part of the content creation. OPR will only be the intermediary between content creators and content consumers, and will not participate in content creation.
+Another category of competitors includes magazines, blogs and expert websites (fig.\ref{fig:blog}) that promote some specific sustainable places. Those are also indirect competitors because they rely on experts' advice on their reviews which tend to be not very trustworthy. OPR's content will be completely user generated, because most people believe more in reviews created by peers and want to be part of the content creation. OPR will only be the intermediary between content creators and content consumers, and will not participate in content creation.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{blog.jpg}
 \caption{example of an expert blog}
+\label{fig:blog}
 \end{figure}
 
 
 \section{Formalism}
 During the work on this project we used the following formal methods:
 \subsection*{UML}
-We used UML (Unified Modeling Language)for describing and modeling the specifications of the project. UML is very flexible and versatile. UML is also one of the best choices for modeling because it is very popular and widely used across the globe, which makes of it easier to grasp by other people. Most software engineers are probably familiar with it.
+We used UML (Unified Modeling Language)for describing and modeling the specifications of the project. UML is very flexible and versatile. UML is also one of the best choices for modeling because it is very popular and widely used across the globe, which makes it easier to grasp by other people. Most software engineers are probably familiar with it.
 \subsection*{Agile scrum}
-We used the agile scrum methodology because it is the most convenient method to the project. Every week we have a sprint where we define the goals of that week from the backlog. This methodology turned to be very efficient, especially that the project consists in developing a prototype, which requires continuous thinking and customization. Agile scrum allowed us to customize the project while working on it.
+We used the agile scrum method because it is the most convenient method to the project. Every week we have a sprint where we define the goals of that week from the backlog. This methodology turned to be very efficient, especially that the project consists in developing a prototype, which requires continuous thinking and customization. Agile scrum allowed us to customize the project while working on it.
 
 
 \chapter{Specifications}
@@ -273,18 +278,18 @@ The admin is responsible of managing the users, he has the permission to CRUD us
 
 \paragraph{Google places service}
 ~\\
-Google places API is called for every search to look for relevant places based on provided location.\\
+Google places API is a passive actor that is called for every search to look for relevant places based on provided location.\\
 The API provides us with :\\
 Basic information (Name, address..), Photo, Google's place\_id (unique identifier)
 
 \paragraph{Google maps service}
 ~\\
-Google Maps API provides us with a map pointing at the specific location based on the location's place\_id we retrieve from Google Places API
+Google Maps API is another passive actor that provides us with a map pointing at the specific location based on the location's place\_id we retrieve from Google Places API
 
 
 \paragraph{Gmail service}
 ~\\
-Google's Gmail is used to send the emails to users.
+Google's Gmail is used to send the emails to users. This actor is also passive.
 
 
 \section{Functionalities' overview}
@@ -301,9 +306,10 @@ API to supply the mobile app with the data.
 \centering
 \includegraphics[width=15cm]{generalUseCase.jpg}
 \caption{general usecase diagram}
+\label{fig:generalusecase}
 \end{figure}
 
-As shown in the use case diagram, any user can use the app to search and view the details of a
+As shown in the use case diagram (fig.\ref{fig:generalusecase}), any user can use the app to search and view the details of a
 place. The search functionality pulls data from Google places service, and shows a map using
 Google maps service.
 When a user registers, he becomes a member. During the registration process Gmail service is
@@ -316,6 +322,7 @@ The member can then login to his profile and becomes able to rate and review pla
 \centering
 \includegraphics[width=15cm]{registerSequence.jpg}
 \caption{registration sequence diagram}
+\label{fig:registration}
 \end{figure}
 
 \begin{table}[H]
@@ -338,7 +345,7 @@ Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user enters an email that'
 \end{table}
 
 
-Every user can register to OPR and becomes a member. A member has the option to post reviews in addition to all the privileges a normal use has. The registration process starts by the user entering his username, email and password. After submitting these information, OPR's registration system checks the unicity of the email and username, as well as the strength of the password. If either the username or email are not unique, or the password is not secure enough, the user will be prompted to re-enter the data with changes to the fields in question.\\When the data is valid, OPR sends an email-confirmation email to the new member. OPR sends the email via Gmail, through an SMTP connection. A registration is only considered complete after the email verification occurs.
+Every user can register (fig.\ref{fig:registration}) to OPR and becomes a member. A member has the option to post reviews in addition to all the privileges a normal use has. The registration process starts by the user entering his username, email and password. After submitting these information, OPR's registration system checks the unicity of the email and username, as well as the strength of the password. If either the username or email are not unique, or the password is not secure enough (i.e. at least 8 characters, composed of letters, numbers and special characters), the user will be prompted to re-enter the data with changes to the fields in question.\\When the data is valid, OPR sends an email-confirmation request to the new member. OPR sends the email via Gmail, through an SMTP connection. A registration is only considered complete after the email verification occurs.
 
 \subsection{Login}
 
@@ -346,6 +353,7 @@ Every user can register to OPR and becomes a member. A member has the option to 
 \centering
 \includegraphics[width=15cm]{loginSequence.jpg}
 \caption{login sequence diagram}
+\label{fig:login}
 \end{figure}
 
 \begin{table}[H]
@@ -367,7 +375,7 @@ Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user enters incorrect cred
 \label{my-label}
 \end{table}
 
-Another basic functionality of the app is letting users log in. In fact users need to log in to be able to post reviews. And to be able to login, the user must be already registered. To login, the user provides his username and password. If they are valid the user is either given a cookie (if he's using a web browser) or an authentication token (if he's using the mobile app). If the credentials he provided are not valid he's prompted to try to log in again.
+Another basic functionality of the app is letting users log in (fig.\ref{fig:login}). In fact users need to log in to be able to post reviews. And to be able to login, the user must be already registered. To login, the user provides his username and password. If they are valid the user is either given a cookie (if he is using a web browser) or an authentication token (if he is using the mobile app). If the credentials he provided are invalid he is prompted to try to log in again.
 
 
 \subsection{Search}
@@ -378,6 +386,7 @@ Another basic functionality of the app is letting users log in. In fact users ne
 \centering
 \includegraphics[width=12cm]{searchSpec.png}
 \caption{search sequence diagram}
+\label{fig:search}
 \end{figure}
 
 
@@ -399,7 +408,7 @@ Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed thr
 \label{my-label}
 \end{table}
 
-The search functionality is a basic but essential functionality of the app. It allows the user to look for a location based on its type (Hotel, restaurant, activity) and location. The search bar offers autocomplete functionality to assist the user with the location names. After a user submits a search query, OPR will make HTTP calls to google's places services to find the locations. The response from the call is formatted, and OPR's data is added (average rating + number of reviews) and then delivered to the client.
+The search functionality (fig.\ref{fig:search}) is a basic but essential functionality of the app. It allows the user to look for a location based on its type (Hotel, restaurant, activity) and location. The search bar offers autocomplete functionality to assist the user with the location names. After a user submits a search query, OPR will make HTTP calls to google's places services to find the locations. The response from the call is formatted, and OPR's data is added (average rating + number of reviews) and then delivered to the client.
 
 \subsection{View details}
 
@@ -408,6 +417,7 @@ The search functionality is a basic but essential functionality of the app. It a
 \centering
 \includegraphics[width=15cm]{viewSpec.png}
 \caption{view details sequence diagram}
+\label{fig:details}
 \end{figure}
 
 
@@ -430,7 +440,7 @@ Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed thr
 \label{my-label}
 \end{table}
 
-After searching for a place, the user will select one of the places shown in the search results, the user is then redirected to the view-details page. When the user does so, OPR calls Google's places service again, but this time to request the details of a specific place. The places are identified by their place\_id.
+After searching for a place, the user will select one of the places shown in the search results, the user is then redirected to the view-details (fig.\ref{fig:details}) page. When the user does so, OPR calls Google's places service again, but this time to request the details of a specific place. The places are identified by their place\_id.
 
 \subsection{Review a place}
 
@@ -439,6 +449,7 @@ After searching for a place, the user will select one of the places shown in the
 \centering
 \includegraphics[width=13cm]{reviewSpec.png}
 \caption{review a place sequence diagram}
+\label{fig:review}
 \end{figure}
 
 
@@ -462,15 +473,16 @@ Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user tries to post a revie
 \label{my-label}
 \end{table}
 
-After a user finds the place he's looking for, he can review that place. If he's not logged in, he'll be redirected to the login page. In case he is already logged in, the user is provided with a review form where he can enter his comments about the place as well as stars-based ratings following some specific criteria. After the user fills and submits the review form, the review is persisted in OPR's DB and the user is shown a thanks screen.
+After a user finds the place he is looking for, he can review (fig.\ref{fig:review}) that place. If he is not logged in, he is redirected to the login page. In case he is already logged in, the user is provided with a review form where he can enter his comments about the place as well as stars-based ratings following some specific criteria. After the user fills and submits the review form, the review is persisted in OPR's DB and the user is shown a thanks screen.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{managerUseCase.jpg}
 \caption{manager usecase diagram}
+\label{fig:manager}
 \end{figure}
 
-A manager, is a member with additional privileges. An admin can create, update and delete:
+A manager (fig.\ref{fig:manager}), is a member with additional privileges. A manager can create, update and delete:
 ads, reviews and rating-categories.
 
 
@@ -478,32 +490,34 @@ ads, reviews and rating-categories.
 \centering
 \includegraphics[width=15cm]{adminUseCase.jpg}
 \caption{admin usecase diagram}
+\label{fig:admin}
 \end{figure}
 
-The admin however is only responsible about managing users. The admin can give and remove users' privileges, and thus can turn normal members into managers and vice-versa.
+The admin (fig.\ref{fig:admin}) however is only responsible for managing users. The admin can give and remove users' privileges, and thus can turn normal members into managers and vice-versa.
 
 \chapter{Design \& architecture}
-In this chapter we'll go through the design of the app from the ground up.
-Since we're building the app from scratch we'll have to take into consideration both the physical and logical aspects of the app.\\~\\
+In this chapter we go through the design of the app from the ground up.
+Since we are building the app from scratch we had to take into consideration both the physical and logical aspects of the app.\\~\\
 As for the physical architecture, the app is designed in a way that prioritizes security and makes it easily scalable.\\~\\
-In the logical side, the app is browken into smaller modules to facilitate maintainability and extensibility. During the design I aimed to make the modules independent to reduce coupling as much as possible, thus offering the possibility to easily change a module in the future, without touching to the other modules.
+In the logical side, the app is broken into smaller modules to facilitate maintainability and extensibility. During the design I aimed to make the modules independent to reduce coupling as much as possible, thus offering the possibility to easily change a module in the future, without touching the other modules.
 \section{Physical architecture}
-The main parts of our physical architecture are: The server hosting the web server and static files, the server hosting the app and the business logic and The DB server.\\~\\
+The main parts of our physical architecture (fig.\ref{fig:physicalarch}) are: The server hosting the web server and static files, the server hosting the app and the business logic and The DB server.\\~\\
 For both the web server and the app server, we used an amazon EC2 instance running Ubuntu 16.04LTS.
 AWS offers great support and scalability features.\\
-The first server hosts the static files of the app (Images, CSS, JS) as well as the web server, in our case NGINX. The web server is configured to listen for the incoming requests, whether from a web browser or the mobile app. If the call is requesting a static file, NGINX will get the file using filesystem access and send it back to the client. If the call is requesting a function to be run in the app, NGINX acts as a proxy and redirects the call to the app server via HTTP, then gets the response and redirects it to the client.\\~\\
-The second server is hosting the app, and the app server. Our app server is Gunicorn, it's a python WSGI server. That's where all the business logic is hosted and run. When a call only requires computing capabilities, this server will respond without needing any third parties. When the call requires external data, this server is responsible of acquiring that data.\\~\\
+The first server hosts the static files of the app (Images, CSS, JS) as well as the web server, in our case NGINX. The web server is configured to listen for the incoming requests, whether from a web browser or the mobile app. If the call is requesting a static file, NGINX will get the file using filesystem access and will send it back to the client. If the call is requesting a function to be run in the app, NGINX acts as a proxy\cite{JUSTIN} and redirects the call to the app server via HTTP, then gets the response and redirects it to the client.\\~\\
+The second server is hosting the app, and the app server. Our app server is Gunicorn, it's a python WSGI server. That is where all the business logic is hosted and run. When a call only requires computing capabilities, this server will respond without needing any third parties. When the call requires external data, this server is responsible for acquiring that data.\\~\\
 Our sources of data are either Google's APIs or our own DB. If the data needed is from Google, the app just triggers an HTTP request to Google's API.\\
 If, on the other hand, the data requested is on our DB, the app has to access the DB through a TCP connection and get that data. The DB server is an AWS RDS instance hosting a PostgreSQL DB.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{physicalArchitecture.png}
 \caption{The app's physical architecture}
+\label{fig:physicalarch}
 \end{figure}
 
 \section{Logical architecture}
 
-The architecture used is a mix of MVC + 3 Tiers.
+The architecture (fig.\ref{fig:logicalarch}) used is a mix of MVC + 3 Tiers.
 
 \paragraph{3 Tiers}
 ~\\
@@ -514,7 +528,7 @@ because we can change one of the tiers without touching the other ones.
 
 \paragraph{MVC}
 ~\\
-MVC architecture was used in the server level. MVC architecture facilitates code visibility and
+MVC architecture was used at the server level. MVC architecture facilitates code visibility and
 maintainability because the architecture is well known and one can easily predict and
 understand the functionality of each of its components. MVC also has the advantage of loose
 coupling, which also offers interoperability as explained in the example of 3 Tiers above.
@@ -524,6 +538,7 @@ coupling, which also offers interoperability as explained in the example of 3 Ti
 \centering
 \includegraphics[width=12cm]{logicalArchitecture.png}
 \caption{The app's logical architecture}
+\label{fig:logicalarch}
 \end{figure}
 
 
@@ -533,10 +548,10 @@ coupling, which also offers interoperability as explained in the example of 3 Ti
 \centering
 \includegraphics[width=15cm]{modularArchitecture.png}
 \caption{The app's modular architecture}
+\label{fig:modulararch}
 \end{figure}
 
-During my work on the project I tried my best to reuse existing code instead of re-writing what
-already exists and is ready to use. Thus Most of the modules shown in the diagram are external
+During my work on the project I tried my best to reuse existing code, thus some of the modules shown in the diagram (fig.\ref{fig:modulararch}) are external
 libraries.
 My work consists of creating the following modules:
 OPR App, REST API and searchAd.
@@ -553,22 +568,23 @@ source (the user's DB) or from an external source (like Google Adsense).
 \centering
 \includegraphics[width=10cm]{searchAdClass.png}
 \caption{searchAd class diagram}
+\label{fig:searchad}
 \end{figure}
 
-The searchAd module is designed following the MVC architecture.
+The searchAd module (fig.\ref{fig:searchad}) is designed following the MVC architecture.
 The AdController is the entrypoint for the module, it allows the user to get an ad based on a
 keyword. It also contains a private method resolveView() that shows the ad in html format to be
 directly injected in the view.\\
-The ExternalAdSource allows to get ads from external sources like Google AdWords. It's made
+The ExternalAdSource allows to get ads from external sources like Google AdWords. It is made
 in a way to make it easily extensible with other external sources. In fact all we have to do is
 create a new class inheriting the ExternalAdSource class and containing the url to the ads
 service.\\
-In case the ads are not pulled from an external source, they're stored in the local database as
+In case the ads are not pulled from an external source, they are stored in the local database as
 LocalAd. The LocalAd model contains a title, content, target\_url and image\_url.
 
 
 \subsection{OPR app module}
-this is the main app, it contains the business logic for searching and rating places. It's also
+this is the main app, it contains the business logic for searching and rating places. It is also
 where most of the other libraries are integrated and linked together.
 
 \paragraph{Search}~\\
@@ -577,9 +593,10 @@ where most of the other libraries are integrated and linked together.
 \centering
 \includegraphics[width=15cm]{searchSequence.png}
 \caption{search sequence diagram}
+\label{fig:searchseq}
 \end{figure}
 
-When the users submits a keyword to search for, the search view which is the intermediary between the user and the business logic gets the keyword and triggers the controller to process it. The search controller pulls the search results from Google places API and returns them to the view. The view also triggers the reviews controller to get the average ratings of the relevant places. The page returned to the user contains the places with their average ratings.
+When the user submits a keyword to search for, the search view (fig.\ref{fig:searchseq}) which is the intermediary between the user and the business logic gets the keyword and triggers the controller to process it. The search controller pulls the search results from Google places API and returns them to the view. The view also triggers the reviews controller to get the average ratings of the relevant places. The page returned to the user contains the places with their average ratings.
 
 
 \paragraph{View details}~\\
@@ -588,9 +605,10 @@ When the users submits a keyword to search for, the search view which is the int
 \centering
 \includegraphics[width=15cm]{viewSequence.png}
 \caption{view-details sequence diagram}
+\label{fig:viewseq}
 \end{figure}
 
-When a user requests the details of a place, the place view triggers the place controller to get the details. Again the place controller pulls the data from Google places and returns them to the view. The view also gets the reviews from the reviews controller, and embeds the urls to the photo in the view. The view returned to the user contains the details, reviews and photo url of the place. Optionally the user may also want to see the map which is requested directly from Google maps by the browser.
+When a user requests the details of a place (fig.\ref{fig:viewseq}), the place view triggers the place controller to get the details. Again the place controller pulls the data from Google places and returns them to the view. The view also gets the reviews from the reviews controller, and embeds the urls to the photo in the view. The view returned to the user contains the details, reviews and photo url of the place. Optionally the user may also want to see the map which is requested directly from Google maps by the browser.
 
 
 \paragraph{Review a place}~\\
@@ -599,25 +617,27 @@ When a user requests the details of a place, the place view triggers the place c
 \centering
 \includegraphics[width=15cm]{reviewSequence.png}
 \caption{review a place sequence diagram}
+\label{fig:reviewseq}
 \end{figure}
 
 
 
-Note that a user can only post a review if he is logged in. The process is explained in the
-following interaction diagram:
+Note that a user can only post a review (fig.\ref{fig:reviewseq}) if he is logged in. The process is explained in the
+following interaction diagram (fig.\ref{fig:interaction})
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{interactionDiagram.png}
 \caption{interaction overview diagram}
+\label{fig:interaction}
 \end{figure}
 
 
 
 \subsection{REST API module}
 This is a sort of a wrapper for OPR App that provides a REST API interface, to be used by the mobile app.
-\\For the REST API Module, I worked using the backwards approach; I started by writing the documentation of the functionalities first.\\
+\\For the REST API Module, I worked using the backwards approach\cite{WERNER}; I started by writing the user manual and documentation of the functionalities before implementing.\\
 
 
 
@@ -633,7 +653,7 @@ The services provided by the API are:
 \item Add review
 \end{itemize}
 The functions that require the transfer of critical data were designed to use the HTTP POST
-method because it's more secure and it is the standard for this type of operations, for instance
+method because it is more secure and it is the standard for this type of operations, for instance
 we used POST for the authentication and registration functions. We also chose HTTP POST for
 posting reviews, because it contains the authentication token, which is critical data, and it
 contains the review's text, whose size might exceed the GET data size limit.\\
@@ -668,7 +688,7 @@ Search for hotels, restaurants or activities
 
 
 \paragraph{Get place details}~\\
-Get the the details of a specific place using it's place\_id
+Get the details of a specific place using its place\_id
 
 \includegraphics[width=15cm]{detailsDoc.png}
 
@@ -698,9 +718,8 @@ Add a new review to a place
 \paragraph{Frontend}~\\
 For the front-end I used HTML/CSS/JS with JQuery library because it facilitates basic
 functionalities like DOM manipulation.\\
-I also used twitter's Bootstrap in order to use it's prebuilt components like the buttons.
-The app is responsive but has some responsiveness-bugs; I didn't fix these because of time
-constraints and because the front-end is being redesigned by a professional designer anyway.
+I also used twitter's Bootstrap in order to use its prebuilt components like the buttons.
+
 
 \paragraph{Backend}~\\
 
@@ -743,7 +762,7 @@ The following table shows some differences of how things work in MySQL vs. in Po
 \begin{tabular}{|l|l|l|}
 \hline
                   & MySQL                                                                                                            & PostgreSQL                                                                                                                                                                                                      \\ \hline
-CREATE INDEX      & \begin{tabular}[c]{@{}l@{}}Entire table is locked for\\ writes\end{tabular}                                      & \begin{tabular}[c]{@{}l@{}}Entire table is locked for\\ writes.But PSQL has \\"CREATE INDEX\\ CONCURRENTLY"\\that permits the creation of\\ index without locking the\\ entire table (but it's slower)\end{tabular} \\ \hline
+CREATE INDEX      & \begin{tabular}[c]{@{}l@{}}Entire table is locked for\\ writes\end{tabular}                                      & \begin{tabular}[c]{@{}l@{}}Entire table is locked for\\ writes.But PSQL has \\"CREATE INDEX\\ CONCURRENTLY"\\that permits the creation of\\ index without locking the\\ entire table (but it is slower)\end{tabular} \\ \hline
 Adding new column & \begin{tabular}[c]{@{}l@{}}Entire table data needs to be\\ rewritten\end{tabular}                                & Instantaneous                                                                                                                                                                                                   \\ \hline
 Connection model  & \begin{tabular}[c]{@{}l@{}}One thread/connection:\\ Easy to create but hard to\\ monitor and manage\end{tabular} & \begin{tabular}[c]{@{}l@{}}One process/connection:\\ Easier to monitor and\\ manage\end{tabular}                                                                                                                \\ \hline
 \end{tabular}
@@ -751,9 +770,9 @@ Connection model  & \begin{tabular}[c]{@{}l@{}}One thread/connection:\\ Easy to 
 \label{my-label}
 \end{table}
 
-I decided to use PostgreSQL as a database because of the previous comparison and because
-it's well supported by Django.\\
-This choice is in someway influenced by the previous choice.
+I decided to use PostgreSQL as a database because of the previous comparison\cite{ANAND} and because
+it is well supported by Django.\\
+This choice is someway influenced by the previous choice.
 
 \paragraph{Server}~\\
 
@@ -771,12 +790,13 @@ setting up load balancers for the project.
 I had the choice between Apache HTTP Server and NGINX.\\
 Both of them are great web servers and have great communities and support, and both of them
 are open source as well.\\
-I went with NGINX because it's better performance-wise and is taking over Apache.
+I went with NGINX because it's better performance-wise and is becoming more and more popular, while Apache HTTP server's userbase is shrinking\cite{ALEXANDRA} (fig.\ref{fig:nginxvsapache}).
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{apache.png}
 \caption{Chart showing how nginx's user base is growing while apache's is regressing}
+\label{fig:nginxvsapache}
 \end{figure}
 
 \paragraph{Python Application server}~\\
@@ -812,9 +832,10 @@ company.
 \centering
 \includegraphics[width=15cm]{landing.jpg}
 \caption{the landing screen of the app}
+\label{screen:landing}
 \end{figure}
 
-When first accessed, the app shows the previous landing page. From there the user is able to
+When first accessed, the app shows the previous landing page (fig.\ref{screen:landing}). From there the user is able to
 search for a place using the search bar.\\
 The user is also to access the login screen from there.\\
 Other functionalities include listing the popular and trending hotels using the links in the top left
@@ -826,10 +847,11 @@ corner, but these functionalities haven't been implemented yet.
 \centering
 \includegraphics[width=15cm]{search.jpg}
 \caption{search screen}
+\label{screen:search}
 \end{figure}
 
 After the landing page, when a user searches for a place he will get redirected to this search
-screen which includes the results retrieved from Google's places service. The search results
+screen (fig.\ref{screen:search}) which includes the results retrieved from Google's places service. The search results
 include the name and the picture (from google) as well as the number of reviews and the
 average score from the reviews posted on OPR.
 
@@ -840,10 +862,11 @@ average score from the reviews posted on OPR.
 \centering
 \includegraphics[width=15cm]{map.jpg}
 \caption{showing the location of a place on the map}
+\label{screen:map}
 \end{figure}
 
 From the search screen, the user is able to click the "show on map" button to see the selected
-place on Google maps. The map is shown in a modal view in order for the user not to quit
+place on Google maps. The map is shown in a modal view (fig.\ref{screen:map}) in order for the user not to quit
 OPR's site.
 
 
@@ -853,9 +876,10 @@ OPR's site.
 \centering
 \includegraphics[width=15cm]{details.jpg}
 \caption{place details}
+\label{screen:details}
 \end{figure}
 
-When the user selects a place to see its details, he's shown this screen; it contains the name,
+When the user selects a place to see its details, he's shown this screen (fig.\ref{screen:details}); it contains the name,
 picture and basic details of the place. This same screen also contains the reviews and a chart
 showing the numbers and proportions of ratings.
 
@@ -867,11 +891,12 @@ showing the numbers and proportions of ratings.
 \centering
 \includegraphics[width=15cm]{createReview.jpg}
 \caption{Creating a review}
+\label{screen:createreview}
 \end{figure}
 
 
 When the user chooses to create a review, the app first checks whether he's logged in.\\
-If not, the user is redirected to the login screen, otherwise this form appears. The form allows
+If not, the user is redirected to the login screen, otherwise this form appears (fig.\ref{screen:createreview}). The form allows
 the user to enter a text review as well as ratings following specific criteria.
 
 
@@ -881,9 +906,10 @@ the user to enter a text review as well as ratings following specific criteria.
 \centering
 \includegraphics[width=15cm]{thanks.jpg}
 \caption{Thanks screen}
+\label{screen:thanks}
 \end{figure}
 
-After a member posts a review successfully, he's shown a thanks screen.
+After a member posts a review successfully, he's shown a thanks screen (fig.\ref{screen:thanks}).
 
 
 
@@ -892,9 +918,10 @@ After a member posts a review successfully, he's shown a thanks screen.
 \centering
 \includegraphics[width=15cm]{review.jpg}
 \caption{Showing a review}
+\label{screen:showreview}
 \end{figure}
 
-After a review is added, it is displayed as in this screenshot. The score, text, username and date
+After a review is added, it is displayed as in this screenshot (fig.\ref{screen:showreview}). The score, text, username and date
 are currently shown. Other features are being added like the user's photo and the categorized
 ratings.
 
@@ -906,9 +933,10 @@ ratings.
 \centering
 \includegraphics[width=15cm]{apilogin.jpg}
 \caption{API Login}
+\label{api:login}
 \end{figure}
 
-This screenshot shows an example of a login request through the REST API.
+This screenshot (fig.\ref{api:login}) shows an example of a login request through the REST API.
 
 
 
@@ -916,9 +944,10 @@ This screenshot shows an example of a login request through the REST API.
 \centering
 \includegraphics[width=15cm]{apiloginfail.jpg}
 \caption{API Login failure}
+\label{api:fail}
 \end{figure}
 
-In case of failure (wrong credentials), an error message is sent back to the user.
+In case of failure (wrong credentials), an error message is sent back to the user (fig.\ref{api:fail}).
 
 
 
@@ -928,9 +957,10 @@ In case of failure (wrong credentials), an error message is sent back to the use
 \centering
 \includegraphics[width=15cm]{apisearch.jpg}
 \caption{API search request}
+\label{api:search}
 \end{figure}
 
-This screenshot shows the response to a search query. The query includes as parameters the
+This screenshot (fig.\ref{api:search}) shows the response to a search query. The query includes as parameters the
 type of place (hotel, restaurant..) as well as a keyword to specify the location.\\
 The response contains the name, image, place\_id, ratings count , and the average rating.\\
 The name and image are displayed as is. The ratings count and the average rating, however,
@@ -945,10 +975,11 @@ get the place's map or the place's details.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{apidetails.jpg}
-\caption{API search request}
+\caption{API place details}
+\label{api:details}
 \end{figure}
 
-When requesting the details of a place, the request includes the place\_id of the place.\\
+When requesting the details of a place (fig.\ref{api:details}), the request includes the place\_id of the place.\\
 Obviously the response includes the name and image of the place, it also includes the number
 and averages of ratings. It also contains the ratings breakdown, which consists of the
 proportions of the ratings arranged by the number of stars ( 0 star = very poor, 1 star = poor...)
@@ -961,9 +992,10 @@ proportions of the ratings arranged by the number of stars ( 0 star = very poor,
 \centering
 \includegraphics[width=15cm]{apilogout.jpg}
 \caption{Logout API call}
+\label{api:logout}
 \end{figure}
 
-This screenshot shows a successful logout call. The authentication is based on an authorization
+This screenshot (fig.\ref{api:logout}) shows a successful logout call. The authentication is based on an authorization
 token stored in the DB. After logging out, that token is deleted.
 
 \section{Deployment}
@@ -976,6 +1008,7 @@ token stored in the DB. After logging out, that token is deleted.
 \centering
 \includegraphics[width=15cm]{ec21.jpg}
 \caption{AWS EC2 allowed inbound traffic}
+\label{ec2:inbound}
 \end{figure}
 
 
@@ -983,11 +1016,12 @@ token stored in the DB. After logging out, that token is deleted.
 \centering
 \includegraphics[width=15cm]{ec22.jpg}
 \caption{AWS EC2 allowed outbound traffic}
+\label{ec2:outbound}
 \end{figure}
 
 A problem I encountered during the deployment is to get the server to reply for requests.
 In the beginning I was even unable to ssh into the VPS. It turned out, for security reasons AWS
-blocks all incoming and outcoming traffic.
+blocks all incoming\cite{EC2DOC} (fig.\ref{ec2:inbound}) and outgoing (fig.\ref{ec2:outbound}) traffic.
 
 
 \paragraph{AWS RDS setup}~\\
@@ -997,11 +1031,12 @@ blocks all incoming and outcoming traffic.
 \centering
 \includegraphics[width=15cm]{rds.jpg}
 \caption{AWS RDS setup}
+\label{rds}
 \end{figure}
 
-I used AWS RDS for hosting the database because security wise it's better approach to host the
+I used AWS RDS (fig.\ref{rds}) for hosting the database because security wise it's better approach to host the
 database separately from the app. Another advantage of AWS RDS is that it automatically
-creates backups of the DB.\\
+creates backups of the DB\cite{RDSDOC}.\\
 First I hosted a local db for testing purposes then I moved the same DB to RDS.
 
 
@@ -1016,7 +1051,7 @@ which is the python server that's serving the app. For the configuration of NGIN
 \section{Testing}
 
 For the development of searchAd module, which is a sort of standalone library, I also created
-unit tests for it.\\
+unit tests (fig.\ref{unittest}) for it.\\
 The unit tests ensure that the code works correctly, and helps verify that the code didn't break
 after some changes. This provides better quality and saves more time.
 
@@ -1025,11 +1060,12 @@ after some changes. This provides better quality and saves more time.
 \centering
 \includegraphics[width=13cm]{unittests.jpg}
 \caption{unit tests}
+\label{unittest}
 \end{figure}
 
 
 I also tested the performance of the app (load speed) using google's Pagespeed Insights, and I
-got some amazing results:
+got some amazing results (fig. \ref{speed1} and fig.\ref{speed2})
 
 
 
@@ -1038,6 +1074,7 @@ got some amazing results:
 \centering
 \includegraphics[width=15cm]{speed1.jpg}
 \caption{landing page speed test}
+\label{speed1}
 \end{figure}
 
 
@@ -1046,9 +1083,11 @@ got some amazing results:
 \centering
 \includegraphics[width=15cm]{speed2.jpg}
 \caption{details page speed test}
+\label{speed2}
 \end{figure}
 
-Below is included the result for the same test applied to facebook.com for comparison purposes:
+Below (fig.\ref{speed3}) is included the result for the same test applied to facebook.com for comparison purposes:
+
 
 
 
@@ -1057,11 +1096,12 @@ Below is included the result for the same test applied to facebook.com for compa
 \centering
 \includegraphics[width=15cm]{fbtest.jpg}
 \caption{facebook page speed test}
+\label{speed3}
 \end{figure}
 
 
-I also tested the performance of the app using blazemeter. I tested the service with 50
-simultaneous virtual users and the results were good.
+I also tested the performance of the app using blazemeter (fig.\ref{blaze}). I tested the service with 50
+simultaneous virtual users and the results were good enough.
 
 
 
@@ -1070,6 +1110,7 @@ simultaneous virtual users and the results were good.
 \centering
 \includegraphics[width=15cm]{blaze.jpg}
 \caption{concurrent users test}
+\label{blaze}
 \end{figure}
 
 With 50 simultaneous users the response time was ~170ms which is okay. Note that the
@@ -1119,41 +1160,97 @@ Unittest is a python library for unit testing. It's included with python by defa
 \chapter{Conclusion}
 
 The work done during my internship constitutes the first working prototype of OPR.
-A substantial effort and time was dedicated to designing and defining how things work because the project is still new and was built from scratch.\\
-Though this is a mere prototype, it's working and is being tested internally and soon to be released to the public. The frontend part of the app is being redesigned, while the backend is now the ground work that the company is building upon.\\~\\
-But before being production ready, the app needs security and penetration testing.
+In the beginning a substantial effort and time was dedicated to analyze the project and identify the available alternatives. We also defined the specification and requirements in details so we can have a clear vision about the needs that the project should satisfy.\\
+Then we went through the design aspects and set the physical architecture (we chose AWS' EC2 and RDS with NGINX as a web server, Gunicorn as python server, PostgreSQL as DB and Ubuntu LTS as OS). We also went through the logical architecture and we decided to use MVC + 3 Tiers. The last step in the design process was to set the modular architecture of the project.\\
+Finally we covered the implementation details, by explaining the tool choices and tech stack as well as exposing how the system works. We also covered the deployment process, configuration and the tests that the project went through.\\~\\
+The prototype is being tested internally and soon to be released to the public. 
+But before becoming production ready, the app needs security and penetration testing.
 Also, now that the project is getting bigger, the project should also take advantage of more sophisticated yet facilitating tools, like continuous integration, continuous deployment and containerization.\\~\\
-The REST API, that is now being used solely for the mobile app, might also turn out useful if the frontend of the web app gets redesigned using a single-page app framework such as React or Angular. This will make the app even easier to maintain as it will loosen the coupling between the frontend and backend.\\~\\
+The REST API might also turn out useful if the frontend of the web app gets redesigned using a single-page app framework such as React or Angular.
 Other performance improvements can be easily implemented, like using a Content Delivery Network to deliver the static files, but the project is still not big enough and not mature enough to require such optimizations.\\~\\
-The project is easily scalable, especially with the help of AWS which allows the expansion of the infrastructure in a couple of clicks. During the deployement I set up a couple instances and a loadbalancer to test the high-availability of the service and it worked perfectly, but I later removed it for budgetary reasons.
+The project is easily scalable, especially with the help of AWS which allows the expansion of the infrastructure in a couple of clicks\cite{EC2DOC}\cite{RDSDOC}. During the deployement I set up a couple instances and a loadbalancer to test the high-availability of the service and it worked perfectly, but I later removed it for budgetary reasons.
 
 
 
-\chapter{References}
 
-lead-digital.de\\
-http://www.lead-digital.de/aktuell/work/arbeiten\_bei\_trivago\_keine\\\_hierarchien\_und\_15\_biersorten\_gratis\\
+\begin{thebibliography}{9}
+
+\bibitem{PAOLO} 
+Paolo Anania. \\
+\textit{Arbeiten bei Trivago: Keine Hierarchien und 15 Biersorten gratis}. (German) \\
+\textit{Working with Trivago: No hierarchy and 15 offices}. (English) \\
+\href{http://www.lead-digital.de/aktuell/work/arbeiten_bei_trivago_keine_hierarchien_und_15_biersorten_gratis}{http://www.lead-digital.de/aktuell/work/arbeiten\_bei\_trivago\\\_keine\_hierarchien\_und\_15\_biersorten\_gratis}.
 
 
-allthingsdistributed.com\\
-http://www.allthingsdistributed.com/2006/11/working\_backwards.ht\\
 
-slideshare.net\\
-https://www.slideshare.net/anandology/ten-reasons-to-prefer-postgresql-to-mysql\\
+\bibitem{WERNER}
+Werner Vogels, CTO@Amazon\\
+\textit{Working Backwards}\\
+\href{http://www.allthingsdistributed.com/2006/11/working_backwards.html}{http://www.allthingsdistributed.com/2006/11/working\_backwards.html}.
 
-digitalocean.com\\
-https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04\\
 
-hostingadvice.com\\
-http://www.hostingadvice.com/how-to/nginx-vs-apache/\\
+\bibitem{ANAND} 
+Anand Chitipothu. \\
+\textit{Ten Reasons Why You Should Prefer PostgreSQL to MySQL
+}. \\
+\href{https://www.slideshare.net/anandology/ten-reasons-to-prefer-postgresql-to-mysql}
+{https://www.slideshare.net/anandology/ten-reasons-to-prefer-postgresql-to-mysql}.
 
-AWS RDS Documentation\\
-http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html\\
 
-AWS EC2 Documentation\\
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html\\
 
-\chapter{Appendix}
+\bibitem{JUSTIN} 
+Justin Ellingwood. \\
+\textit{How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 16.04
+}. \\
+\href{https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04}
+{https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04}.
+
+
+\bibitem{ALEXANDRA} 
+Alexandra Leslie. \\
+\textit{NGINX vs. Apache (Pro/Con Review, Uses, \& Hosting for Each)
+}. \\
+\href{http://www.hostingadvice.com/how-to/nginx-vs-apache/}
+{http://www.hostingadvice.com/how-to/nginx-vs-apache/}.
+
+
+
+\bibitem{RDSDOC} 
+Amazon web services. \\
+\textit{AWS RDS Documentation
+}. \\
+\href{http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html}
+{http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html}.
+
+
+\bibitem{EC2DOC} 
+Amazon web services. \\
+\textit{AWS EC2 Documentation
+}. \\
+\href{http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html}
+{http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html}.
+
+
+\bibitem{UNESCO} 
+ John Fien, Margaret Calder and Clayton White. \\
+\textit{Sustainable tourism
+}. \\
+\href{http://www.unesco.org/education/tlsf/mods/theme_c/mod16.html}
+{http://www.unesco.org/education/tlsf/mods/theme\_c/mod16.html}.
+
+
+
+\bibitem{UN} 
+ United Nationas. \\
+\textit{Sustainable Development Goals
+}. \\
+\href{https://sustainabledevelopment.un.org/sdgs}
+{https://sustainabledevelopment.un.org/sdgs}.
+
+
+\end{thebibliography}
+
+\chapter*{Appendix}
 \section{NGINX configuration}
 \includegraphics[width=15cm]{nginx.jpg}
 

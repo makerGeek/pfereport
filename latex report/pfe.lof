@@ -1,7 +1,7 @@
 \select@language {english}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces screenshot of Tripadvisor}}{4}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces screenshot of search results for Trivago}}{5}{figure.1.2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces screenshot of search results for Trivago}}{4}{figure.1.2}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces screenshot of Momondo}}{5}{figure.1.3}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces example of an expert blog}}{6}{figure.1.4}
 \addvspace {10\p@ }
@@ -34,16 +34,14 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces API Login}}{51}{figure.4.9}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces API Login failure}}{51}{figure.4.10}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces API search request}}{52}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces API search request}}{52}{figure.4.12}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces API place details}}{52}{figure.4.12}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Logout API call}}{53}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces AWS EC2 allowed inbound traffic}}{53}{figure.4.14}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces AWS EC2 allowed inbound traffic}}{54}{figure.4.14}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces AWS EC2 allowed outbound traffic}}{54}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces AWS RDS setup}}{54}{figure.4.16}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces AWS RDS setup}}{55}{figure.4.16}
 \contentsline {figure}{\numberline {4.17}{\ignorespaces unit tests}}{56}{figure.4.17}
 \contentsline {figure}{\numberline {4.18}{\ignorespaces landing page speed test}}{57}{figure.4.18}
 \contentsline {figure}{\numberline {4.19}{\ignorespaces details page speed test}}{57}{figure.4.19}
 \contentsline {figure}{\numberline {4.20}{\ignorespaces facebook page speed test}}{57}{figure.4.20}
 \contentsline {figure}{\numberline {4.21}{\ignorespaces concurrent users test}}{58}{figure.4.21}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
 \addvspace {10\p@ }
