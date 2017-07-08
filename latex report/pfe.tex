@@ -127,6 +127,7 @@ I would also like to thank all my professors for teaching me and helping me achi
 My graduation project consists in creating a web application that contains listings of hotels, restaurants and any place available in the Google places API and allows registered users to create reviews about these places as well as rate these places following some specific criteria like the use of renewable energy and the use of recyclable materials..
 The web app also provides a REST API that is being used by a mobile app developed separately. Part of the project also consists of deploying the app to the cloud.
 
+
 \section*{Keywords}
 Python - Django - Sustainable Tourism - REST API - Amazon Web Services - Ratings
 
@@ -337,6 +338,8 @@ Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user enters an email that'
 \end{table}
 
 
+Every user can register to OPR and becomes a member. A member has the option to post reviews in addition to all the privileges a normal use has. The registration process starts by the user entering his username, email and password. After submitting these information, OPR's registration system checks the unicity of the email and username, as well as the strength of the password. If either the username or email are not unique, or the password is not secure enough, the user will be prompted to re-enter the data with changes to the fields in question.\\When the data is valid, OPR sends an email-confirmation email to the new member. OPR sends the email via Gmail, through an SMTP connection. A registration is only considered complete after the email verification occurs.
+
 \subsection{Login}
 
 \begin{figure}[H]
@@ -364,7 +367,8 @@ Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user enters incorrect cred
 \label{my-label}
 \end{table}
 
-Every user can register to OPR and becomes a member. A member has the option to post reviews in addition to all the privileges a normal use has. The registration process starts by the user entering his username, email and password. After submitting these information, OPR's registration system checks the unicity of the email and username, as well as the strength of the password. If either the username or email are not unique, or the password is not secure enough, the user will be prompted to re-enter the data with changes to the fields in question.\\When the data is valid, OPR sends an email-confirmation email to the new member. OPR sends the email via Gmail, through an SMTP connection. A registration is only considered complete after the email verification occurs.
+Another basic functionality of the app is letting users log in. In fact users need to log in to be able to post reviews. And to be able to login, the user must be already registered. To login, the user provides his username and password. If they are valid the user is either given a cookie (if he's using a web browser) or an authentication token (if he's using the mobile app). If the credentials he provided are not valid he's prompted to try to log in again.
+
 
 \subsection{Search}
 
@@ -426,7 +430,7 @@ Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed thr
 \label{my-label}
 \end{table}
 
-After searching for a place, the user will select one of the places shown in the search results, the user is then redirected to the view-details page. When the user does so, OPR calls Google's places service again, but this time to request the details of a specific place. The places are identified by their place\_id
+After searching for a place, the user will select one of the places shown in the search results, the user is then redirected to the view-details page. When the user does so, OPR calls Google's places service again, but this time to request the details of a specific place. The places are identified by their place\_id.
 
 \subsection{Review a place}
 
@@ -458,6 +462,7 @@ Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user tries to post a revie
 \label{my-label}
 \end{table}
 
+After a user finds the place he's looking for, he can review that place. If he's not logged in, he'll be redirected to the login page. In case he is already logged in, the user is provided with a review form where he can enter his comments about the place as well as stars-based ratings following some specific criteria. After the user fills and submits the review form, the review is persisted in OPR's DB and the user is shown a thanks screen.
 
 \begin{figure}[H]
 \centering
@@ -474,6 +479,8 @@ ads, reviews and rating-categories.
 \includegraphics[width=15cm]{adminUseCase.jpg}
 \caption{admin usecase diagram}
 \end{figure}
+
+The admin however is only responsible about managing users. The admin can give and remove users' privileges, and thus can turn normal members into managers and vice-versa.
 
 \chapter{Design \& architecture}
 In this chapter we'll go through the design of the app from the ground up.
@@ -572,6 +579,7 @@ where most of the other libraries are integrated and linked together.
 \caption{search sequence diagram}
 \end{figure}
 
+When the users submits a keyword to search for, the search view which is the intermediary between the user and the business logic gets the keyword and triggers the controller to process it. The search controller pulls the search results from Google places API and returns them to the view. The view also triggers the reviews controller to get the average ratings of the relevant places. The page returned to the user contains the places with their average ratings.
 
 
 \paragraph{View details}~\\
@@ -582,7 +590,7 @@ where most of the other libraries are integrated and linked together.
 \caption{view-details sequence diagram}
 \end{figure}
 
-
+When a user requests the details of a place, the place view triggers the place controller to get the details. Again the place controller pulls the data from Google places and returns them to the view. The view also gets the reviews from the reviews controller, and embeds the urls to the photo in the view. The view returned to the user contains the details, reviews and photo url of the place. Optionally the user may also want to see the map which is requested directly from Google maps by the browser.
 
 
 \paragraph{Review a place}~\\
@@ -666,11 +674,10 @@ Get the the details of a specific place using it's place\_id
 
 \includegraphics[width=15cm]{detailsDocResponse.png}
 
-In the ratings\_breakdown, ​ ["Outstanding", 2, 50.0] means there is 2 votes for
-outstanding, which count for 50% of the total number of votes
+
 
 \paragraph{Get reviews}~\\
-Get the reviews of a place using it's place\_id
+Get the reviews of a place using its place\_id
 
 \includegraphics[width=15cm]{reviewsDoc.png}
 
