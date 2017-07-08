@@ -364,6 +364,8 @@ Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user enters incorrect cred
 \label{my-label}
 \end{table}
 
+Every user can register to OPR and becomes a member. A member has the option to post reviews in addition to all the privileges a normal use has. The registration process starts by the user entering his username, email and password. After submitting these information, OPR's registration system checks the unicity of the email and username, as well as the strength of the password. If either the username or email are not unique, or the password is not secure enough, the user will be prompted to re-enter the data with changes to the fields in question.\\When the data is valid, OPR sends an email-confirmation email to the new member. OPR sends the email via Gmail, through an SMTP connection. A registration is only considered complete after the email verification occurs.
+
 \subsection{Search}
 
 
@@ -393,7 +395,7 @@ Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed thr
 \label{my-label}
 \end{table}
 
-
+The search functionality is a basic but essential functionality of the app. It allows the user to look for a location based on its type (Hotel, restaurant, activity) and location. The search bar offers autocomplete functionality to assist the user with the location names. After a user submits a search query, OPR will make HTTP calls to google's places services to find the locations. The response from the call is formatted, and OPR's data is added (average rating + number of reviews) and then delivered to the client.
 
 \subsection{View details}
 
@@ -423,6 +425,8 @@ Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed thr
 \caption{view-details description}
 \label{my-label}
 \end{table}
+
+After searching for a place, the user will select one of the places shown in the search results, the user is then redirected to the view-details page. When the user does so, OPR calls Google's places service again, but this time to request the details of a specific place. The places are identified by their place\_id
 
 \subsection{Review a place}
 
