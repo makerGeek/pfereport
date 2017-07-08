@@ -8,37 +8,42 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces general usecase diagram}}{10}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces registration sequence diagram}}{11}{figure.2.2}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces login sequence diagram}}{13}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces manager usecase diagram}}{15}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces admin usecase diagram}}{16}{figure.2.5}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces search sequence diagram}}{15}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces view details sequence diagram}}{17}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces review a place sequence diagram}}{19}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces manager usecase diagram}}{21}{figure.2.7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces admin usecase diagram}}{22}{figure.2.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The app's physical architecture}}{18}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The app's logical architecture}}{20}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The app's modular architecture}}{21}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces searchAd class diagram}}{22}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces search sequence diagram}}{24}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces view-details sequence diagram}}{25}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces review a place sequence diagram}}{27}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces interaction overview diagram}}{29}{figure.3.8}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The app's physical architecture}}{24}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The app's logical architecture}}{26}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The app's modular architecture}}{27}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces searchAd class diagram}}{28}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces search sequence diagram}}{30}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces view-details sequence diagram}}{31}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces review a place sequence diagram}}{32}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces interaction overview diagram}}{33}{figure.3.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Chart showing how nginx’s user base is growing while apache’s is regressing}}{42}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces the landing screen of the app}}{43}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces search screen}}{44}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces showing the location of a place on the map}}{44}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces place details}}{45}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Creating a review}}{45}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Thanks screen}}{46}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Showing a review}}{46}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces API Login}}{47}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces API Login failure}}{47}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces API search request}}{48}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces API search request}}{48}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Logout API call}}{49}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces AWS EC2 allowed inbound traffic}}{49}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces AWS EC2 allowed outbound traffic}}{50}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces AWS RDS setup}}{50}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces NGINX setup}}{51}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces unit tests}}{52}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces landing page speed test}}{53}{figure.4.19}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces details page speed test}}{53}{figure.4.20}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces facebook page speed test}}{53}{figure.4.21}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces concurrent users test}}{54}{figure.4.22}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Chart showing how nginx's user base is growing while apache's is regressing}}{46}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces the landing screen of the app}}{47}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces search screen}}{48}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces showing the location of a place on the map}}{48}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces place details}}{49}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Creating a review}}{49}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Thanks screen}}{50}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Showing a review}}{50}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces API Login}}{51}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces API Login failure}}{51}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces API search request}}{52}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces API search request}}{52}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Logout API call}}{53}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces AWS EC2 allowed inbound traffic}}{53}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces AWS EC2 allowed outbound traffic}}{54}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces AWS RDS setup}}{54}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces NGINX setup}}{55}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces unit tests}}{56}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces landing page speed test}}{57}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces details page speed test}}{57}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces facebook page speed test}}{57}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces concurrent users test}}{58}{figure.4.22}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

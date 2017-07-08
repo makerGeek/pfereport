@@ -15,45 +15,59 @@
 \contentsline {section}{\numberline {2.2}Functionalities' overview}{9}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Register}{11}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Login}{13}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3}Design \& architecture}{17}{chapter.3}
-\contentsline {section}{\numberline {3.1}Physical architecture}{18}{section.3.1}
-\contentsline {section}{\numberline {3.2}Logical architecture}{19}{section.3.2}
-\contentsline {paragraph}{3 Tiers}{19}{section*.11}
-\contentsline {paragraph}{MVC}{19}{section*.12}
-\contentsline {section}{\numberline {3.3}Modular architecture}{21}{section.3.3}
-\contentsline {section}{\numberline {3.4}Modules}{21}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}searchAdModule}{21}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}OPR app module}{23}{subsection.3.4.2}
-\contentsline {paragraph}{Search}{23}{section*.13}
-\contentsline {paragraph}{View details}{25}{section*.14}
-\contentsline {paragraph}{Review a place}{26}{section*.15}
-\contentsline {subsection}{\numberline {3.4.3}REST API module}{29}{subsection.3.4.3}
-\contentsline {paragraph}{Login}{30}{section*.16}
-\contentsline {paragraph}{Register}{31}{section*.17}
-\contentsline {paragraph}{Logout}{32}{section*.18}
-\contentsline {paragraph}{Search for places}{33}{section*.19}
-\contentsline {paragraph}{Get place details}{34}{section*.20}
-\contentsline {paragraph}{Get reviews}{36}{section*.21}
-\contentsline {paragraph}{Add review}{38}{section*.22}
-\contentsline {chapter}{\numberline {4}Implementation}{40}{chapter.4}
-\contentsline {section}{\numberline {4.1}Technology choices}{40}{section.4.1}
-\contentsline {paragraph}{Frontend}{40}{section*.23}
-\contentsline {paragraph}{Backend}{40}{section*.24}
-\contentsline {paragraph}{Database}{41}{section*.25}
-\contentsline {paragraph}{Server}{42}{section*.26}
-\contentsline {paragraph}{Web Server}{42}{section*.27}
-\contentsline {paragraph}{Python Application server}{42}{section*.28}
-\contentsline {paragraph}{Additional Frameworks/libraries}{43}{section*.29}
-\contentsline {subparagraph}{Django-rest-framework}{43}{section*.30}
-\contentsline {subparagraph}{Django-allauth}{43}{section*.31}
-\contentsline {subparagraph}{Django-rest-auth}{43}{section*.32}
-\contentsline {subparagraph}{Django-review}{43}{section*.33}
-\contentsline {section}{\numberline {4.2}Screenshots}{43}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Web interface}{43}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}API}{47}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Deployment}{49}{section.4.3}
-\contentsline {paragraph}{AWS EC2 Security setup}{49}{section*.34}
-\contentsline {paragraph}{AWS RDS setup}{50}{section*.35}
-\contentsline {paragraph}{NGINX setup}{50}{section*.36}
-\contentsline {section}{\numberline {4.4}Testing}{51}{section.4.4}
-\contentsline {section}{\numberline {4.5}Work environment}{54}{section.4.5}
+\contentsline {subsection}{\numberline {2.2.3}Search}{15}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}View details}{17}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Review a place}{19}{subsection.2.2.5}
+\contentsline {chapter}{\numberline {3}Design \& architecture}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Physical architecture}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Logical architecture}{25}{section.3.2}
+\contentsline {paragraph}{3 Tiers}{25}{section*.11}
+\contentsline {paragraph}{MVC}{25}{section*.12}
+\contentsline {section}{\numberline {3.3}Modular architecture}{27}{section.3.3}
+\contentsline {section}{\numberline {3.4}Modules}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}searchAdModule}{27}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}OPR app module}{29}{subsection.3.4.2}
+\contentsline {paragraph}{Search}{29}{section*.13}
+\contentsline {paragraph}{View details}{30}{section*.14}
+\contentsline {paragraph}{Review a place}{31}{section*.15}
+\contentsline {subsection}{\numberline {3.4.3}REST API module}{33}{subsection.3.4.3}
+\contentsline {paragraph}{Login}{34}{section*.16}
+\contentsline {paragraph}{Register}{35}{section*.17}
+\contentsline {paragraph}{Logout}{36}{section*.18}
+\contentsline {paragraph}{Search for places}{37}{section*.19}
+\contentsline {paragraph}{Get place details}{38}{section*.20}
+\contentsline {paragraph}{Get reviews}{40}{section*.21}
+\contentsline {paragraph}{Add review}{42}{section*.22}
+\contentsline {chapter}{\numberline {4}Implementation}{44}{chapter.4}
+\contentsline {section}{\numberline {4.1}Technology choices}{44}{section.4.1}
+\contentsline {paragraph}{Frontend}{44}{section*.23}
+\contentsline {paragraph}{Backend}{44}{section*.24}
+\contentsline {paragraph}{Database}{45}{section*.25}
+\contentsline {paragraph}{Server}{46}{section*.26}
+\contentsline {paragraph}{Web Server}{46}{section*.27}
+\contentsline {paragraph}{Python Application server}{46}{section*.28}
+\contentsline {paragraph}{Additional Frameworks/libraries}{47}{section*.29}
+\contentsline {subparagraph}{Django-rest-framework}{47}{section*.30}
+\contentsline {subparagraph}{Django-allauth}{47}{section*.31}
+\contentsline {subparagraph}{Django-rest-auth}{47}{section*.32}
+\contentsline {subparagraph}{Django-review}{47}{section*.33}
+\contentsline {section}{\numberline {4.2}Screenshots}{47}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Web interface}{47}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}API}{51}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Deployment}{53}{section.4.3}
+\contentsline {paragraph}{AWS EC2 Security setup}{53}{section*.34}
+\contentsline {paragraph}{AWS RDS setup}{54}{section*.35}
+\contentsline {paragraph}{NGINX setup}{54}{section*.36}
+\contentsline {section}{\numberline {4.4}Testing}{55}{section.4.4}
+\contentsline {section}{\numberline {4.5}Work environment}{58}{section.4.5}
+\contentsline {paragraph}{PyCharm}{59}{section*.37}
+\contentsline {paragraph}{BitBucket}{59}{section*.38}
+\contentsline {paragraph}{Slack}{59}{section*.39}
+\contentsline {paragraph}{draw.io \& Dia}{59}{section*.40}
+\contentsline {paragraph}{GIMP}{59}{section*.41}
+\contentsline {paragraph}{InvisionApp}{59}{section*.42}
+\contentsline {paragraph}{Chrome developer tools}{60}{section*.43}
+\contentsline {paragraph}{Postman}{60}{section*.44}
+\contentsline {paragraph}{Unittest}{60}{section*.45}
+\contentsline {chapter}{\numberline {5}Conclusion}{61}{chapter.5}
+\contentsline {chapter}{\numberline {6}References}{62}{chapter.6}

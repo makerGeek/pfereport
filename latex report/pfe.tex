@@ -139,11 +139,11 @@ Python - Django - Sustainable Tourism - REST API - Amazon Web Services - Ratings
 \chapter*{Introduction}
 
 The internet is full of tourism platforms that list hotels, restaurants and similar tourism related services. To name a few of them we can cite as notable examples: Tripadvisor, Trivago and Kayak. There is literally tens of these platforms, from different countries and in different shapes and colours. However all of the existing platforms only let users write "general" reviews about the listed places, and the visitors can only distinguish between those places based on either the prices or the "general" reviews.
-It turns out that there’s also a market for people who are interested in "sustainable tourism" and don’t mind paying more for an eco-friendly vacation. Sustainable tourism is defined as "tourism that respects local people, the traveller, cultural heritage and the environment" by UNESCO, you think of it as "fairtrade" and "organic" but for the travel sector.
+It turns out that there's also a market for people who are interested in "sustainable tourism" and don't mind paying more for an eco-friendly vacation. Sustainable tourism is defined as "tourism that respects local people, the traveller, cultural heritage and the environment" by UNESCO, you think of it as "fairtrade" and "organic" but for the travel sector.
 
 One Planet Rating (OPR) was created to fill this void and serve this portion of tourists by listing the same places while focusing on sustainability instead of price.
-One Planet Rating is a newly founded social startup based in Stockholm, with a portion of its team members working remotely (partially including myself). The startup is in it’s very early stages, it’s main product/service is the web application described in this report.The company’s service isn’t released to the public yet.
-The company thrives to have an impact and aims, with its services, to help achieve some of the United Nations’ Sustainable Development Goals (UN SDGs) like:
+One Planet Rating is a newly founded social startup based in Stockholm, with a portion of its team members working remotely (partially including myself). The startup is in it's very early stages, it's main product/service is the web application described in this report.The company's service isn't released to the public yet.
+The company thrives to have an impact and aims, with its services, to help achieve some of the United Nations' Sustainable Development Goals (UN SDGs) like:
 \begin{itemize}
 
 \item UN SDG 8: "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all".
@@ -152,11 +152,11 @@ The company thrives to have an impact and aims, with its services, to help achie
 \end{itemize}
 OPR is a tourism platform that is sustainability focused, it allows people from around the world to rate and review touristic services based on how much they respect the earth.
 The long term goal of OPR is to promote the movement of sustainable tourism and incite people to be more responsible during their trips, and eventually help protect the environment and the community.
-OPR also emphasizes on transparency as it doesn’t participate in writing the reviews and ratings, it only provides a playground for all people to express themselves freely.
+OPR also emphasizes on transparency as it doesn't participate in writing the reviews and ratings, it only provides a playground for all people to express themselves freely.
 
 
-In this report we’ll briefly cover the state of the art and market analysis of the project.
-In the first chapter we’ll go through the requirements and specifications.
+In this report we'll briefly cover the state of the art and market analysis of the project.
+In the first chapter we'll go through the requirements and specifications.
 The second chapter covers the design aspect of the project.
 The third chapter covers the development and deployment aspects of the project.
 
@@ -164,7 +164,7 @@ The third chapter covers the development and deployment aspects of the project.
 \chapter{State of the art}
 
 
-Many online tourism platforms exist today, we can consider these platforms as “indirect competitors” because they offer an alternative functionality to OPR, but what makes the most difference is the target market.
+Many online tourism platforms exist today, we can consider these platforms as "indirect competitors" because they offer an alternative functionality to OPR, but what makes the most difference is the target market.
 Some of these major platforms are Tripadvisor(Fig.1), Trivago(Fig.2) and Momondo(Fig.3).
 As shown in the following screenshots, all of those platforms focus on the general ratings and the price.
 They offer very similar functionalities but in different layouts.
@@ -193,9 +193,9 @@ In contrast, the Germany based company, Trivago, only focuses on hotels. Trivago
 \caption{screenshot of Momondo}
 \end{figure}
 
-Momondo is also a similar service which, in addition to listing hotels, also provides flight booking and car rental services. Another interesting thing about Momondo is that it’s based in Scandinavia, and this makes of it a local competitor.
+Momondo is also a similar service which, in addition to listing hotels, also provides flight booking and car rental services. Another interesting thing about Momondo is that it's based in Scandinavia, and this makes of it a local competitor.
 
-Another thing to note is that most of these “indirect competitors” are booking websites while OPR is not. OPR’s goal is to promote the sustainable places and punish the unsustainable ones.
+Another thing to note is that most of these "indirect competitors" are booking websites while OPR is not. OPR's goal is to promote the sustainable places and punish the unsustainable ones.
 
 
 
@@ -223,7 +223,7 @@ Sustainabilityratings              & NO          & NO      & NO      & YES \\ \h
 
 
 
-Another category of competitors includes magazines, blogs and expert websites ( like shown in Fig.4) that promote some specific sustainable places. Those are also indirect competitors because they rely on experts’ advice on their reviews which tend to be not very trustworthy. OPR’s content will be completely user generated, because most people believe more in reviews created by peers and want to be part of the content creation. OPR will only be the intermediary between content creators and content consumers, and will not participate in content creation.
+Another category of competitors includes magazines, blogs and expert websites ( like shown in Fig.4) that promote some specific sustainable places. Those are also indirect competitors because they rely on experts' advice on their reviews which tend to be not very trustworthy. OPR's content will be completely user generated, because most people believe more in reviews created by peers and want to be part of the content creation. OPR will only be the intermediary between content creators and content consumers, and will not participate in content creation.
 
 \begin{figure}[H]
 \centering
@@ -245,14 +245,14 @@ We used the agile scrum methodology because it is the most convenient method to 
 \subsection{Internal actors}
 \paragraph{User}
 ~\\
-Anybody who accesses OPR Ratings via App or Web is a User. As opposed to “Member” (see
+Anybody who accesses OPR Ratings via App or Web is a User. As opposed to "Member" (see
 below) this does not require any log-on, or creation of a OPR Profile.
 A User can search for specific places and read reviews of those places.
 
 
 \paragraph{Member}
 ~\\
-OPR Members are Users who sign up to use OPR’s services with a Profile. A User needs to be
+OPR Members are Users who sign up to use OPR's services with a Profile. A User needs to be
 logged in, to be acting as a Member.
 A member can do everything a User can do, in addition to the ability of posting their own
 reviews and ratings.
@@ -274,16 +274,16 @@ The admin is responsible of managing the users, he has the permission to CRUD us
 ~\\
 Google places API is called for every search to look for relevant places based on provided location.\\
 The API provides us with :\\
-Basic information (Name, address..), Photo, Google’s place\_id (unique identifier)
+Basic information (Name, address..), Photo, Google's place\_id (unique identifier)
 
 \paragraph{Google maps service}
 ~\\
-Google Maps API provides us with a map pointing at the specific location based on the location’s place\_id we retrieve from Google Places API
+Google Maps API provides us with a map pointing at the specific location based on the location's place\_id we retrieve from Google Places API
 
 
 \paragraph{Gmail service}
 ~\\
-Google’s Gmail is used to send the emails to users.
+Google's Gmail is used to send the emails to users.
 
 
 \section{Functionalities' overview}
@@ -330,7 +330,7 @@ Pre-conditions    & \begin{tabular}[c]{@{}l@{}}The user should be on the registr
 Post-conditions   & The user becomes registered (member)                                                                                                                                                                                                                                                            \\ \hline
 Story             & \begin{tabular}[c]{@{}l@{}}1. The user enters his username\\ 2. The user enters his email\\ 3. The user enters his password\\ 4. The user re-enters his password\\ 5. The user submits the form\end{tabular}                                                                                    \\ \hline
 Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\ mobile app instead of a browser.\end{tabular}                                                                                                                                                                            \\ \hline
-Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user enters an email that’s already in the DB,\\  the user will be prompted to enter a different email.\\ If the user enters a password that’s not \\ compliant to the security constraints, he will\\ be prompted to enter a different password\end{tabular} \\ \hline
+Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user enters an email that's already in the DB,\\  the user will be prompted to enter a different email.\\ If the user enters a password that's not \\ compliant to the security constraints, he will\\ be prompted to enter a different password\end{tabular} \\ \hline
 \end{tabular}
 \caption{Registration description}
 \label{my-label}
@@ -364,7 +364,96 @@ Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user enters incorrect cred
 \label{my-label}
 \end{table}
 
-\newpage~
+\subsection{Search}
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{searchSpec.png}
+\caption{search sequence diagram}
+\end{figure}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+Title             & Search                                                                                                                                                                              \\ \hline
+Author            & Moetaz Ben Charrada                                                                                                                                                                 \\ \hline
+Version           & 1.0                                                                                                                                                                                 \\ \hline
+Objectives        & Allows users to search for a specific place.                                                                                                                                        \\ \hline
+Actors            & User - OPR - Places service                                                                                                                                                         \\ \hline
+Pre-conditions    & \begin{tabular}[c]{@{}l@{}}The user should be on a page where there's\\ a search bar.\end{tabular}                                                                                  \\ \hline
+Post-conditions   & \begin{tabular}[c]{@{}l@{}}The user finds places related to his keywords,\\ and may click to check the details of that\\ place.\end{tabular}                                        \\ \hline
+Story             & \begin{tabular}[c]{@{}l@{}}1. The user enters keywords related \\ to the place he's looking for\\ 2. The user selects the type of place\\ 3. The user submits the form\end{tabular} \\ \hline
+Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\mobile app instead of a browser.\\ (Through the REST API)\end{tabular}                                          \\ \hline
+\end{tabular}
+\caption{search description}
+\label{my-label}
+\end{table}
+
+
+
+\subsection{View details}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{viewSpec.png}
+\caption{view details sequence diagram}
+\end{figure}
+
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+Title             & View details                                                                                                                                                                                                                                                                                                                       \\ \hline
+Author            & Moetaz Ben Charrada                                                                                                                                                                                                                                                                                                                \\ \hline
+Version           & 1.0                                                                                                                                                                                                                                                                                                                                \\ \hline
+Objectives        & \begin{tabular}[c]{@{}l@{}}Allows users to view the details and reviews\\ of a specific place\end{tabular}                                                                                                                                                                                                                         \\ \hline
+Actors            & User - OPR - Places service - Maps service                                                                                                                                                                                                                                                                                         \\ \hline
+Pre-conditions    & \begin{tabular}[c]{@{}l@{}}The user should have searched for the\\ place before.\end{tabular}                                                                                                                                                                                                                                      \\ \hline
+Post-conditions   & \begin{tabular}[c]{@{}l@{}}The user sees the details and reviews of \\ the place and can possibly post a review about it.\end{tabular}                                                                                                                                                                                             \\ \hline
+Story             & \begin{tabular}[c]{@{}l@{}}1. The user clicks on one of the places he found\\ in the search view.\\ 2. OPR app will then get the details of that\\  place from Google places service, get\\  the map from Google maps service.\\ 3. The data is combined with the local\\ reviews' data and is sent back to the user.\end{tabular} \\ \hline
+Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\ mobile app instead of a browser.\\ (Through the REST API)\end{tabular}                                                                                                                                                                                      \\ \hline
+\end{tabular}
+\caption{view-details description}
+\label{my-label}
+\end{table}
+
+\subsection{Review a place}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=13cm]{reviewSpec.png}
+\caption{review a place sequence diagram}
+\end{figure}
+
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+Title             & Review a place                                                                                                                                                                                           \\ \hline
+Author            & Moetaz Ben Charrada                                                                                                                                                                                      \\ \hline
+Version           & 1.0                                                                                                                                                                                                      \\ \hline
+Objectives        & \begin{tabular}[c]{@{}l@{}}Allows users to post a review about a specific\\ place\end{tabular}                                                                                                           \\ \hline
+Actors            & User - OPR                                                                                                                                                                                               \\ \hline
+Pre-conditions    & \begin{tabular}[c]{@{}l@{}}The user should be authenticated to be able\\ to post a review.\end{tabular}                                                                                                  \\ \hline
+Post-conditions   & \begin{tabular}[c]{@{}l@{}}The user creates a review.\\ The review becomes visible to the public.\end{tabular}                                                                                           \\ \hline
+Story             & \begin{tabular}[c]{@{}l@{}}1.The user enters his review data \\ 2.The user submits the form. \\ 3.The review data is saved to the \\ database.\\ 4.A thanks message is shown to\\ the user.\end{tabular} \\ \hline
+Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\ mobile app instead of a browser.\\ (Through the REST API)\end{tabular}                                                            \\ \hline
+Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user tries to post a review while\\  he's not authenticated. He is \\ redirected to the login page.\end{tabular}                                                       \\ \hline
+\end{tabular}
+\caption{review a place description}
+\label{my-label}
+\end{table}
+
 
 \begin{figure}[H]
 \centering
@@ -382,10 +471,19 @@ ads, reviews and rating-categories.
 \caption{admin usecase diagram}
 \end{figure}
 
-
 \chapter{Design \& architecture}
+In this chapter we'll go through the design of the app from the ground up.
+Since we're building the app from scratch we'll have to take into consideration both the physical and logical aspects of the app.\\~\\
+As for the physical architecture, the app is designed in a way that prioritizes security and makes it easily scalable.\\~\\
+In the logical side, the app is browken into smaller modules to facilitate maintainability and extensibility. During the design I aimed to make the modules independent to reduce coupling as much as possible, thus offering the possibility to easily change a module in the future, without touching to the other modules.
 \section{Physical architecture}
-
+The main parts of our physical architecture are: The server hosting the web server and static files, the server hosting the app and the business logic and The DB server.\\~\\
+For both the web server and the app server, we used an amazon EC2 instance running Ubuntu 16.04LTS.
+AWS offers great support and scalability features.\\
+The first server hosts the static files of the app (Images, CSS, JS) as well as the web server, in our case NGINX. The web server is configured to listen for the incoming requests, whether from a web browser or the mobile app. If the call is requesting a static file, NGINX will get the file using filesystem access and send it back to the client. If the call is requesting a function to be run in the app, NGINX acts as a proxy and redirects the call to the app server via HTTP, then gets the response and redirects it to the client.\\~\\
+The second server is hosting the app, and the app server. Our app server is Gunicorn, it's a python WSGI server. That's where all the business logic is hosted and run. When a call only requires computing capabilities, this server will respond without needing any third parties. When the call requires external data, this server is responsible of acquiring that data.\\~\\
+Our sources of data are either Google's APIs or our own DB. If the data needed is from Google, the app just triggers an HTTP request to Google's API.\\
+If, on the other hand, the data requested is on our DB, the app has to access the DB through a TCP connection and get that data. The DB server is an AWS RDS instance hosting a PostgreSQL DB.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{physicalArchitecture.png}
@@ -436,7 +534,7 @@ OPR App, REST API and searchAd.
 
 \subsection{searchAdModule}
 This is a standalone library that offers the possibility to create and show ads either from a local
-source (the user’s DB) or from an external source (like Google Adsense).
+source (the user's DB) or from an external source (like Google Adsense).
 
 
 
@@ -450,16 +548,16 @@ The searchAd module is designed following the MVC architecture.
 The AdController is the entrypoint for the module, it allows the user to get an ad based on a
 keyword. It also contains a private method resolveView() that shows the ad in html format to be
 directly injected in the view.\\
-The ExternalAdSource allows to get ads from external sources like Google AdWords. It’s made
+The ExternalAdSource allows to get ads from external sources like Google AdWords. It's made
 in a way to make it easily extensible with other external sources. In fact all we have to do is
 create a new class inheriting the ExternalAdSource class and containing the url to the ads
 service.\\
-In case the ads are not pulled from an external source, they’re stored in the local database as
+In case the ads are not pulled from an external source, they're stored in the local database as
 LocalAd. The LocalAd model contains a title, content, target\_url and image\_url.
 
 
 \subsection{OPR app module}
-this is the main app, it contains the business logic for searching and rating places. It’s also
+this is the main app, it contains the business logic for searching and rating places. It's also
 where most of the other libraries are integrated and linked together.
 
 \paragraph{Search}~\\
@@ -471,25 +569,6 @@ where most of the other libraries are integrated and linked together.
 \end{figure}
 
 
-\begin{table}[H]
-\centering
-\begin{tabular}{|l|l|}
-\hline
-Title             & Search                                                                                                                                                                              \\ \hline
-Author            & Moetaz Ben Charrada                                                                                                                                                                 \\ \hline
-Version           & 1.0                                                                                                                                                                                 \\ \hline
-Objectives        & Allows users to search for a specific place.                                                                                                                                        \\ \hline
-Actors            & User - OPR - Places service                                                                                                                                                         \\ \hline
-Pre-conditions    & \begin{tabular}[c]{@{}l@{}}The user should be on a page where there's\\ a search bar.\end{tabular}                                                                                  \\ \hline
-Post-conditions   & \begin{tabular}[c]{@{}l@{}}The user finds places related to his keywords,\\ and may click to check the details of that\\ place.\end{tabular}                                        \\ \hline
-Story             & \begin{tabular}[c]{@{}l@{}}1. The user enters keywords related \\ to the place he's looking for\\ 2. The user selects the type of place\\ 3. The user submits the form\end{tabular} \\ \hline
-Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\mobile app instead of a browser.\\ (Through the REST API)\end{tabular}                                          \\ \hline
-\end{tabular}
-\caption{search description}
-\label{my-label}
-\end{table}
-
-
 
 \paragraph{View details}~\\
 
@@ -498,24 +577,6 @@ Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed thr
 \includegraphics[width=15cm]{viewSequence.png}
 \caption{view-details sequence diagram}
 \end{figure}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|l|l|}
-\hline
-Title             & View details                                                                                                                                                                                                                                                                                                                       \\ \hline
-Author            & Moetaz Ben Charrada                                                                                                                                                                                                                                                                                                                \\ \hline
-Version           & 1.0                                                                                                                                                                                                                                                                                                                                \\ \hline
-Objectives        & \begin{tabular}[c]{@{}l@{}}Allows users to view the details and reviews\\ of a specific place\end{tabular}                                                                                                                                                                                                                         \\ \hline
-Actors            & User - OPR - Places service - Maps service                                                                                                                                                                                                                                                                                         \\ \hline
-Pre-conditions    & \begin{tabular}[c]{@{}l@{}}The user should have searched for the\\ place before.\end{tabular}                                                                                                                                                                                                                                      \\ \hline
-Post-conditions   & \begin{tabular}[c]{@{}l@{}}The user sees the details and reviews of \\ the place and can possibly post a review about it.\end{tabular}                                                                                                                                                                                             \\ \hline
-Story             & \begin{tabular}[c]{@{}l@{}}1. The user clicks on one of the places he found\\ in the search view.\\ 2. OPR app will then get the details of that\\  place from Google places service, get\\  the map from Google maps service.\\ 3. The data is combined with the local\\ reviews’ data and is sent back to the user.\end{tabular} \\ \hline
-Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\ mobile app instead of a browser.\\ (Through the REST API)\end{tabular}                                                                                                                                                                                      \\ \hline
-\end{tabular}
-\caption{view-details description}
-\label{my-label}
-\end{table}
 
 
 
@@ -528,25 +589,6 @@ Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed thr
 \caption{review a place sequence diagram}
 \end{figure}
 
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|l|l|}
-\hline
-Title             & Review a place                                                                                                                                                                                           \\ \hline
-Author            & Moetaz Ben Charrada                                                                                                                                                                                      \\ \hline
-Version           & 1.0                                                                                                                                                                                                      \\ \hline
-Objectives        & \begin{tabular}[c]{@{}l@{}}Allows users to post a review about a specific\\ place\end{tabular}                                                                                                           \\ \hline
-Actors            & User - OPR                                                                                                                                                                                               \\ \hline
-Pre-conditions    & \begin{tabular}[c]{@{}l@{}}The user should be authenticated to be able\\ to post a review.\end{tabular}                                                                                                  \\ \hline
-Post-conditions   & \begin{tabular}[c]{@{}l@{}}The user creates a review.\\ The review becomes visible to the public.\end{tabular}                                                                                           \\ \hline
-Story             & \begin{tabular}[c]{@{}l@{}}1.The user enters his review data \\ 2.The user submits the form. \\ 3.The review data is saved to the \\ database.\\ 4.A thanks message is shown to\\ the user.\end{tabular} \\ \hline
-Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\ mobile app instead of a browser.\\ (Through the REST API)\end{tabular}                                                            \\ \hline
-Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user tries to post a review while\\  he’s not authenticated. He is \\ redirected to the login page.\end{tabular}                                                       \\ \hline
-\end{tabular}
-\caption{review a place description}
-\label{my-label}
-\end{table}
 
 
 Note that a user can only post a review if he is logged in. The process is explained in the
@@ -579,10 +621,10 @@ The services provided by the API are:
 \item Add review
 \end{itemize}
 The functions that require the transfer of critical data were designed to use the HTTP POST
-method because it’s more secure and it is the standard for this type of operations, for instance
+method because it's more secure and it is the standard for this type of operations, for instance
 we used POST for the authentication and registration functions. We also chose HTTP POST for
 posting reviews, because it contains the authentication token, which is critical data, and it
-contains the review’s text, whose size might exceed the GET data size limit.\\
+contains the review's text, whose size might exceed the GET data size limit.\\
 As for the other functionalities we used HTTP GET methods. One of the benefits of using GET
 here is that you can share and bookmark links easier when the data is included in the URL.
 
@@ -614,7 +656,7 @@ Search for hotels, restaurants or activities
 
 
 \paragraph{Get place details}~\\
-Get the the details of a specific place using it’s place\_id
+Get the the details of a specific place using it's place\_id
 
 \includegraphics[width=15cm]{detailsDoc.png}
 
@@ -624,7 +666,7 @@ In the ratings\_breakdown, ​ ["Outstanding", 2, 50.0] means there is 2 votes f
 outstanding, which count for 50% of the total number of votes
 
 \paragraph{Get reviews}~\\
-Get the reviews of a place using it’s place\_id
+Get the reviews of a place using it's place\_id
 
 \includegraphics[width=15cm]{reviewsDoc.png}
 
@@ -645,8 +687,8 @@ Add a new review to a place
 \paragraph{Frontend}~\\
 For the front-end I used HTML/CSS/JS with JQuery library because it facilitates basic
 functionalities like DOM manipulation.\\
-I also used twitter’s Bootstrap in order to use it’s prebuilt components like the buttons.
-The app is responsive but has some responsiveness-bugs; I didn’t fix these because of time
+I also used twitter's Bootstrap in order to use it's prebuilt components like the buttons.
+The app is responsive but has some responsiveness-bugs; I didn't fix these because of time
 constraints and because the front-end is being redesigned by a professional designer anyway.
 
 \paragraph{Backend}~\\
@@ -690,7 +732,7 @@ The following table shows some differences of how things work in MySQL vs. in Po
 \begin{tabular}{|l|l|l|}
 \hline
                   & MySQL                                                                                                            & PostgreSQL                                                                                                                                                                                                      \\ \hline
-CREATE INDEX      & \begin{tabular}[c]{@{}l@{}}Entire table is locked for\\ writes\end{tabular}                                      & \begin{tabular}[c]{@{}l@{}}Entire table is locked for\\ writes.But PSQL has \\“CREATE INDEX\\ CONCURRENTLY”\\that permits the creation of\\ index without locking the\\ entire table (but it’s slower)\end{tabular} \\ \hline
+CREATE INDEX      & \begin{tabular}[c]{@{}l@{}}Entire table is locked for\\ writes\end{tabular}                                      & \begin{tabular}[c]{@{}l@{}}Entire table is locked for\\ writes.But PSQL has \\"CREATE INDEX\\ CONCURRENTLY"\\that permits the creation of\\ index without locking the\\ entire table (but it's slower)\end{tabular} \\ \hline
 Adding new column & \begin{tabular}[c]{@{}l@{}}Entire table data needs to be\\ rewritten\end{tabular}                                & Instantaneous                                                                                                                                                                                                   \\ \hline
 Connection model  & \begin{tabular}[c]{@{}l@{}}One thread/connection:\\ Easy to create but hard to\\ monitor and manage\end{tabular} & \begin{tabular}[c]{@{}l@{}}One process/connection:\\ Easier to monitor and\\ manage\end{tabular}                                                                                                                \\ \hline
 \end{tabular}
@@ -699,14 +741,14 @@ Connection model  & \begin{tabular}[c]{@{}l@{}}One thread/connection:\\ Easy to 
 \end{table}
 
 I decided to use PostgreSQL as a database because of the previous comparison and because
-it’s well supported by Django.\\
+it's well supported by Django.\\
 This choice is in someway influenced by the previous choice.
 
 \paragraph{Server}~\\
 
 I used an Ubuntu 16.04 LTS Virtual Private Server for hosting the project.
 Ubuntu has a great community and support, is reliable, and the Long Term Support (LTS)
-version remains maintained for 5 years, so we won’t have to worry about upgrading the system
+version remains maintained for 5 years, so we won't have to worry about upgrading the system
 for five years.\\
 Ubuntu is based on Debian, which is one of the most stable Linux distributions ever.\\
 The provider of the VPS is Amazon Web Service (AWS). I used AWS because it offers a free
@@ -718,12 +760,12 @@ setting up load balancers for the project.
 I had the choice between Apache HTTP Server and NGINX.\\
 Both of them are great web servers and have great communities and support, and both of them
 are open source as well.\\
-I went with NGINX because it’s better performance-wise and is taking over Apache.
+I went with NGINX because it's better performance-wise and is taking over Apache.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{apache.png}
-\caption{Chart showing how nginx’s user base is growing while apache’s is regressing}
+\caption{Chart showing how nginx's user base is growing while apache's is regressing}
 \end{figure}
 
 \paragraph{Python Application server}~\\
@@ -733,7 +775,7 @@ server.
 
 \subparagraph{Django-rest-framework}~\\
 Django-rest-framework (DRF) supports the creation of REST APIs on top of Django.
-This framework is django’s standard tool to create REST APIs.
+This framework is django's standard tool to create REST APIs.
 
 \subparagraph{Django-allauth}~\\
 This is a library addressing authentication, registration, account management and social
@@ -749,7 +791,7 @@ This library makes the previously mentioned library (allauth) accessible via RES
 
 \subparagraph{Django-review}~\\
 This is a library facilitating the creation of reviews and ratings. I found multiple libraries offering
-reviews-related functionalities. I chose this library because it’s kept updated and is backed by a
+reviews-related functionalities. I chose this library because it's kept updated and is backed by a
 company.
 
 \section{Screenshots}
@@ -765,7 +807,7 @@ When first accessed, the app shows the previous landing page. From there the use
 search for a place using the search bar.\\
 The user is also to access the login screen from there.\\
 Other functionalities include listing the popular and trending hotels using the links in the top left
-corner, but these functionalities haven’t been implemented yet.
+corner, but these functionalities haven't been implemented yet.
 
 
 
@@ -776,7 +818,7 @@ corner, but these functionalities haven’t been implemented yet.
 \end{figure}
 
 After the landing page, when a user searches for a place he will get redirected to this search
-screen which includes the results retrieved from Google’s places service. The search results
+screen which includes the results retrieved from Google's places service. The search results
 include the name and the picture (from google) as well as the number of reviews and the
 average score from the reviews posted on OPR.
 
@@ -789,9 +831,9 @@ average score from the reviews posted on OPR.
 \caption{showing the location of a place on the map}
 \end{figure}
 
-From the search screen, the user is able to click the “show on map” button to see the selected
+From the search screen, the user is able to click the "show on map" button to see the selected
 place on Google maps. The map is shown in a modal view in order for the user not to quit
-OPR’s site.
+OPR's site.
 
 
 
@@ -802,7 +844,7 @@ OPR’s site.
 \caption{place details}
 \end{figure}
 
-When the user selects a place to see its details, he’s shown this screen; it contains the name,
+When the user selects a place to see its details, he's shown this screen; it contains the name,
 picture and basic details of the place. This same screen also contains the reviews and a chart
 showing the numbers and proportions of ratings.
 
@@ -817,7 +859,7 @@ showing the numbers and proportions of ratings.
 \end{figure}
 
 
-When the user chooses to create a review, the app first checks whether he’s logged in.\\
+When the user chooses to create a review, the app first checks whether he's logged in.\\
 If not, the user is redirected to the login screen, otherwise this form appears. The form allows
 the user to enter a text review as well as ratings following specific criteria.
 
@@ -830,7 +872,7 @@ the user to enter a text review as well as ratings following specific criteria.
 \caption{Thanks screen}
 \end{figure}
 
-After a member posts a review successfully, he’s shown a thanks screen.
+After a member posts a review successfully, he's shown a thanks screen.
 
 
 
@@ -842,7 +884,7 @@ After a member posts a review successfully, he’s shown a thanks screen.
 \end{figure}
 
 After a review is added, it is displayed as in this screenshot. The score, text, username and date
-are currently shown. Other features are being added like the user’s photo and the categorized
+are currently shown. Other features are being added like the user's photo and the categorized
 ratings.
 
 \subsection{API}
@@ -882,7 +924,7 @@ type of place (hotel, restaurant..) as well as a keyword to specify the location
 The response contains the name, image, place\_id, ratings count , and the average rating.\\
 The name and image are displayed as is. The ratings count and the average rating, however,
 are used to display the globes/stars next to each place in the results list. The place\_id is used to
-get the place’s map or the place’s details.
+get the place's map or the place's details.
 
 
 
@@ -946,7 +988,7 @@ blocks all incoming and outcoming traffic.
 \caption{AWS RDS setup}
 \end{figure}
 
-I used AWS RDS for hosting the database because security wise it’s better approach to host the
+I used AWS RDS for hosting the database because security wise it's better approach to host the
 database separately from the app. Another advantage of AWS RDS is that it automatically
 creates backups of the DB.\\
 First I hosted a local db for testing purposes then I moved the same DB to RDS.
@@ -962,16 +1004,16 @@ First I hosted a local db for testing purposes then I moved the same DB to RDS.
 \caption{NGINX setup}
 \end{figure}
 
-NGINX is the entrypoint to the app. It’s also the web server used to serve the app. NGINX was
+NGINX is the entrypoint to the app. It's also the web server used to serve the app. NGINX was
 setup to listen on port 8000 and to serve the static files like the images and css ( practically
 every url pointing to /static). In case of non static files, NGINX redirects the request to gunicorn
-which is the python server that’s serving the app.
+which is the python server that's serving the app.
 
 \section{Testing}
 
 For the development of searchAd module, which is a sort of standalone library, I also created
 unit tests for it.\\
-The unit tests ensure that the code works correctly, and helps verify that the code didn’t break
+The unit tests ensure that the code works correctly, and helps verify that the code didn't break
 after some changes. This provides better quality and saves more time.
 
 
@@ -982,7 +1024,7 @@ after some changes. This provides better quality and saves more time.
 \end{figure}
 
 
-I also tested the performance of the app (load speed) using google’s Pagespeed Insights, and I
+I also tested the performance of the app (load speed) using google's Pagespeed Insights, and I
 got some amazing results:
 
 
@@ -1027,7 +1069,7 @@ simultaneous virtual users and the results were good.
 \end{figure}
 
 With 50 simultaneous users the response time was ~170ms which is okay. Note that the
-performance is influenced by the performance amazon’s server, which is very limited but easily
+performance is influenced by the performance amazon's server, which is very limited but easily
 scalable. For the development, I went with a low-performance server instance because of
 budgetary reasons, but we can scale up easily later when we need to.
 The used instance is an AWS EC2 t2.micro with the following specs:
@@ -1044,17 +1086,69 @@ All of the development was made on my personal laptop which has the following sp
 \item OS: Ubuntu 16.04 LTS
 \end{itemize}
 
-During the development I used the IDE PyCharm.
-For version control we used Git, hosted on BitBucket.
-Communication was all held on Slack.
-The diagrams were made using Dia and draw.io
-~\\~\\
+\paragraph{PyCharm}~\\
+During the development I used the IDE PyCharm. It's developed by JetBrains, the world leader in IDEs development. PyCharm's user interface is very user-friendly and familiar because it's similar to the company's other products.\\
+PyCharm is also extremely powerful. To name a few of its features we can cite: code completion, debugging and integrated version control tools.
+
+\paragraph{BitBucket}~\\
+For version control we used Git, hosted on BitBucket. Git is the most popular distributed version control system. It's widely used and very powerful. It allows developers to keep all the history of the project, and allows them to collaborate efficiently. BitBucket offers unlimited free private git repositories for teams of up to 5 people.
+\paragraph{Slack}~\\
+Communication was all held on Slack. Slack is becoming the standard in the corporate communication tools and is used by some of the biggest organizations in the world like NASA. Slack allows people to create chat channels, share files, and hold audio and video calls from the web browser. Another major powerful feature of Slack is that it has multiple plugins and external integrations.
+\paragraph{draw.io \& Dia}~\\
+The diagrams were made using Dia and draw.io\\Both of these tools are open source and very popular.
+The main difference is that Dia runs locally while draw.io runs on the browser. Both of these tools are powerful, versatile and have ready-to-use UML components.
+~\\
+\paragraph{GIMP}~\\
 In the beginning of the project I also did some graphic design using GIMP, which is an open
-source and free alternative to photoshop.
-I also used InvisionApp to create an interactive prototype using the mockups I designed.
-Chrome developer tools were used extensively for debugging and tweaking the frontend.
-Postman was used to test the REST requests for the API.
-Python’s unittest was used for the unit tests.
+source and free alternative to photoshop.\\ GIMP allows the creation of layers, transparency, filters and many advanced features that were very useful during the design phase.
+\paragraph{InvisionApp}~\\
+I used InvisionApp to create an interactive prototype using the mockups I designed.\\ InvisionApp allows the creation of prototypes from images only. Images become clickable and the behaviour is customizable. The prototype can then be tested in the browser or using a mobile device, and gives a very real experience.
+\paragraph{Chrome developer tools}~\\
+Chrome developer tools were used extensively for debugging and tweaking the frontend.\\The tools offer several features from simple ones like changing the styling of the DOM and seeing the changes in realtime to more advanced operations like debugging JavaScript code in the browser and monitoring the requests and their responses.
+\paragraph{Postman}
+Postman was used to test the REST requests for the API.\\ Postman is a Chrome extension that allows to send custom HTTP requests and preview their responses. In the beginning I used curl, but it turned out Postman is a lot more efficient.
+\paragraph{Unittest}
+Unittest is a python library for unit testing. It's included with python by default. I used it for testing the searchAd module.
+
+
+
+\chapter{Conclusion}
+
+The work done during my internship constitutes the first working prototype of OPR.
+A substantial effort and time was dedicated to designing and defining how things work because the project is still new and was built from scratch.\\
+Though this is a mere prototype, it's working and is being tested internally and soon to be released to the public. The frontend part of the app is being redesigned, while the backend is now the ground work that the company is building upon.\\~\\
+But before being production ready, the app needs security and penetration testing.
+Also, now that the project is getting bigger, the project should also take advantage of more sophisticated yet facilitating tools, like continuous integration, continuous deployment and containerization.\\~\\
+The REST API, that is now being used solely for the mobile app, might also turn out useful if the frontend of the web app gets redesigned using a single-page app framework such as React or Angular. This will make the app even easier to maintain as it will loosen the coupling between the frontend and backend.\\~\\
+Other performance improvements can be easily implemented, like using a Content Delivery Network to deliver the static files, but the project is still not big enough and not mature enough to require such optimizations.\\~\\
+The project is easily scalable, especially with the help of AWS which allows the expansion of the infrastructure in a couple of clicks. During the deployement I set up a couple instances and a loadbalancer to test the high-availability of the service and it worked perfectly, but I later removed it for budgetary reasons.
+
+
+
+\chapter{References}
+
+lead-digital.de\\
+http://www.lead-digital.de/aktuell/work/arbeiten\_bei\_trivago\_keine\\\_hierarchien\_und\_15\_biersorten\_gratis\\
+
+
+allthingsdistributed.com\\
+http://www.allthingsdistributed.com/2006/11/working\_backwards.ht\\
+
+slideshare.net\\
+https://www.slideshare.net/anandology/ten-reasons-to-prefer-postgresql-to-mysql\\
+
+digitalocean.com\\
+https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04\\
+
+hostingadvice.com\\
+http://www.hostingadvice.com/how-to/nginx-vs-apache/\\
+
+AWS RDS Documentation\\
+http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html\\
+
+AWS EC2 Documentation\\
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html\\
+
 
 %
 %\section{Etat de l'art}
