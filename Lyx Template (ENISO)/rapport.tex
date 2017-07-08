@@ -1,0 +1,801 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,french]{report}
+\usepackage{charter}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,rmargin=2.5cm}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{color}
+\usepackage{babel}
+\makeatletter
+\addto\extrasfrench{%
+   \providecommand{\og}{\leavevmode\flqq~}%
+   \providecommand{\fg}{\ifdim\lastskip>\z@\unskip\fi~\frqq}%
+}
+
+\makeatother
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{nomencl}
+% the following is useful when we have the old nomencl.sty package
+\providecommand{\printnomenclature}{\printglossary}
+\providecommand{\makenomenclature}{\makeglossary}
+\makenomenclature
+\onehalfspacing
+\usepackage[unicode=true,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
+ breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true]
+ {hyperref}
+\hypersetup{
+ linkcolor=black, citecolor=red, urlcolor=blue, filecolor=blue, pdfstartview=XYZ}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% the pages of the TOC is numbered roman
+% and a pdf-bookmark for the TOC is added
+\pagenumbering{roman}
+
+%\let\myTOC\tableofcontents
+%\renewcommand\tableofcontents{%
+ % \pdfbookmark[1]{\contentsname}{}
+ % \myTOC
+ % \cleardoublepage  }
+
+%*****Chapter style******
+\usepackage[Glenn]{fncychap}
+\ChNameVar{\large}
+\ChTitleAsIs
+\ChTitleVar{\bfseries\Huge}
+
+%*****Header style*******
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE,LO]{\footnotesize\nouppercase{\leftmark}}
+
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\renewcommand{\headrulewidth}{0,5pt}
+
+%****Glossaire Title*****
+\renewcommand{\nomname}{Glossaire}
+
+\makeatother
+
+\begin{document}
+\noindent \begin{titlepage}
+\begin{center}
+% Upper part of the page
+\begin{minipage}{0.4\textwidth}   Réf : xx/xx  \end{minipage}
+\begin{minipage}{0.4\textwidth} \begin{flushright} A.U. : 2014-2015 \end{flushright}\end{minipage}
+\rule[0.5ex]{1\columnwidth}{1pt}\\[0.5cm]
+\textsc{\large{Université de Sousse}}\\
+\textsc{\large{Ecole Nationale d'Ingénieurs de Sousse}}\\
+\includegraphics[width=0.3\textwidth]{images/logo-eniso.pdf}\\[-0.5cm]
+\Large{Rapport de Projet de Fin d'Etudes}\\[0.5cm]
+\normalsize{Présenté en vue de l'obtention du diplôme d'}\\
+\Large{ \bfseries{Ingénieur en Génie .....}}\\
+\normalsize{Option ...}\\[0.6cm]
+\rule[0.5ex]{1\columnwidth}{1pt}\\[0.5cm]
+{ \huge \bfseries Conception et développement d'une application }\\[0.5cm]
+\rule[0.5ex]{1\columnwidth}{1pt}\\[2cm]
+% Author and supervisor
+\begin{minipage}{0.4\textwidth} \begin{flushleft} \large \emph{Réalisé par:}\\ Prénom~\textsc{Nom} \end{flushleft} \end{minipage} \begin{minipage}{0.5\textwidth} \begin{flushright} \large \emph{Encadré par:} \\  Mr.~Prénom~\textsc{Nom} \end{flushright} \end{minipage}
+\vfill
+% Bottom of the page 
+\end{center}
+\end{titlepage}
+
+
+\chapter*{Dédicaces}
+
+\noindent \begin{center}
+\textit{Ici vos dédicaces}
+\par\end{center}
+
+\noindent \begin{center}
+\textit{Pour vos amis}
+\par\end{center}
+
+\noindent \begin{flushright}
+\textbf{Votre Prénom}
+\par\end{flushright}
+
+
+\chapter*{Remerciements}
+
+Ici vos remerciements...
+
+\tableofcontents{}
+
+\listoffigures
+
+
+\listoftables
+
+
+
+\chapter*{Introduction Générale}
+
+
+
+\pagenumbering{arabic} 
+\addcontentsline{toc}{chapter}{Introduction Générale}
+\markboth{Introduction Générale}{Introduction Générale}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit. 
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper.
+
+
+\chapter{Cadre du Projet}
+
+
+\section*{Introduction}
+
+Nam eu leo justo. Praesent accumsan consequat tellus, et hendrerit
+magna ornare ut. Nullam ac orci ac magna ullamcorper tristique. Cras
+lacus augue, congue in ullamcorper id, cursus sit amet odio. Fusce
+dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu. Mauris
+interdum pretium urna a posuere. Fusce in porttitor ante. Suspendisse
+potenti (une référence vers un élément de Bibliographie \cite{key-1}). 
+
+
+\section{Présentation de l'organisme d'accueil}
+
+Cras mattis adipiscing enim. Duis varius, neque in posuere porttitor,
+odio urna bibendum nunc, sit amet laoreet sem orci id lorem. Ut ultrices
+mauris quis purus fringilla tristique. Aliquam non nunc nulla, vitae
+sagittis nibh. Mauris in diam felis. Cras quis neque sed turpis condimentum
+porta ac a purus. Duis posuere pellentesque feugiat. Nunc tempus,
+ligula ac scelerisque dignissim, neque mauris venenatis lorem, nec
+consectetur sem odio in tortor. Sed velit tellus, egestas ut malesuada
+nec, interdum a eros. Class aptent taciti sociosqu ad litora torquent
+per conubia nostra, per inceptos himenaeos\footnote{Voici une note de bas de page}. 
+
+Nulla tellus augue, mattis sed scelerisque id, aliquet sit amet nunc.
+Nullam nulla metus, volutpat vitae tempus vel, rhoncus id elit. Quisque
+non semper urna. Cras molestie mollis sapien egestas rutrum. Proin
+tincidunt laoreet est id fringilla. Aliquam vel risus augue. Mauris
+scelerisque tortor arcu, sed auctor tellus. Donec egestas luctus varius.
+Vestibulum tortor erat, elementum sollicitudin tempus quis, tempus
+nec magna. Sed sed metus turpis, in pulvinar orci. 
+
+
+\section{Travail demandé}
+
+Sed sed augue vel velit interdum bibendum. Donec imperdiet interdum
+elit eu elementum. Vivamus pulvinar pharetra erat, et mattis est iaculis
+a. Pellentesque eu nunc sit amet orci ultrices tempus vitae non massa.
+Morbi pharetra posuere sem eget pharetra. Phasellus commodo purus
+ac eros consequat a sodales orci sodales. In vitae augue vel nisl
+tincidunt elementum ac eu lorem. Nam placerat sapien quis lorem facilisis
+molestie. Proin eros massa, rhoncus eu accumsan a, lobortis eget est.
+Etiam ac quam eros, quis suscipit lectus. Donec sit amet metus id
+turpis aliquet iaculis sed in tellus. Sed sed ligula lorem, ut porttitor
+lacus. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas.
+
+
+\section{Etat de l'art}
+
+Morbi pharetra posuere sem eget pharetra. Phasellus commodo purus
+ac eros consequat a sodales orci sodales. In vitae augue vel nisl
+tincidunt elementum ac eu lorem. Nam placerat sapien quis lorem facilisis
+molestie.
+
+
+\subsection{Exemple site 1}
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper (voir figure \ref{fig:mon_image}). 
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics{images/pseudo_image}
+\par\end{centering}
+
+\caption{\label{fig:mon_image}Mon image du premier site avec référence}
+\end{figure}
+
+
+Nam eu leo justo. Praesent accumsan consequat tellus, et hendrerit
+magna ornare ut. Nullam ac orci ac magna ullamcorper tristique. Cras
+lacus augue, congue in ullamcorper id, cursus sit amet odio. Fusce
+dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu. Mauris
+interdum pretium urna a posuere. Fusce in porttitor ante. Suspendisse
+potenti. Cras mattis adipiscing enim. Duis varius, neque in posuere
+porttitor, odio urna bibendum nunc, sit amet laoreet sem orci id lorem.
+Ut ultrices mauris quis purus fringilla tristique. Aliquam non nunc
+nulla, vitae sagittis nibh. Mauris in diam felis. Cras quis neque
+sed turpis condimentum porta ac a purus. Duis posuere pellentesque
+feugiat. Nunc tempus, ligula ac scelerisque dignissim, neque mauris
+venenatis lorem, nec consectetur sem odio in tortor. Sed velit tellus,
+egestas ut malesuada nec, interdum a eros. Class aptent taciti sociosqu
+ad litora torquent per conubia nostra, per inceptos himenaeos. 
+
+\begin{table}[H]
+\noindent \begin{centering}
+\begin{tabular}{|c|c|c|}
+\hline 
+A & B & C\tabularnewline
+\hline 
+\hline 
+X & Y & Z\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+
+\caption{Un exemple de tableau}
+
+
+\end{table}
+
+
+Nulla tellus augue, mattis sed scelerisque id, aliquet sit amet nunc.
+Nullam nulla metus, volutpat vitae tempus vel, rhoncus id elit. Quisque
+non semper urna. Cras molestie mollis sapien egestas rutrum. Proin
+tincidunt laoreet est id fringilla. Aliquam vel risus augue. Mauris
+scelerisque tortor arcu, sed auctor tellus. Donec egestas luctus varius.
+Vestibulum tortor erat, elementum sollicitudin tempus quis, tempus
+nec magna. Sed sed metus turpis, in pulvinar orci. 
+
+Sed sed augue vel velit interdum bibendum. Donec imperdiet interdum
+elit eu elementum. Vivamus pulvinar pharetra erat, et mattis est iaculis
+a. Pellentesque eu nunc sit amet orci ultrices tempus vitae non massa.
+Morbi pharetra posuere sem eget pharetra. Phasellus commodo purus
+ac eros consequat a sodales orci sodales. In vitae augue vel nisl
+tincidunt elementum ac eu lorem. Nam placerat sapien quis lorem facilisis
+molestie. 
+
+
+\subsection{Exemple site 2}
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper (voir figure \ref{fig:mon_image-1}). 
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics{images/pseudo_image}
+\par\end{centering}
+
+\caption{\label{fig:mon_image-1}Mon image du deuxième site avec référence}
+\end{figure}
+
+
+Nam eu leo justo. Praesent accumsan consequat tellus, et hendrerit
+magna ornare ut. Nullam ac orci ac magna ullamcorper tristique. Cras
+lacus augue, congue in ullamcorper id, cursus sit amet odio. Fusce
+dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu. Mauris
+interdum pretium urna a posuere. Fusce in porttitor ante. Suspendisse
+potenti. Cras mattis adipiscing enim. Duis varius, neque in posuere
+porttitor, odio urna bibendum nunc, sit amet laoreet sem orci id lorem.
+Ut ultrices mauris quis purus fringilla tristique. Aliquam non nunc
+nulla, vitae sagittis nibh. Mauris in diam felis. Cras quis neque
+sed turpis condimentum porta ac a purus. Duis posuere pellentesque
+feugiat. Nunc tempus, ligula ac scelerisque dignissim, neque mauris
+venenatis lorem, nec consectetur sem odio in tortor. Sed velit tellus,
+egestas ut malesuada nec, interdum a eros. Class aptent taciti sociosqu
+ad litora torquent per conubia nostra, per inceptos himenaeos. 
+
+
+\subsection{Exemple site 3}
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper (voir figure \ref{fig:mon_image-2}). 
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics{images/pseudo_image}
+\par\end{centering}
+
+\caption{\label{fig:mon_image-2}Mon image du troisème site avec référence}
+\end{figure}
+
+
+Nam eu leo justo. Praesent accumsan consequat tellus, et hendrerit
+magna ornare ut. Nullam ac orci ac magna ullamcorper tristique. Cras
+lacus augue, congue in ullamcorper id, cursus sit amet odio. Fusce
+dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu. Mauris
+interdum pretium urna a posuere. Fusce in porttitor ante. Suspendisse
+potenti. Cras mattis adipiscing enim. Duis varius, neque in posuere
+porttitor, odio urna bibendum nunc, sit amet laoreet sem orci id lorem.
+Ut ultrices mauris quis purus fringilla tristique. Aliquam non nunc
+nulla, vitae sagittis nibh. Mauris in diam felis. Cras quis neque
+sed turpis condimentum porta ac a purus. Duis posuere pellentesque
+feugiat. Nunc tempus, ligula ac scelerisque dignissim, neque mauris
+venenatis lorem, nec consectetur sem odio in tortor. Sed velit tellus,
+egestas ut malesuada nec, interdum a eros. Class aptent taciti sociosqu
+ad litora torquent per conubia nostra, per inceptos himenaeos. 
+
+
+\section*{Conclusion}
+
+Proin eros massa, rhoncus eu accumsan a, lobortis eget est. Etiam
+ac quam eros, quis suscipit lectus. Donec sit amet metus id turpis
+aliquet iaculis sed in tellus. Sed sed ligula lorem, ut porttitor
+lacus. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas.
+
+
+\chapter{Analyse et Spécification des Besoins}
+
+
+\section*{Introduction}
+
+Nam eu leo justo. Praesent accumsan consequat tellus, et hendrerit
+magna ornare ut. Nullam ac orci ac magna ullamcorper tristique. Cras
+lacus augue, congue in ullamcorper id, cursus sit amet odio. Fusce
+dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu. Mauris
+interdum pretium urna a posuere.
+
+
+\section{Analyse des besoins}
+
+Nam eu leo justo. Praesent accumsan consequat tellus, et hendrerit
+magna ornare ut. Nullam ac orci ac magna ullamcorper tristique. Cras
+lacus augue, congue in ullamcorper id, cursus sit amet odio. Fusce
+dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu. Mauris
+interdum pretium urna a posuere.
+
+
+\subsection{Besoins fonctionnels}
+
+Cras mattis adipiscing enim. Duis varius, neque in posuere porttitor,
+odio urna bibendum nunc, sit amet laoreet sem orci id lorem. Ut ultrices
+mauris quis purus fringilla tristique. Aliquam non nunc nulla, vitae
+sagittis nibh. Mauris in diam felis. Cras quis neque sed turpis condimentum
+porta ac a purus. Duis posuere pellentesque feugiat. Nunc tempus,
+ligula ac scelerisque dignissim, neque mauris venenatis lorem, nec
+consectetur sem odio in tortor. Sed velit tellus, egestas ut malesuada
+nec, interdum a eros. Class aptent taciti sociosqu ad litora torquent
+per conubia nostra, per inceptos himenaeos. 
+
+
+\subsection{Besoins non fonctionnels}
+
+Nulla tellus augue, mattis sed scelerisque id, aliquet sit amet nunc.
+Nullam nulla metus, volutpat vitae tempus vel, rhoncus id elit. Quisque
+non semper urna. 
+\begin{itemize}
+\item Cras molestie mollis sapien egestas rutrum.
+\item Proin tincidunt laoreet est id fringilla. 
+\item Aliquam vel risus augue. Mauris scelerisque tortor arcu, sed auctor
+tellus. 
+\item Donec egestas luctus varius. Vestibulum tortor erat, elementum sollicitudin
+tempus quis, tempus nec magna. Sed sed metus turpis, in pulvinar orci. 
+\end{itemize}
+
+\section{Spécification des besoins}
+
+Fusce dui ligula, vehicula ut pharetra sit amet, feugiat ac arcu.
+Mauris interdum pretium urna a posuere.
+
+
+\subsection{Identification des acteurs}
+
+
+\subsection{Diagramme de cas d'utilisation}
+
+
+\section*{Conclusion}
+
+
+\chapter{Conception}
+
+
+\section*{Introduction}
+
+Cras mattis adipiscing enim. Duis varius, neque in posuere porttitor,
+odio urna bibendum nunc, sit amet laoreet sem orci id lorem. Ut ultrices
+mauris quis purus fringilla tristique. Aliquam non nunc nulla, vitae
+sagittis nibh. Mauris in diam felis. Cras quis neque sed turpis condimentum
+porta ac a purus. Duis posuere pellentesque feugiat. Nunc tempus,
+ligula ac scelerisque dignissim, neque mauris venenatis lorem, nec
+consectetur sem odio in tortor. Sed velit tellus, egestas ut malesuada
+nec, interdum a eros.
+
+
+\section{Conception générale}
+
+Ut ultrices mauris quis purus fringilla tristique. Aliquam non nunc
+nulla, vitae sagittis nibh. Mauris in diam felis.
+
+
+\subsection{Architecture de la solution}
+
+Sed sed augue vel velit interdum bibendum. Donec imperdiet interdum
+elit eu elementum. Vivamus pulvinar pharetra erat, et mattis est iaculis
+a. Pellentesque eu nunc sit amet orci ultrices tempus vitae non massa.
+Morbi pharetra posuere sem eget pharetra. Phasellus commodo purus
+ac eros consequat a sodales orci sodales. In vitae augue vel nisl
+tincidunt elementum ac eu lorem. Nam placerat sapien quis lorem facilisis
+molestie. Proin eros massa, rhoncus eu accumsan a, lobortis eget est.
+Etiam ac quam eros, quis suscipit lectus. Donec sit amet metus id
+turpis aliquet iaculis sed in tellus. Sed sed ligula lorem, ut porttitor
+lacus. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas.
+
+
+\subsection{Diagramme de packages}
+
+Cras mattis adipiscing enim. Duis varius, neque in posuere porttitor,
+odio urna bibendum nunc, sit amet laoreet sem orci id lorem. Ut ultrices
+mauris quis purus fringilla tristique. Aliquam non nunc nulla, vitae
+sagittis nibh. Mauris in diam felis. Cras quis neque sed turpis condimentum
+porta ac a purus. Duis posuere pellentesque feugiat. Nunc tempus,
+ligula ac scelerisque dignissim, neque mauris venenatis lorem, nec
+consectetur sem odio in tortor. Sed velit tellus, egestas ut malesuada
+nec, interdum a eros.
+
+
+\section{Conception détaillée}
+
+Mauris in diam felis. Cras quis neque sed turpis condimentum porta
+ac a purus. 
+
+
+\subsection{Conception de la base de données}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit. 
+
+
+\subsection{Diagramme de classes}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit. 
+
+
+\section*{Conclusion}
+
+Cras mattis adipiscing enim. Duis varius, neque in posuere porttitor,
+odio urna bibendum nunc, sit amet laoreet sem orci id lorem. Ut ultrices
+mauris quis purus fringilla tristique. Aliquam non nunc nulla, vitae
+sagittis nibh. Mauris in diam felis. Cras quis neque sed turpis condimentum
+porta ac a purus. Duis posuere pellentesque feugiat. Nunc tempus,
+ligula ac scelerisque dignissim, neque mauris venenatis lorem, nec
+consectetur sem odio in tortor. Sed velit tellus, egestas ut malesuada
+nec, interdum a eros.
+
+
+\chapter{Réalisation et Résultats}
+
+
+\section*{Introduction}
+
+
+\section{Environnement et outils de travail}
+
+
+\subsection{Configuration matérielle}
+
+
+\subsection{Environnement logiciel}
+
+
+\section{Interfaces Homme Machine}
+
+
+\section{Problèmes rencontrés}
+\begin{itemize}
+\item problème
+\item problème
+\item problème
+\end{itemize}
+
+\section{Chronogramme de travail}
+
+
+\section*{Conclusion}
+
+
+\chapter*{Conclusion Générale}
+
+
+
+\addcontentsline{toc}{chapter}{Conclusion Générale}
+\markboth{Conclusion Générale}{Conclusion Générale}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit. 
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper.
+\begin{thebibliography}{1}
+\bibitem{key-1}Auteur. (ou Orgnisme). Titre de la page d'accueil
+en ligne. Disponible sur : \href{http://www.google.com}{www.google.com}
+{[}date à laquelle le document a été consulté (JJ-mois-AAAA){]}
+
+\bibitem{key-4}Nom, Prénom ou Initiales. \textit{Titre en italique}.
+Lieu d'édition : Éditeur, Année de publication.
+
+\end{thebibliography}
+
+
+\addcontentsline{toc}{chapter}{Bibliographie}  % instruction pour ajouter la bibliographie au sommaire
+\markboth{Bibliographie}{Bibliographie}
+
+\printnomenclature[3cm]{}
+
+\nomenclature{ENISO}{Ecole Nationale d'Ingénieurs de Sousse}
+
+\nomenclature{API}{Application Programming Interface}
+
+
+
+\addcontentsline{toc}{chapter}{Glossaire}  % instruction pour ajouter le glossaire au sommaire
+\markboth{Glossaire}{Glossaire}
+
+\appendix  % code pour commencer la numérotation des annexes
+
+
+\chapter{Une annexe optionnelle}
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim
+gravida risus, quis malesuada ipsum ullamcorper at. Nunc suscipit
+dolor vel purus euismod rutrum. Quisque nec libero elit, id hendrerit
+lacus. Integer nunc est, dignissim facilisis suscipit et, gravida
+sit amet turpis. Integer at adipiscing sapien. Aenean vel quam in
+felis suscipit elementum. Nulla pharetra viverra lorem, non ultricies
+elit mattis non. Vestibulum interdum, massa id fermentum viverra,
+nulla arcu faucibus diam, in sagittis sem diam quis tellus. Praesent
+id nisi nec leo facilisis dignissim sed in enim. Vestibulum vel eros
+arcu. Proin sapien magna, vestibulum sed ultricies ut, ornare eu elit.
+
+Cras pretium, sapien ac interdum suscipit, arcu ante ultricies quam,
+eu vulputate nisl odio vitae tellus. In eget odio tellus, non varius
+dolor. Cras porttitor convallis augue, at viverra tortor faucibus
+id. Donec sagittis tristique est, a bibendum quam rutrum at. Vestibulum
+ac mi ante, eu facilisis ligula. Ut nec feugiat ipsum. Vivamus elementum
+dolor ut ligula pharetra ac convallis lacus fermentum. Phasellus suscipit
+lacus vel odio tristique sed ultricies elit varius. Phasellus elit
+nisi, pellentesque sit amet rhoncus non, aliquet interdum lorem. Nullam
+et neque nibh, non mattis nulla. Nam sit amet tincidunt arcu. Aliquam
+consequat laoreet quam, vitae mattis nunc gravida eget. Proin nec
+massa tortor, ut sagittis odio. Donec bibendum ipsum sed nibh ornare
+gravida. Donec volutpat felis nec massa posuere fermentum. Donec tincidunt
+faucibus velit non semper.
+\end{document}

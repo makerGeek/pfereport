@@ -1,0 +1,925 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.7)  8 JUL 2017 03:43
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**pfe.tex
+(./pfe.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/charter.sty
+Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 143.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/02/24 3.9q The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/02/24 3.9q Babel common definitions
+\babel@savecnt=\count92
+\U@D=\dimen111
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count93
+\float@exts=\toks16
+\float@box=\box26
+\@float@everytoks=\toks17
+\@floatcapt=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+)
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
+\nomlabelwidth=\dimen114
+\nom@tempdim=\dimen115
+\nomitemsep=\skip43
+)
+\@nomenclaturefile=\write3
+\openout3 = `pfe.nlo'.
+
+
+Writing nomenclature file pfe.nlo
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen116
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count96
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4319.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4319
+.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4319.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4319.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count97
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen117
+\Fld@menulength=\count98
+\Field@Width=\dimen118
+\Fld@charsize=\dimen119
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count99
+\c@Item=\count100
+\c@Hfootnote=\count101
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count102
+\c@bookmark@seq@number=\count103
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip44
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip45
+\mylen=\skip46
+\myhi=\skip47
+\px=\skip48
+\py=\skip49
+\pyy=\skip50
+\pxx=\skip51
+\backskip=\skip52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip53
+\f@ncyO@elh=\skip54
+\f@ncyO@erh=\skip55
+\f@ncyO@olh=\skip56
+\f@ncyO@orh=\skip57
+\f@ncyO@elf=\skip58
+\f@ncyO@erf=\skip59
+\f@ncyO@olf=\skip60
+\f@ncyO@orf=\skip61
+)
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 63.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 64.
+
+(./pfe.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
+\openout1 = `pfe.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Try loading font information for T1+bch on input line 75.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1bch.fd
+File: t1bch.fd 2004/10/18 font definitions for T1/bch.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 436.7489pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=436.7489pt
+* \textheight=702.78308pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count104
+\scratchdimen=\dimen120
+\scratchbox=\box28
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen121
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks19
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring ON on input line 75.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count110
+)
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
+
+(./pfe.out) (./pfe.out)
+\@outlinefile=\write4
+\openout4 = `pfe.out'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 79.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 79.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 79.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111 \chapter
+              *{Acknowledgements} [1] [2
+
+] (./pfe.toc [3
+
+])
+\tf@toc=\write5
+\openout5 = `pfe.toc'.
+
+ [4] (./pfe.lof
+[5
+
+])
+\tf@lof=\write6
+\openout6 = `pfe.lof'.
+
+ [6] (./pfe.lot)
+\tf@lot=\write7
+\openout7 = `pfe.lot'.
+
+ [7
+
+] [1
+
+]
+LaTeX Font Info:    Try loading font information for OMS+bch on input line 149.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsbch.fd
+File: omsbch.fd 
+)
+LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
+ [2
+
+] [3]
+Chapter 1.
+<tripadvisor.jpg, id=273, 1179.40625pt x 594.22pt>
+File: tripadvisor.jpg Graphic file (type jpg)
+ <use tripadvisor.jpg>
+Package pdftex.def Info: tripadvisor.jpg used on input line 174.
+(pdftex.def)             Requested size: 426.79134pt x 215.03429pt.
+
+<trivago.jpg, id=274, 661.47125pt x 150.5625pt>
+File: trivago.jpg Graphic file (type jpg)
+ <use trivago.jpg>
+Package pdftex.def Info: trivago.jpg used on input line 183.
+(pdftex.def)             Requested size: 426.79134pt x 97.14307pt.
+ [4
+
+ <./tripadvisor.jpg>] <momondo.jpg, id=279, 1268.74pt x 686.565pt>
+File: momondo.jpg Graphic file (type jpg)
+ <use momondo.jpg>
+Package pdftex.def Info: momondo.jpg used on input line 192.
+(pdftex.def)             Requested size: 426.79134pt x 230.95665pt.
+
+[5 <./trivago.jpg> <./momondo.jpg>] <blog.jpg, id=285, 862.22125pt x 602.25pt>
+File: blog.jpg Graphic file (type jpg)
+
+<use blog.jpg>
+Package pdftex.def Info: blog.jpg used on input line 230.
+(pdftex.def)             Requested size: 426.79134pt x 298.10088pt.
+ [6 <./blog.jpg>] [7]
+Chapter 2.
+[8
+
+] <generalUseCase.jpg, id=304, 803.0pt x 812.03375pt>
+File: generalUseCase.jpg Graphic file (type jpg)
+
+<use generalUseCase.jpg>
+Package pdftex.def Info: generalUseCase.jpg used on input line 301.
+(pdftex.def)             Requested size: 426.79134pt x 431.60251pt.
+ [9]
+<registerSequence.jpg, id=312, 747.79375pt x 594.22pt>
+File: registerSequence.jpg Graphic file (type jpg)
+
+<use registerSequence.jpg>
+Package pdftex.def Info: registerSequence.jpg used on input line 316.
+(pdftex.def)             Requested size: 426.79134pt x 339.14413pt.
+ [10 <./generalUseCase.jpg>] [11 <./registerSequence.jpg>] <loginSequence.jpg, 
+id=323, 548.0475pt x 576.1525pt>
+File: loginSequence.jpg Graphic file (type jpg)
+
+<use loginSequence.jpg>
+Package pdftex.def Info: loginSequence.jpg used on input line 344.
+(pdftex.def)             Requested size: 426.79134pt x 448.68503pt.
+ [12] [13 <./loginSequence.jpg>] [14]
+<managerUseCase.jpg, id=336, 742.775pt x 812.03375pt>
+File: managerUseCase.jpg Graphic file (type jpg)
+ <use managerUseCase.jpg>
+Package pdftex.def Info: managerUseCase.jpg used on input line 371.
+(pdftex.def)             Requested size: 426.79134pt x 466.59363pt.
+
+<adminUseCase.jpg, id=337, 683.55376pt x 279.0425pt>
+File: adminUseCase.jpg Graphic file (type jpg)
+ <use adminUseCase.jpg>
+Package pdftex.def Info: adminUseCase.jpg used on input line 381.
+(pdftex.def)             Requested size: 426.79134pt x 174.2308pt.
+
+[15 <./managerUseCase.jpg>] [16 <./adminUseCase.jpg>]
+Chapter 3.
+<physicalArchitecture.png, id=346, 723.70375pt x 673.51625pt>
+File: physicalArchitecture.png Graphic file (type png)
+
+<use physicalArchitecture.png>
+Package pdftex.def Info: physicalArchitecture.png used on input line 391.
+(pdftex.def)             Requested size: 426.79134pt x 397.19643pt.
+ [17
+
+]
+Overfull \vbox (26.642pt too high) has occurred while \output is active []
+
+
+[18 <./physicalArchitecture.png>]
+<logicalArchitecture.png, id=358, 443.6575pt x 875.27pt>
+File: logicalArchitecture.png Graphic file (type png)
+
+<use logicalArchitecture.png>
+Package pdftex.def Info: logicalArchitecture.png used on input line 416.
+(pdftex.def)             Requested size: 341.43306pt x 673.58603pt.
+ [19]
+<modularArchitecture.png, id=365, 678.535pt x 383.4325pt>
+File: modularArchitecture.png Graphic file (type png)
+
+<use modularArchitecture.png>
+Package pdftex.def Info: modularArchitecture.png used on input line 425.
+(pdftex.def)             Requested size: 426.79134pt x 241.17175pt.
+ [20 <./logicalArchitecture.png>]
+<searchAdClass.png, id=371, 649.42625pt x 1595.9625pt>
+File: searchAdClass.png Graphic file (type png)
+ <use searchAdClass.png>
+Package pdftex.def Info: searchAdClass.png used on input line 445.
+(pdftex.def)             Requested size: 284.52756pt x 699.23033pt.
+
+[21 <./modularArchitecture.png>]
+Overfull \vbox (23.46124pt too high) has occurred while \output is active []
+
+
+[22 <./searchAdClass.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+<searchSequence.png, id=381, 692.5875pt x 605.26125pt>
+File: searchSequence.png Graphic file (type png)
+
+<use searchSequence.png>
+Package pdftex.def Info: searchSequence.png used on input line 469.
+(pdftex.def)             Requested size: 426.79134pt x 372.98615pt.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
+
+ []
+
+<viewSequence.png, id=388, 818.05624pt x 874.26625pt>
+File: viewSequence.png Graphic file (type png)
+ <use viewSequence.png>
+Package pdftex.def Info: viewSequence.png used on input line 498.
+(pdftex.def)             Requested size: 426.79134pt x 456.12851pt.
+
+[24 <./searchSequence.png>] [25 <./viewSequence.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
+
+ []
+
+<reviewSequence.png, id=400, 619.31375pt x 452.69125pt>
+File: reviewSequence.png Graphic file (type png)
+
+<use reviewSequence.png>
+Package pdftex.def Info: reviewSequence.png used on input line 527.
+(pdftex.def)             Requested size: 426.79134pt x 311.97739pt.
+ [26] [27 <./reviewSequence.png>]
+<interactionDiagram.png, id=411, 653.44125pt x 753.81625pt>
+File: interactionDiagram.png Graphic file (type png)
+
+<use interactionDiagram.png>
+Package pdftex.def Info: interactionDiagram.png used on input line 558.
+(pdftex.def)             Requested size: 426.79134pt x 492.34424pt.
+ [28]
+Underfull \hbox (badness 10000) in paragraph at lines 565--567
+
+ []
+
+[29 <./interactionDiagram.png>]
+<loginDoc.png, id=422, 793.96625pt x 747.79375pt>
+File: loginDoc.png Graphic file (type png)
+ <use loginDoc.png>
+Package pdftex.def Info: loginDoc.png used on input line 592.
+(pdftex.def)             Requested size: 426.79134pt x 401.97694pt.
+ [30]
+<registerDoc.png, id=428, 797.98125pt x 729.72626pt>
+File: registerDoc.png Graphic file (type png)
+ <use registerDoc.png>
+Package pdftex.def Info: registerDoc.png used on input line 598.
+(pdftex.def)             Requested size: 426.79134pt x 390.28279pt.
+
+[31 <./loginDoc.png>] <logoutDoc.png, id=434, 800.9925pt x 678.535pt>
+File: logoutDoc.png Graphic file (type png)
+
+<use logoutDoc.png>
+Package pdftex.def Info: logoutDoc.png used on input line 604.
+(pdftex.def)             Requested size: 426.79134pt x 361.5476pt.
+ [32 <./registerDoc.png>]
+<searchDoc.png, id=441, 805.0075pt x 440.64626pt>
+File: searchDoc.png Graphic file (type png)
+ <use searchDoc.png>
+Package pdftex.def Info: searchDoc.png used on input line 610.
+(pdftex.def)             Requested size: 426.79134pt x 233.61536pt.
+
+<searchDocResponse.png, id=442, 806.01125pt x 829.0975pt>
+File: searchDocResponse.png Graphic file (type png)
+
+<use searchDocResponse.png>
+Package pdftex.def Info: searchDocResponse.png used on input line 612.
+(pdftex.def)             Requested size: 426.79134pt x 439.01476pt.
+ [33 <./logoutDoc.png> <./searchDoc.png>]
+<detailsDoc.png, id=448, 569.12625pt x 715.67375pt>
+File: detailsDoc.png Graphic file (type png)
+ <use detailsDoc.png>
+Package pdftex.def Info: detailsDoc.png used on input line 619.
+(pdftex.def)             Requested size: 426.79134pt x 536.71031pt.
+
+<detailsDocResponse.png, id=449, 563.10374pt x 347.2975pt> [34 <./searchDocResp
+onse.png>]
+File: detailsDocResponse.png Graphic file (type png)
+ <use detailsDocResponse.png>
+Package pdftex.def Info: detailsDocResponse.png used on input line 621.
+(pdftex.def)             Requested size: 426.79134pt x 263.22813pt.
+ [35 <./detailsDoc.png>]
+<reviewsDoc.png, id=460, 571.13374pt x 709.65125pt>
+File: reviewsDoc.png Graphic file (type png)
+ <use reviewsDoc.png>
+Package pdftex.def Info: reviewsDoc.png used on input line 629.
+(pdftex.def)             Requested size: 426.79134pt x 530.29884pt.
+
+<reviewsDocResponse.png, id=461, 566.115pt x 540.0175pt> [36 <./detailsDocRespo
+nse.png>]
+File: reviewsDocResponse.png Graphic file (type png)
+ <use reviewsDocResponse.png>
+Package pdftex.def Info: reviewsDocResponse.png used on input line 631.
+(pdftex.def)             Requested size: 426.79134pt x 407.1298pt.
+ [37 <./reviewsDoc.png>]
+<addDoc.png, id=471, 558.085pt x 588.1975pt>
+File: addDoc.png Graphic file (type png)
+ <use addDoc.png>
+Package pdftex.def Info: addDoc.png used on input line 637.
+(pdftex.def)             Requested size: 426.79134pt x 449.83499pt.
+
+<addDocResponse.png, id=472, 555.07375pt x 206.7725pt> [38 <./reviewsDocRespons
+e.png>]
+File: addDocResponse.png Graphic file (type png)
+ <use addDocResponse.png>
+Package pdftex.def Info: addDocResponse.png used on input line 639.
+(pdftex.def)             Requested size: 426.79134pt x 158.98814pt.
+ [39 <./addDoc.png> <./addDocResponse.png>]
+Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 652--653
+
+ []
+
+[40
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
+
+ []
+
+
+Overfull \hbox (18.96274pt too wide) in paragraph at lines 690--697
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
+
+ []
+
+[41]
+Overfull \hbox (7.0811pt too wide) in paragraph at lines 717--722
+\T1/bch/m/n/12 I went with NG-INX be-cause it’s bet-ter performance-wise and 
+is tak-ing over Apache. 
+ []
+
+<apache.png, id=494, 1065.9825pt x 601.24625pt>
+File: apache.png Graphic file (type png)
+ <use apache.png>
+Package pdftex.def Info: apache.png used on input line 725.
+(pdftex.def)             Requested size: 426.79134pt x 240.72359pt.
+ [42 <./apache.png>] <landing.jpg, id=503, 1367.1075pt x 678.535pt>
+File: landing.jpg Graphic file (type jpg)
+ <use landing.jpg>
+Package pdftex.def Info: landing.jpg used on input line 760.
+(pdftex.def)             Requested size: 426.79134pt x 211.82423pt.
+ [43 <./landing.jpg>] <search.jpg, id=513, 1367.1075pt x 677.53125pt>
+File: search.jpg Graphic file (type jpg)
+ <use search.jpg>
+Package pdftex.def Info: search.jpg used on input line 774.
+(pdftex.def)             Requested size: 426.79134pt x 211.51088pt.
+
+<map.jpg, id=514, 1367.1075pt x 674.52pt>
+File: map.jpg Graphic file (type jpg)
+ <use map.jpg>
+Package pdftex.def Info: map.jpg used on input line 788.
+(pdftex.def)             Requested size: 426.79134pt x 210.57085pt.
+ [44 <./search.jpg> <./map.jpg>] <details.jpg, id=519, 1366.10374pt x 678.535pt
+>
+File: details.jpg Graphic file (type jpg)
+ <use details.jpg>
+Package pdftex.def Info: details.jpg used on input line 801.
+(pdftex.def)             Requested size: 426.79134pt x 211.97954pt.
+
+<createReview.jpg, id=520, 1366.10374pt x 675.52374pt>
+File: createReview.jpg Graphic file (type jpg)
+ <use createReview.jpg>
+Package pdftex.def Info: createReview.jpg used on input line 815.
+(pdftex.def)             Requested size: 426.79134pt x 211.0388pt.
+
+[45 <./details.jpg> <./createReview.jpg>]
+<thanks.jpg, id=525, 1368.11125pt x 679.53876pt>
+File: thanks.jpg Graphic file (type jpg)
+ <use thanks.jpg>
+Package pdftex.def Info: thanks.jpg used on input line 829.
+(pdftex.def)             Requested size: 426.79134pt x 211.98206pt.
+
+<review.jpg, id=526, 1342.01375pt x 652.4375pt>
+File: review.jpg Graphic file (type jpg)
+ <use review.jpg>
+Package pdftex.def Info: review.jpg used on input line 840.
+(pdftex.def)             Requested size: 426.79134pt x 207.49005pt.
+
+<apilogin.jpg, id=527, 1065.9825pt x 437.635pt>
+File: apilogin.jpg Graphic file (type jpg)
+ <use apilogin.jpg>
+Package pdftex.def Info: apilogin.jpg used on input line 854.
+(pdftex.def)             Requested size: 426.79134pt x 175.21783pt.
+ [46 <./thanks.jpg> <./review.jpg>] <apiloginfail.jpg, id=532, 1065.9825pt x 43
+6.63126pt>
+File: apiloginfail.jpg Graphic file (type jpg)
+
+<use apiloginfail.jpg>
+Package pdftex.def Info: apiloginfail.jpg used on input line 864.
+(pdftex.def)             Requested size: 426.79134pt x 174.81596pt.
+ <apisearch.jpg, id=533, 1160.335pt x 628.3475pt>
+File: apisearch.jpg Graphic file (type jpg)
+
+<use apisearch.jpg>
+Package pdftex.def Info: apisearch.jpg used on input line 876.
+(pdftex.def)             Requested size: 426.79134pt x 231.11388pt.
+ [47 <./apilogin.jpg> <./apiloginfail.jpg>]
+<apidetails.jpg, id=539, 1165.35374pt x 638.385pt>
+File: apidetails.jpg Graphic file (type jpg)
+ <use apidetails.jpg>
+Package pdftex.def Info: apidetails.jpg used on input line 894.
+(pdftex.def)             Requested size: 426.79134pt x 233.79272pt.
+
+[48 <./apisearch.jpg> <./apidetails.jpg>]
+<apilogout.jpg, id=544, 1163.34625pt x 546.04pt>
+File: apilogout.jpg Graphic file (type jpg)
+ <use apilogout.jpg>
+Package pdftex.def Info: apilogout.jpg used on input line 909.
+(pdftex.def)             Requested size: 426.79134pt x 200.3236pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--919
+
+ []
+
+<ec21.jpg, id=545, 1127.21124pt x 461.725pt>
+File: ec21.jpg Graphic file (type jpg)
+ <use ec21.jpg>
+Package pdftex.def Info: ec21.jpg used on input line 924.
+(pdftex.def)             Requested size: 426.79134pt x 174.82324pt.
+
+<ec22.jpg, id=546, 1113.15875pt x 463.7325pt>
+File: ec22.jpg Graphic file (type jpg)
+ <use ec22.jpg>
+Package pdftex.def Info: ec22.jpg used on input line 931.
+(pdftex.def)             Requested size: 426.79134pt x 177.79811pt.
+ [49 <./apilogout.jpg> <./ec21.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 940--941
+
+ []
+
+<rds.jpg, id=552, 1068.99374pt x 414.54875pt>
+File: rds.jpg Graphic file (type jpg)
+ <use rds.jpg>
+Package pdftex.def Info: rds.jpg used on input line 945.
+(pdftex.def)             Requested size: 426.79134pt x 165.5066pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 955--956
+
+ []
+
+<nginx.jpg, id=553, 644.4075pt x 512.91624pt>
+File: nginx.jpg Graphic file (type jpg)
+ <use nginx.jpg>
+Package pdftex.def Info: nginx.jpg used on input line 961.
+(pdftex.def)             Requested size: 426.79134pt x 339.7154pt.
+ [50 <./ec22.jpg> <./rds.jpg>] <unittests.jpg, id=560, 770.88pt x 1371.1225pt>
+File: unittests.jpg Graphic file (type jpg)
+
+<use unittests.jpg>
+Package pdftex.def Info: unittests.jpg used on input line 980.
+(pdftex.def)             Requested size: 426.79134pt x 759.09906pt.
+ [51 <./nginx.jpg>]
+Overfull \vbox (83.32997pt too high) has occurred while \output is active []
+
+
+[52 <./unittests.jpg>] <speed1.jpg, id=570, 1347.0325pt x 562.1pt>
+File: speed1.jpg Graphic file (type jpg)
+
+<use speed1.jpg>
+Package pdftex.def Info: speed1.jpg used on input line 993.
+(pdftex.def)             Requested size: 426.79134pt x 178.09167pt.
+ <speed2.jpg, id=571, 1334.9875pt x 451.6875pt>
+File: speed2.jpg Graphic file (type jpg)
+
+<use speed2.jpg>
+Package pdftex.def Info: speed2.jpg used on input line 1001.
+(pdftex.def)             Requested size: 426.79134pt x 144.39821pt.
+ <fbtest.jpg, id=572, 1342.01375pt x 448.67625pt>
+File: fbtest.jpg Graphic file (type jpg)
+
+<use fbtest.jpg>
+Package pdftex.def Info: fbtest.jpg used on input line 1012.
+(pdftex.def)             Requested size: 426.79134pt x 142.68932pt.
+ [53 <./speed1.jpg> <./speed2.jpg> <./fbtest.jpg>]
+<blaze.jpg, id=578, 986.68625pt x 471.7625pt>
+File: blaze.jpg Graphic file (type jpg)
+ <use blaze.jpg>
+Package pdftex.def Info: blaze.jpg used on input line 1025.
+(pdftex.def)             Requested size: 426.79134pt x 204.06326pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1058
+
+ []
+
+[54 <./blaze.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1621.
+ [55]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1621.
+ (./pfe.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1621.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1621.
+
+Package rerunfilecheck Info: File `pfe.out' has not changed.
+(rerunfilecheck)             Checksum: C9D75FF66E9CB8246ABBBC5524D1C75B;3748.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1621.
+ ) 
+Here is how much of TeX's memory you used:
+ 10197 strings out of 494910
+ 142026 string characters out of 6179837
+ 212281 words of memory out of 5000000
+ 13168 multiletter control sequences out of 15000+600000
+ 45234 words of font info for 47 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 29i,14n,43p,573b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb>
+Output written on pfe.pdf (63 pages, 3029595 bytes).
+PDF statistics:
+ 643 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 451 words of extra memory for PDF output out of 10000 (max. 10000000)
+

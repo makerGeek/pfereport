@@ -1,0 +1,59 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}State of the art}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Formalism}{7}{section.1.1}
+\contentsline {chapter}{\numberline {2}Specifications}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Actors}{8}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Internal actors}{8}{subsection.2.1.1}
+\contentsline {paragraph}{User}{8}{section*.4}
+\contentsline {paragraph}{Member}{8}{section*.5}
+\contentsline {paragraph}{Manager}{8}{section*.6}
+\contentsline {paragraph}{Admin}{8}{section*.7}
+\contentsline {subsection}{\numberline {2.1.2}External actors}{9}{subsection.2.1.2}
+\contentsline {paragraph}{Google places service}{9}{section*.8}
+\contentsline {paragraph}{Google maps service}{9}{section*.9}
+\contentsline {paragraph}{Gmail service}{9}{section*.10}
+\contentsline {section}{\numberline {2.2}Functionalities' overview}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Register}{11}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Login}{13}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {3}Design \& architecture}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Physical architecture}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Logical architecture}{19}{section.3.2}
+\contentsline {paragraph}{3 Tiers}{19}{section*.11}
+\contentsline {paragraph}{MVC}{19}{section*.12}
+\contentsline {section}{\numberline {3.3}Modular architecture}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}Modules}{21}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}searchAdModule}{21}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}OPR app module}{23}{subsection.3.4.2}
+\contentsline {paragraph}{Search}{23}{section*.13}
+\contentsline {paragraph}{View details}{25}{section*.14}
+\contentsline {paragraph}{Review a place}{26}{section*.15}
+\contentsline {subsection}{\numberline {3.4.3}REST API module}{29}{subsection.3.4.3}
+\contentsline {paragraph}{Login}{30}{section*.16}
+\contentsline {paragraph}{Register}{31}{section*.17}
+\contentsline {paragraph}{Logout}{32}{section*.18}
+\contentsline {paragraph}{Search for places}{33}{section*.19}
+\contentsline {paragraph}{Get place details}{34}{section*.20}
+\contentsline {paragraph}{Get reviews}{36}{section*.21}
+\contentsline {paragraph}{Add review}{38}{section*.22}
+\contentsline {chapter}{\numberline {4}Implementation}{40}{chapter.4}
+\contentsline {section}{\numberline {4.1}Technology choices}{40}{section.4.1}
+\contentsline {paragraph}{Frontend}{40}{section*.23}
+\contentsline {paragraph}{Backend}{40}{section*.24}
+\contentsline {paragraph}{Database}{41}{section*.25}
+\contentsline {paragraph}{Server}{42}{section*.26}
+\contentsline {paragraph}{Web Server}{42}{section*.27}
+\contentsline {paragraph}{Python Application server}{42}{section*.28}
+\contentsline {paragraph}{Additional Frameworks/libraries}{43}{section*.29}
+\contentsline {subparagraph}{Django-rest-framework}{43}{section*.30}
+\contentsline {subparagraph}{Django-allauth}{43}{section*.31}
+\contentsline {subparagraph}{Django-rest-auth}{43}{section*.32}
+\contentsline {subparagraph}{Django-review}{43}{section*.33}
+\contentsline {section}{\numberline {4.2}Screenshots}{43}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Web interface}{43}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}API}{47}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Deployment}{49}{section.4.3}
+\contentsline {paragraph}{AWS EC2 Security setup}{49}{section*.34}
+\contentsline {paragraph}{AWS RDS setup}{50}{section*.35}
+\contentsline {paragraph}{NGINX setup}{50}{section*.36}
+\contentsline {section}{\numberline {4.4}Testing}{51}{section.4.4}
+\contentsline {section}{\numberline {4.5}Work environment}{54}{section.4.5}
