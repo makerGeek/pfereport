@@ -73,24 +73,32 @@
 \makeatother
 
 \begin{document}
-\noindent \begin{titlepage}
+\noindent 
+\begin{titlepage}
 \begin{center}
 % Upper part of the page
-\begin{minipage}{0.4\textwidth}   Réf : xx/xx  \end{minipage}
-\begin{minipage}{0.4\textwidth} \begin{flushright} A.U. : 2014-2015 \end{flushright}\end{minipage}
+\begin{minipage}{0.4\textwidth}    \end{minipage}
+\begin{minipage}{0.4\textwidth} \begin{flushright} A.U. : 2016-2017 \end{flushright}\end{minipage}
 \rule[0.5ex]{1\columnwidth}{1pt}\\[0.5cm]
-\textsc{\large{Université de Sousse}}\\
-\textsc{\large{Ecole Nationale d'Ingénieurs de Sousse}}\\
+\textsc{\large{University of Sousse}}\\
+\textsc{\large{National School of Engineering of Sousse}}\\
 %\includegraphics[width=0.3\textwidth]{logo.png}\\[-0.5cm]
-\Large{Rapport de Projet de Fin d'Etudes}\\[0.5cm]
-\normalsize{Présenté en vue de l'obtention du diplôme d'}\\
-\Large{ \bfseries{Ingénieur en Génie .....}}\\
-\normalsize{Option ...}\\[0.6cm]
+\Large{Graduation project report}\\[0.5cm]
+\Large{ \bfseries{Applied Computer Engineering}}\\
+\normalsize{Option: Distributed Systems}\\
+~\\[0.6cm]
 \rule[0.5ex]{1\columnwidth}{1pt}\\[0.5cm]
-{ \huge \bfseries Conception et développement d'une application }\\[0.5cm]
+{ \huge \bfseries Developing a ratings and reviews web app for sustainable tourism }\\[0.5cm]
 \rule[0.5ex]{1\columnwidth}{1pt}\\[2cm]
 % Author and supervisor
-\begin{minipage}{0.4\textwidth} \begin{flushleft} \large \emph{Réalisé par:}\\ Prénom~\textsc{Nom} \end{flushleft} \end{minipage} \begin{minipage}{0.5\textwidth} \begin{flushright} \large \emph{Encadré par:} \\  Mr.~Prénom~\textsc{Nom} \end{flushright} \end{minipage}
+\center By: Moetaz Bellah Ben Charrada\\~\\
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+President	 	: 	Mr. Imed Bennour, ENISO\\
+Member 			: 	Mr. Naoufel Khayati, ENISO\\
+Company supervisor	:	 Mr. Richard Lindberg, One Planet Rating\\
+University supervisor 	:	Mr. Taha Ben Salah, ENISO\\
+
 \vfill
 % Bottom of the page 
 \end{center}
@@ -167,14 +175,14 @@ The third chapter covers the development and deployment aspects of the project.
 
 
 Many online tourism platforms exist today, we can consider these platforms as "indirect competitors" because they offer an alternative functionality to OPR, but what makes the most difference is the target market.
-Some of these major platforms are Tripadvisor (fig.\ref{fig:tripadvisor}), Trivago (fig.\ref{fig:trivago}) and Momondo(fig.\ref{fig:momondo}).
+Some of these major platforms are Tripadvisor (fig.\ref{fig:tripadvisor}), Trivago (fig.\ref{fig:trivago}), Momondo(fig.\ref{fig:momondo}) and Kayak (fig.\ref{fig:kayak}).
 As shown in the following screenshots, all of those platforms focus on the general ratings and the price.
 They offer very similar functionalities but in different layouts.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{tripadvisor.jpg}
-\caption{screenshot of Tripadvisor}
+\caption{Screenshot of Tripadvisor}
 \label{fig:tripadvisor}
 \end{figure}
 
@@ -184,23 +192,31 @@ Tripadvisor, which is the world leader in the tourism sector, provides hotel boo
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{trivago.jpg}
-\caption{screenshot of search results for Trivago}
+\caption{Screenshot of search results for Trivago}
 \label{fig:trivago}
 \end{figure}
 
-In contrast, the Germany based company, Trivago, only focuses on hotels. Trivago is the leader hotel search engine in Germany\cite{PAOLO}. Though trivago only lists hotels, it is owned by Expedia, which owns and operates more than 200 websites that offer diverse services in the tourism and travel sectors.
+In contrast, the Germany based company, Trivago, only focuses on hotels. Trivago is the leader hotel search engine in Germany\cite{PAOLO}. Though Trivago only lists hotels, it is owned by Expedia, which owns and operates more than 200 websites that offer diverse services in the tourism and travel sectors.
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{momondo.jpg}
-\caption{screenshot of Momondo}
+\caption{Screenshot of Momondo}
 \label{fig:momondo}
 \end{figure}
 
 Momondo is also a similar service which, in addition to listing hotels, also provides flight booking and car rental services. Another interesting thing about Momondo is that it is based in Scandinavia, and this makes of it a local competitor.
 
-Another thing to note is that most of these "indirect competitors" are booking websites while OPR is not. OPR's goal is to promote the sustainable places and discourage the unsustainable ones.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{kayak.png}
+\caption{Screenshot of Kayak}
+\label{fig:kayak}
+\end{figure}
+Kayak is also one of the most popular travel search engines. It is owned by The Priceline Group which runs multiple tourism related services. Kayak offers multiple services like booking flights, hotels and cars.\\
+
 
 
 
@@ -209,33 +225,35 @@ Another thing to note is that most of these "indirect competitors" are booking w
 The following table shows more in detail the difference between OPR and the above-mentioned competitors:
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|l|l|l|}
+\begin{tabular}{|l|l|l|l|l|l|}
 \hline
-Funtionality                       & Tripadvisor & Trivago & Momondo & OPR \\ \hline
-Search hotels                      & YES         & YES     & YES     & YES \\ \hline
-Search restaurants                 & YES         & NO      & NO      & YES \\ \hline
-Search activities and other places & YES         & NO      & NO      & YES \\ \hline
-Search for flights                 & YES         & NO      & YES     & NO  \\ \hline
-Search for flights                 & NO          & NO      & YES     & NO  \\ \hline
-Booking service                    & YES         & YES     & YES     & NO  \\ \hline
-General ratings                    & YES         & YES     & YES     & YES \\ \hline
-Sustainability ratings              & NO          & NO      & NO      & YES \\ \hline
+Funtionality                       & Tripadvisor & Trivago & Momondo& Kayak & OPR \\ \hline
+Search hotels                      & YES         & YES     & YES    & YES & YES \\ \hline
+Search restaurants                 & YES         & NO      & NO     & NO & YES \\ \hline
+Search activities and other places & YES         & NO      & NO     & YES & YES \\ \hline
+Search for flights                 & YES         & NO      & YES    & YES  & NO  \\ \hline
+Booking service                    & YES         & YES     & YES    & YES  & NO  \\ \hline
+General ratings                    & YES         & YES     & YES    & YES & YES \\ \hline
+Sustainability ratings              & NO          & NO      & NO     & NO & YES \\ \hline
 \end{tabular}
-\caption{comparison of tourism platforms}
+\caption{Comparison of tourism platforms}
 \label{my-label}
 \end{table}
 
 
-
+It is worth noting that most of these "indirect competitors" are booking websites while OPR is not. OPR's goal is to promote the sustainable places and discourage the unsustainable ones.
 
-Another category of competitors includes magazines, blogs and expert websites (fig.\ref{fig:blog}) that promote some specific sustainable places. Those are also indirect competitors because they rely on experts' advice on their reviews which tend to be not very trustworthy. OPR's content will be completely user generated, because most people believe more in reviews created by peers and want to be part of the content creation. OPR will only be the intermediary between content creators and content consumers, and will not participate in content creation.
+
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{blog.jpg}
-\caption{example of an expert blog}
+\caption{Example of an expert blog}
 \label{fig:blog}
 \end{figure}
+
+Another category of competitors includes magazines, blogs and expert websites (fig.\ref{fig:blog}) that promote some specific sustainable places. Those are also indirect competitors because they rely on experts' advice on their reviews which tend to be not very trustworthy. OPR's content will be completely user generated, because most people believe more in reviews created by peers and want to be part of the content creation. OPR will only be the intermediary between content creators and content consumers, and will not participate in content creation.\\
+In short, OPR's main goal is to generate sustainability-focused reviews created by travelers and normal internet users.
 
 
 \section{Formalism}
@@ -305,7 +323,7 @@ API to supply the mobile app with the data.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{generalUseCase.jpg}
-\caption{general usecase diagram}
+\caption{General usecase diagram}
 \label{fig:generalusecase}
 \end{figure}
 
@@ -321,7 +339,7 @@ The member can then login to his profile and becomes able to rate and review pla
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{registerSequence.jpg}
-\caption{registration sequence diagram}
+\caption{Registration sequence diagram}
 \label{fig:registration}
 \end{figure}
 
@@ -352,7 +370,7 @@ Every user can register (fig.\ref{fig:registration}) to OPR and becomes a member
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{loginSequence.jpg}
-\caption{login sequence diagram}
+\caption{Login sequence diagram}
 \label{fig:login}
 \end{figure}
 
@@ -371,7 +389,7 @@ Story             & \begin{tabular}[c]{@{}l@{}}1. The user enters his username\\
 Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\ mobile app instead of a browser.\\ (Through the REST API)\end{tabular} \\ \hline
 Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user enters incorrect credentials, he will\\ be prompted to try to login again.\end{tabular}             \\ \hline
 \end{tabular}
-\caption{login description}
+\caption{Login description}
 \label{my-label}
 \end{table}
 
@@ -385,7 +403,7 @@ Another basic functionality of the app is letting users log in (fig.\ref{fig:log
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{searchSpec.png}
-\caption{search sequence diagram}
+\caption{Search sequence diagram}
 \label{fig:search}
 \end{figure}
 
@@ -404,7 +422,7 @@ Post-conditions   & \begin{tabular}[c]{@{}l@{}}The user finds places related to 
 Story             & \begin{tabular}[c]{@{}l@{}}1. The user enters keywords related \\ to the place he's looking for\\ 2. The user selects the type of place\\ 3. The user submits the form\end{tabular} \\ \hline
 Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\mobile app instead of a browser.\\ (Through the REST API)\end{tabular}                                          \\ \hline
 \end{tabular}
-\caption{search description}
+\caption{Search description}
 \label{my-label}
 \end{table}
 
@@ -416,7 +434,7 @@ The search functionality (fig.\ref{fig:search}) is a basic but essential functio
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{viewSpec.png}
-\caption{view details sequence diagram}
+\caption{View details sequence diagram}
 \label{fig:details}
 \end{figure}
 
@@ -448,7 +466,7 @@ After searching for a place, the user will select one of the places shown in the
 \begin{figure}[H]
 \centering
 \includegraphics[width=13cm]{reviewSpec.png}
-\caption{review a place sequence diagram}
+\caption{Review a place sequence diagram}
 \label{fig:review}
 \end{figure}
 
@@ -469,7 +487,7 @@ Story             & \begin{tabular}[c]{@{}l@{}}1.The user enters his review data
 Alternative story & \begin{tabular}[c]{@{}l@{}}The functionality is accessed through the\\ mobile app instead of a browser.\\ (Through the REST API)\end{tabular}                                                            \\ \hline
 Exceptional story & \begin{tabular}[c]{@{}l@{}}If the user tries to post a review while\\  he's not authenticated. He is \\ redirected to the login page.\end{tabular}                                                       \\ \hline
 \end{tabular}
-\caption{review a place description}
+\caption{Review a place description}
 \label{my-label}
 \end{table}
 
@@ -478,7 +496,7 @@ After a user finds the place he is looking for, he can review (fig.\ref{fig:revi
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{managerUseCase.jpg}
-\caption{manager usecase diagram}
+\caption{Manager usecase diagram}
 \label{fig:manager}
 \end{figure}
 
@@ -489,7 +507,7 @@ ads, reviews and rating-categories.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{adminUseCase.jpg}
-\caption{admin usecase diagram}
+\caption{Admin usecase diagram}
 \label{fig:admin}
 \end{figure}
 
@@ -521,7 +539,7 @@ The architecture (fig.\ref{fig:logicalarch}) used is a mix of MVC + 3 Tiers.
 
 \paragraph{3 Tiers}
 ~\\
-3 Tiers was used to separate the data, logic and the client from each other. Each of those three
+3 Tiers was used to separate the data, logic and the presentation from each other. Each of those three
 tiers is a separate, standalone entity. This provides more security, because if one of the tiers
 gets attacked the other tiers remain intact. This also provides some sort of interoperability
 because we can change one of the tiers without touching the other ones.
@@ -536,11 +554,11 @@ coupling, which also offers interoperability as explained in the example of 3 Ti
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{logicalArchitecture.png}
+\includegraphics[width=10cm]{logicalArchitecture.png}
 \caption{The app's logical architecture}
 \label{fig:logicalarch}
 \end{figure}
-
+Django uses the MVT (Model View Template) which is very similar to the MVC model, but with differences in the terminology. So the View block acts as the controller, it is where all the logic lives. The Template and Template tags blocks act as the views, that is where the formatting and styling are.
 
 \section{Modular architecture}
 
@@ -558,7 +576,7 @@ OPR App, REST API and searchAd.
 
 \section{Modules}
 
-\subsection{searchAdModule}
+\subsection{SearchAdModule}
 This is a standalone library that offers the possibility to create and show ads either from a local
 source (the user's DB) or from an external source (like Google Adsense).
 
@@ -567,11 +585,11 @@ source (the user's DB) or from an external source (like Google Adsense).
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{searchAdClass.png}
-\caption{searchAd class diagram}
+\caption{SearchAd class diagram}
 \label{fig:searchad}
 \end{figure}
 
-The searchAd module (fig.\ref{fig:searchad}) is designed following the MVC architecture.
+The SearchAd module (fig.\ref{fig:searchad}) is designed following the MVC architecture.
 The AdController is the entrypoint for the module, it allows the user to get an ad based on a
 keyword. It also contains a private method resolveView() that shows the ad in html format to be
 directly injected in the view.\\
@@ -584,23 +602,29 @@ LocalAd. The LocalAd model contains a title, content, target\_url and image\_url
 
 
 \subsection{OPR app module}
-this is the main app, it contains the business logic for searching and rating places. It is also
-where most of the other libraries are integrated and linked together.
+This is the main app, it contains the business logic for searching and rating places. It is also
+where most of the other libraries are integrated and linked together (fig.\ref{fig:oprapp}).
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{oprappclass.png}
+\caption{OPR app class diagram}
+\label{fig:oprapp}
+\end{figure}
+\newpage
 \paragraph{Search}~\\
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{searchSequence.png}
-\caption{search sequence diagram}
+\caption{Search sequence diagram}
 \label{fig:searchseq}
 \end{figure}
 
 When the user submits a keyword to search for, the search view (fig.\ref{fig:searchseq}) which is the intermediary between the user and the business logic gets the keyword and triggers the controller to process it. The search controller pulls the search results from Google places API and returns them to the view. The view also triggers the reviews controller to get the average ratings of the relevant places. The page returned to the user contains the places with their average ratings.
 
-
+\newpage
 \paragraph{View details}~\\
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{viewSequence.png}
@@ -610,13 +634,12 @@ When the user submits a keyword to search for, the search view (fig.\ref{fig:sea
 
 When a user requests the details of a place (fig.\ref{fig:viewseq}), the place view triggers the place controller to get the details. Again the place controller pulls the data from Google places and returns them to the view. The view also gets the reviews from the reviews controller, and embeds the urls to the photo in the view. The view returned to the user contains the details, reviews and photo url of the place. Optionally the user may also want to see the map which is requested directly from Google maps by the browser.
 
-
+\newpage
 \paragraph{Review a place}~\\
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{reviewSequence.png}
-\caption{review a place sequence diagram}
+\caption{Review a place sequence diagram}
 \label{fig:reviewseq}
 \end{figure}
 
@@ -629,7 +652,7 @@ following interaction diagram (fig.\ref{fig:interaction})
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{interactionDiagram.png}
-\caption{interaction overview diagram}
+\caption{Interaction overview diagram}
 \label{fig:interaction}
 \end{figure}
 
@@ -659,18 +682,20 @@ posting reviews, because it contains the authentication token, which is critical
 contains the review's text, whose size might exceed the GET data size limit.\\
 As for the other functionalities we used HTTP GET methods. One of the benefits of using GET
 here is that you can share and bookmark links easier when the data is included in the URL.
-
+\newpage
 \paragraph{Login}~\\
 Authenticate the user with the system and obtain the auth\_token
 
 \includegraphics[width=15cm]{loginDoc.png}
 
+\newpage
 
 \paragraph{Register}~\\
 Create and add a new user to the app
 
 \includegraphics[width=15cm]{registerDoc.png}
 
+\newpage
 
 \paragraph{Logout}~\\
 Log out the current user
@@ -685,6 +710,7 @@ Search for hotels, restaurants or activities
 
 \includegraphics[width=15cm]{searchDocResponse.png}
 
+\newpage
 
 
 \paragraph{Get place details}~\\
@@ -695,6 +721,7 @@ Get the details of a specific place using its place\_id
 \includegraphics[width=15cm]{detailsDocResponse.png}
 
 
+\newpage
 
 \paragraph{Get reviews}~\\
 Get the reviews of a place using its place\_id
@@ -703,6 +730,7 @@ Get the reviews of a place using its place\_id
 
 \includegraphics[width=15cm]{reviewsDocResponse.png}
 
+\newpage
 
 \paragraph{Add review}~\\
 Add a new review to a place
@@ -722,7 +750,6 @@ I also used twitter's Bootstrap in order to use its prebuilt components like the
 
 
 \paragraph{Backend}~\\
-
 The programming language used is Python, with the framework Django.\\
 After careful thought I went with this choice because of several factors, including but not limited
 to:
@@ -751,7 +778,6 @@ in little time. Timing is a crucial part of this project, especially in this pha
 
 
 \paragraph{Database}~\\
-
 While comparing multiple databases, I ended up with two of the most popular databases to
 compare between: MySQL and PostgreSQL.\\
 The following table shows some differences of how things work in MySQL vs. in PostgreSQL.
@@ -775,7 +801,6 @@ it is well supported by Django.\\
 This choice is someway influenced by the previous choice.
 
 \paragraph{Server}~\\
-
 I used an Ubuntu 16.04 LTS Virtual Private Server for hosting the project.
 Ubuntu has a great community and support, is reliable, and the Long Term Support (LTS)
 version remains maintained for 5 years, so we won't have to worry about upgrading the system
@@ -802,28 +827,28 @@ I went with NGINX because it's better performance-wise and is becoming more and 
 \paragraph{Python Application server}~\\
 I used Gunicorn as application server because it is the most popular and the best supported
 server.
+\newpage
 \paragraph{Additional Frameworks/libraries}
 
 \subparagraph{Django-rest-framework}~\\
 Django-rest-framework (DRF) supports the creation of REST APIs on top of Django.
-This framework is django's standard tool to create REST APIs.
+This framework is django's standard tool to create REST APIs. It also includes a web browsable API to facilitate the development. The framework has extensive documentation and is used by multiple huge companies like RedHat and Heroku.
 
 \subparagraph{Django-allauth}~\\
 This is a library addressing authentication, registration, account management and social
-authentication
+authentication. The library allows authentication using multiple services including social login with facebook, twitter and lots of other services. The library can be customized to send messages for email verifications.
 
 
 
 \subparagraph{Django-rest-auth}~\\
-This library makes the previously mentioned library (allauth) accessible via REST API
+This library makes the previously mentioned library (allauth) accessible via REST API. The library is backed by the company Tivix. The functionalities offered by this library are: registration and activation, login/logout, password change, password reset and social authentication.
 
 
 
 
 \subparagraph{Django-review}~\\
 This is a library facilitating the creation of reviews and ratings. I found multiple libraries offering
-reviews-related functionalities. I chose this library because it's kept updated and is backed by a
-company.
+reviews-related functionalities. I chose this library because it's kept updated and is backed by the company bitlabstudio.	
 
 \section{Screenshots}
 \subsection{Web interface}
@@ -831,7 +856,7 @@ company.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{landing.jpg}
-\caption{the landing screen of the app}
+\caption{The landing screen of the app}
 \label{screen:landing}
 \end{figure}
 
@@ -846,7 +871,7 @@ corner, but these functionalities haven't been implemented yet.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{search.jpg}
-\caption{search screen}
+\caption{Search screen}
 \label{screen:search}
 \end{figure}
 
@@ -861,7 +886,7 @@ average score from the reviews posted on OPR.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{map.jpg}
-\caption{showing the location of a place on the map}
+\caption{Showing the location of a place on the map}
 \label{screen:map}
 \end{figure}
 
@@ -875,7 +900,7 @@ OPR's site.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{details.jpg}
-\caption{place details}
+\caption{Place details}
 \label{screen:details}
 \end{figure}
 
@@ -1023,10 +1048,8 @@ A problem I encountered during the deployment is to get the server to reply for 
 In the beginning I was even unable to ssh into the VPS. It turned out, for security reasons AWS
 blocks all incoming\cite{EC2DOC} (fig.\ref{ec2:inbound}) and outgoing (fig.\ref{ec2:outbound}) traffic.
 
-
+\newpage
 \paragraph{AWS RDS setup}~\\
-
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{rds.jpg}
@@ -1041,8 +1064,6 @@ First I hosted a local db for testing purposes then I moved the same DB to RDS.
 
 
 \paragraph{NGINX setup}~\\
-
-
 NGINX is the entrypoint to the app. It's also the web server used to serve the app. NGINX was
 setup to listen on port 8000 and to serve the static files like the images and css ( practically
 every url pointing to /static). In case of non static files, NGINX redirects the request to gunicorn
@@ -1059,7 +1080,7 @@ after some changes. This provides better quality and saves more time.
 \begin{figure}[H]
 \centering
 \includegraphics[width=13cm]{unittests.jpg}
-\caption{unit tests}
+\caption{Unit tests}
 \label{unittest}
 \end{figure}
 
@@ -1073,7 +1094,7 @@ got some amazing results (fig. \ref{speed1} and fig.\ref{speed2})
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{speed1.jpg}
-\caption{landing page speed test}
+\caption{Landing page speed test}
 \label{speed1}
 \end{figure}
 
@@ -1082,7 +1103,7 @@ got some amazing results (fig. \ref{speed1} and fig.\ref{speed2})
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{speed2.jpg}
-\caption{details page speed test}
+\caption{Details page speed test}
 \label{speed2}
 \end{figure}
 
@@ -1095,7 +1116,7 @@ Below (fig.\ref{speed3}) is included the result for the same test applied to fac
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{fbtest.jpg}
-\caption{facebook page speed test}
+\caption{Facebook page speed test}
 \label{speed3}
 \end{figure}
 
@@ -1109,7 +1130,7 @@ simultaneous virtual users and the results were good enough.
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{blaze.jpg}
-\caption{concurrent users test}
+\caption{Concurrent users test}
 \label{blaze}
 \end{figure}
 

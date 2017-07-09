@@ -2,7 +2,7 @@
 \contentsline {chapter}{\numberline {1}Context}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}State of the art}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Formalism}{6}{section.1.3}
+\contentsline {section}{\numberline {1.3}Formalism}{7}{section.1.3}
 \contentsline {chapter}{\numberline {2}Specifications}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}Actors}{8}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Internal actors}{8}{subsection.2.1.1}
@@ -27,25 +27,25 @@
 \contentsline {paragraph}{MVC}{25}{section*.12}
 \contentsline {section}{\numberline {3.3}Modular architecture}{27}{section.3.3}
 \contentsline {section}{\numberline {3.4}Modules}{27}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}searchAdModule}{27}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}SearchAdModule}{27}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}OPR app module}{29}{subsection.3.4.2}
-\contentsline {paragraph}{Search}{29}{section*.13}
-\contentsline {paragraph}{View details}{30}{section*.14}
-\contentsline {paragraph}{Review a place}{31}{section*.15}
+\contentsline {paragraph}{Search}{30}{section*.13}
+\contentsline {paragraph}{View details}{31}{section*.14}
+\contentsline {paragraph}{Review a place}{32}{section*.15}
 \contentsline {subsection}{\numberline {3.4.3}REST API module}{33}{subsection.3.4.3}
-\contentsline {paragraph}{Login}{34}{section*.16}
-\contentsline {paragraph}{Register}{35}{section*.17}
-\contentsline {paragraph}{Logout}{36}{section*.18}
+\contentsline {paragraph}{Login}{35}{section*.16}
+\contentsline {paragraph}{Register}{36}{section*.17}
+\contentsline {paragraph}{Logout}{37}{section*.18}
 \contentsline {paragraph}{Search for places}{37}{section*.19}
-\contentsline {paragraph}{Get place details}{38}{section*.20}
-\contentsline {paragraph}{Get reviews}{40}{section*.21}
-\contentsline {paragraph}{Add review}{42}{section*.22}
+\contentsline {paragraph}{Get place details}{39}{section*.20}
+\contentsline {paragraph}{Get reviews}{41}{section*.21}
+\contentsline {paragraph}{Add review}{43}{section*.22}
 \contentsline {chapter}{\numberline {4}Implementation}{44}{chapter.4}
 \contentsline {section}{\numberline {4.1}Technology choices}{44}{section.4.1}
 \contentsline {paragraph}{Frontend}{44}{section*.23}
 \contentsline {paragraph}{Backend}{44}{section*.24}
 \contentsline {paragraph}{Database}{45}{section*.25}
-\contentsline {paragraph}{Server}{46}{section*.26}
+\contentsline {paragraph}{Server}{45}{section*.26}
 \contentsline {paragraph}{Web Server}{46}{section*.27}
 \contentsline {paragraph}{Python Application server}{46}{section*.28}
 \contentsline {paragraph}{Additional Frameworks/libraries}{47}{section*.29}
@@ -53,12 +53,12 @@
 \contentsline {subparagraph}{Django-allauth}{47}{section*.31}
 \contentsline {subparagraph}{Django-rest-auth}{47}{section*.32}
 \contentsline {subparagraph}{Django-review}{47}{section*.33}
-\contentsline {section}{\numberline {4.2}Screenshots}{47}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Web interface}{47}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.2}Screenshots}{48}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Web interface}{48}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}API}{51}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Deployment}{53}{section.4.3}
-\contentsline {paragraph}{AWS EC2 Security setup}{53}{section*.34}
-\contentsline {paragraph}{AWS RDS setup}{54}{section*.35}
+\contentsline {section}{\numberline {4.3}Deployment}{54}{section.4.3}
+\contentsline {paragraph}{AWS EC2 Security setup}{54}{section*.34}
+\contentsline {paragraph}{AWS RDS setup}{55}{section*.35}
 \contentsline {paragraph}{NGINX setup}{55}{section*.36}
 \contentsline {section}{\numberline {4.4}Testing}{55}{section.4.4}
 \contentsline {section}{\numberline {4.5}Work environment}{58}{section.4.5}
